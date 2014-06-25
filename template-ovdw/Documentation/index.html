@@ -1,0 +1,1966 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+
+	<!-- Basic Page Needs
+  ================================================== -->
+	<meta charset="utf-8">
+	<title>Agility &ndash; Support Guide</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<!-- Mobile Specific Metas
+  	================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- CSS
+  	================================================== -->
+	<link rel="stylesheet" href="assets/style.css">
+	<link type="text/css" rel="stylesheet" href="assets/syntaxhighlighter/styles/shCoreDefault.css"/>
+	<link type="text/css" rel="stylesheet" href="assets/syntaxhighlighter/styles/shThemeFadeToGrey.css"/>
+	
+	<!-- Favicons
+	================================================== -->
+	<link rel="shortcut icon" href="assets/favicon.ico">
+
+	<!-- Fonts
+	================================================== -->
+	
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+
+	
+	<!-- JS
+	================================================== -->
+	<script type="text/javascript" src="assets/syntaxhighlighter/scripts/shCore.js"></script>
+	<script type="text/javascript" src="assets/syntaxhighlighter/scripts/shBrushJScript.js"></script>
+	<script type="text/javascript" src="assets/syntaxhighlighter/scripts/shBrushCss.js"></script>
+	<script type="text/javascript" src="assets/syntaxhighlighter/scripts/shBrushPhp.js"></script>	
+	<script type="text/javascript">SyntaxHighlighter.all();</script>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+	<script src="assets/help.js"></script>
+	
+	
+		
+</head>
+
+<body>
+	
+	<div class="wrap">
+		
+		<div id="nav-panel">
+			<div id="nav-panel-inner">
+				
+				<header>
+					<h1><a href="http://agility-html.sevenspark.com/help">Agility HTML</a></h1>
+					<h4>Support Guide</h4>
+				</header>
+				
+				<nav id="nav">
+					<ul>
+						<li><a href="#introduction" class="current">Start Here!</a></li>
+						<li><a href="#support">Getting Support</a></li>
+						<li><a href="#templates">Templates</a>
+							<ul>
+								<li><a href="#templates-home">Home Templates</a></li>
+								<li><a href="#templates-blog">Blog Templates</a></li>
+								<li><a href="#templates-portfolio">Portfolio Templates</a></li>
+								<li><a href="#templates-pages">Pages Templates</a></li>
+							</ul>
+						</li>
+						<li><a href="#html-structure">HTML Structure</a>
+							<ul>
+								<li><a href="#html-grid">Grid System</a></li>
+								<li><a href="#html-navigation">Navigation</a></li>								
+								<li><a href="#html-feature-cols">Featured Columns</a></li>
+								<li><a href="#html-blog-layouts">Blog Layouts</a></li>
+								<li><a href="#html-portfolio">Portfolios</a></li>
+								<li><a href="#html-horizontalrules">Horizontal Rules</a></li>
+								<li><a href="#html-blockquotes">Blockquotes</a></li>
+								<li><a href="#html-taglines">Taglines</a></li>
+								<li><a href="#html-lists">Lists</a></li>
+								
+							</ul>							
+						</li>
+						<li><a href="#ui-kit">UI Elements</a>
+							<ul>
+								<li><a href="#ui-buttons">Buttons</a></li>
+								<li><a href="#ui-tabs">Tabs</a></li>
+								<li><a href="#ui-alerts">Alert Boxes</a></li>
+								
+							</ul>							
+						</li>	
+						<li><a href="#media">Media</a>
+							<ul>
+								<li><a href="#media-images">Responsive Images</a></li>
+								<li><a href="#media-video">Responsive Video Embedding</a></li>
+								<li><a href="#media-lightbox">Lightbox</a></li>
+								<li><a href="#media-maps">Maps</a></li>
+							</ul>
+						</li>					
+						<li><a href="#plugins">Plugins</a>
+							<ul>
+								<li><a href="#plugins-slider">Responsive Slider</a></li>
+								<li><a href="#plugins-contact-form">Contact Form</a></li>
+								<li><a href="#plugins-prettyPhoto">Pretty Photo</a></li>								
+							</ul>
+						</li>
+						<li><a href="#skins">Skins</a>
+							<ul>
+								<li><a href="#skins-background">Background</a></li>
+								<li><a href="#skins-highlights">Highlight Color</a></li>
+								
+							</ul>				
+						</li>
+						<li><a href="#css-structure">CSS Files and Structure</a>
+							<ul>
+								<li><a href="#css-base">base.css</a></li>
+								<li><a href="#css-skeleton">skeleton.css</a></li>
+								<li><a href="#css-layout">layout.css</a></li>
+								<li><a href="#css-ie7">ie7.css</a></li>
+							</ul>
+							
+						</li>
+						<li><a href="#javascript">JavaScript</a>
+							<ul>
+								<li><a href="#agility-js">agility.js</a></li>
+								<li><a href="#jquery-js">jquery.min.js</a></li>
+								<li><a href="#tabs">tabs.js</a></li>
+								<li><a href="#prettyPhoto">prettyPhoto.js</a></li>
+								<li><a href="#flexSlider">jquery.flexslider.js</a></li>
+								<li><a href="#ajaxContact">AJAX Contact Form</a></li>
+								<li><a href="#fix-ie">fix-ie.js</a></li>
+								<li><a href="#google-maps-api-js">Google Maps API</a></li>
+								<li><a href="#twitter-js">Twitter JS</a></li>
+							</ul>	
+						</li>
+						<li><a href="#faqs">FAQs</a></li>
+						<li><a href="#credits">Sources &amp; Credits</a>
+							<ul>
+								<li><a href="#credit-grid">Grid Framework</a></li>
+								<li><a href="#credit-javascript">JavaScripts</a></li>
+								<li><a href="#credit-phpscript">PHP Scripts</a></li>
+								<li><a href="#credit-images">Images</a></li>
+								<li><a href="#credit-graphics">Graphics</a></li>
+							</ul>							
+						</li>
+						
+					</ul>
+				</nav>
+				
+				<div class="search-tip">Tip: Press CRTL+F to search this file</div>
+				
+				<div class="nav-footer">
+					<a href="http://sevenspark.com" class="ss-attribution" target="_blank">by SevenSpark</a>
+				</div>
+				
+			</div>
+		</div>
+		
+		<div id="content-panel">
+			
+			<div id="content-panel-inner">
+			
+			
+			
+				<!-- INTRODUCTION -->
+				<section id="introduction">
+					<h2 style="margin-top:0em;">Introduction to Agility &ndash; Responsive HTML5/CSS3 Template</h2>
+					
+					
+					<table class="info-table">
+						<tr>
+							<td>Template: </td>
+							<td>Agility HTML</td>
+						</tr>
+						<tr>
+							<td>Template by:</td>
+							<td>Chris Mavricos, <a href="http://sevenspark.com">SevenSpark</a></td>
+						</tr>
+						<tr>
+							<td>Website: </td>
+							<td><a href="http://sevenspark.com">sevenspark.com</a></td>
+						</tr>
+						<tr>
+							<td>Created:</td>
+							<td>December 3, 2011</td>
+						</tr>
+						<tr>
+							<td>Guide Last Updated:</td>
+							<td>December 9, 2011</td>
+						</tr>
+						
+						
+					</table>
+					
+					
+					<p>Welcome to Agility!  Thank you for purchasing this template, I appreciate it!</p>
+					
+					<p>This guide should answer all your questions about how to use this template.  You can 
+						browse the document using the navigation sidebar on the left, or search the entire document
+						by using CTRL+F in your browser.</p>
+						
+					<p>Agility is based on a high quality responsive Grid Framework called Skeleton, which makes 
+						creating responsive layouts simple.  You may want to start off by checking out the
+						
+					<a href="http://getskeleton.com/" class="button" target="_blank">Full Skeleton Documentation &rarr;</a>
+					</p>
+					
+					<p>The latest version of this support guide can always be found here: 
+						<a href="http://agility-html.sevenspark.com/help">Agility Support Guide</a>.</p>
+											
+					
+					
+				</section>
+				
+				
+				
+				
+				
+				
+				<!-- SUPPORT -->
+				<section id="support">
+					
+					<h2>Getting Support</h2>
+					
+					<div class="alert alert-notification">
+						First, <strong>please take a moment to search this file</strong>, as the answer to your question is likely
+						already in here.  You can press <strong>CTRL+F</strong> in your browser and then search this entire page 
+						for keywords.  Or, browse the topics in the navigation on the left.  It's the fastest way to get
+						the answer you need!</div>
+					<br/>
+					<p>Please be polite when requesting support, and I'll be sure to respond as soon as possible.  
+						I'll do my best to answer your questions, but unfortunately I generally can't offer 
+						customizations beyond a few lines of code - there just aren't enought hours in the day!  
+						Of course, I will always provide fixes for any bugs that crop up as soon as can be :)</p>
+					
+					<div class="alert alert-notification">When requesting support, please indicate which product you are referring to,
+						explain what you've already tried and provide a link to your site so I may see
+						the issue firsthand.  It's really the only way to efficiently diagnose a problem.  Thanks!</div>
+					
+					<a class="button" href="http://sevenspark.com/out/support" target="_blank">I can't find my answer in this guide.  Get Support &rarr;</a>
+					
+					
+					
+				</section>
+				
+				
+				
+				
+				<!-- TEMPLATES -->
+				<section id="templates">
+					
+					<h2>Templates</h2>
+					
+					<p>Here's a list of the templates included with Agility.</p>
+					
+					<table class="template-list">
+						
+						<!-- HOME -->
+						<tr>
+							<td class="template-group" colspan="3" id="templates-home">Home Templates</td>
+						</tr>
+						
+						<tr>
+							<td class="template-title">Home</td>
+							<td class="template-file">index.html</td>
+							<td>Home page with slider, tagline, featured columns, blog list, feature list,
+								latest Tweet</td>							
+						</tr>
+						
+						<tr>
+							<td class="template-title">Home - Alternate</td>
+							<td class="template-file">home-alternate.html</td>
+							<td>2/3rds width slider, 1/3rd tagline, featured columns, blog list, feature list,
+								latest Tweet</td>							
+						</tr>
+						
+						
+						<tr>
+							<td class="template-title">Home - No Slider</td>
+							<td class="template-file">home-no-slider.html</td>
+							<td>Header image, tagline, featured columns, blog list, feature list,
+								latest Tweet</td>							
+						</tr>
+						
+						<tr>
+							<td class="template-title">Home + Blog</td>
+							<td class="template-file">home-blog.html</td>
+							<td>Slider, tagline, grid-style blog</td>					
+						</tr>
+						
+						
+						
+						<!-- BLOG -->
+						<tr>
+							<td class="template-group" colspan="3" id="templates-blog">Blog Templates</td>
+						</tr>
+						
+						<tr>
+							<td class="template-title">Standard Blog Layout</td>
+							<td class="template-file">blog.html</td>
+							<td>The standard blog loop, in list format</td>							
+						</tr>
+						
+						
+						<tr>
+							<td class="template-title">Grid Blog Layout</td>
+							<td class="template-file">blog-grid.html</td>
+							<td>The blog loop, in 3-column grid/mosaic format</td>							
+						</tr>
+						
+						
+						<tr>
+							<td class="template-title">Single Blog Post</td>
+							<td class="template-file">blog-post.html</td>
+							<td>A single blog post with featured image, lightbox, About the Author,
+								Related Posts, and Comments</td>
+						</tr>
+						
+						
+						<tr>
+							<td class="template-title">Single Blog Post - Video</td>
+							<td class="template-file">blog-post-video.html</td>
+							<td>A single blog post with featured video, video lightbox, About the Author, 
+								Related Posts, and Comments</td>							
+						</tr>
+						
+						
+						<!-- PORTFOLIO -->
+						<tr>
+							<td class="template-group" colspan="3" id="templates-portfolio">Portfolio Templates</td>
+						</tr>
+						
+						<tr>
+							<td class="template-title">4 Column Grid Layout</td>
+							<td class="template-file">portfolio-4col.html</td>
+							<td>Four column grid layout portfolio with image and video lightboxes.</td>							
+						</tr>
+						
+						<tr>
+							<td class="template-title">3 Columns Grid Layout</td>
+							<td class="template-file">portfolio-3col.html</td>
+							<td>Three column grid layout portfolio with image and video lightboxes.</td>							
+						</tr>
+						
+						<tr>
+							<td class="template-title">2 Column Layout</td>
+							<td class="template-file">portfolio-2col.html</td>
+							<td>Two column grid layout portfolio with image and video lightboxes.</td>							
+						</tr>
+						
+						
+						<tr>
+							<td class="template-title">1 Column Layout</td>
+							<td class="template-file">portfolio-1col.html</td>
+							<td>One column grid layout portfolio with image and video lightboxes.</td>							
+						</tr>
+						
+						<tr>
+							<td class="template-title">Single Portfolio Item</td>
+							<td class="template-file">portfolio-single.html</td>
+							<td>A single portfolio item with image feature.</td>							
+						</tr>
+						
+						<tr>
+							<td class="template-title">Single Portfolio Item + Video</td>
+							<td class="template-file">portfolio-single-video.html</td>
+							<td>A single portfolio item with video feature.</td>							
+						</tr>
+						
+						
+						<!-- PAGES -->
+						<tr>
+							<td class="template-group" colspan="3" id="templates-pages">Page Templates</td>
+						</tr>
+						
+						<tr>
+							<td class="template-title">About (typography / single page)</td>
+							<td class="template-file">about.html</td>
+							<td>Template demonstrating all the typographical and HTML elements
+								Agility has to offer, as well as a single page layout.</td>							
+						</tr>
+						
+						<tr>
+							<td class="template-title">Responsive Grid / Full Width</td>
+							<td class="template-file">grid.html</td>
+							<td>Template demonstrating the column options from the responsive grid
+								in a full-width page.</td>							
+						</tr>
+						
+						<tr>
+							<td class="template-title">Responsive Slider Samples</td>
+							<td class="template-file">slider.html</td>
+							<td>Template showing various slider styles - images, captions,
+								sizes.</td>							
+						</tr>
+						
+						<tr>
+							<td class="template-title">Video Slider</td>
+							<td class="template-file">slider-video.html</td>
+							<td>Template for video-specific slider.</td>							
+						</tr>
+						
+						<tr>
+							<td class="template-title">Contact</td>
+							<td class="template-file">contact.html</td>
+							<td>Includes the contact form, address, and Google Maps</td>							
+						</tr>
+						
+						<tr>
+							<td class="template-title">404 (Page Not Found)</td>
+							<td class="template-file">404.html</td>
+							<td>A sample template for your 404 page.</td>							
+						</tr>
+						
+						<!--
+						<tr>
+							<td class="template-title"></td>
+							<td class="template-file"></td>
+							<td></td>							
+						</tr>
+						-->
+						
+					</table>
+					
+				</section>				
+				
+				
+				
+				
+				
+				<!-- HTML STRUCTURE -->
+				<section id="html-structure">
+					
+					<h2>HTML Structure</h2>
+					
+					
+					<h3 id="html-grid">Responsive Grid System</h3>
+					
+					<a href="http://agility-html.sevenspark.com/responsive-grid" target="_blank" class="button">Responsive Grid Demo</a>
+					<a href="http://getskeleton.com/" class="button" target="_blank">View the Full Skeleton Documentation &rarr;</a>
+					
+					
+					
+					<p>The grid system makes it easy to create well-proportioned layouts.  The Skeleton framework, based on
+						the 960.gs framework, splits the grid into sixteen columns.  Columns are created by adding simple, 
+						intuitive classes to your HTML elements.</p>
+						
+					<div class="alert alert-notification">For a full demonstration of the responsive grid, visit 
+						the <a href="http://getskeleton.com/#grid">Skeleton Grid Demo</a>
+					</div>
+						
+					<p>The grid elements must be wrapped in a .container element, so you end up with something like this:</p>
+					
+					<pre class="brush: php;">
+						<div class="container">
+							<div class="nine columns">Nine Columns</div>
+							<div class="seven columns">Seven Columns</div>
+						</div></pre>
+						
+					<div class="alert alert-notification">A full width page is 16 columns, while a page with a sidebar is 
+						split into 11 and 4 columns, with a	1 column offset</div>
+						
+					<br/>
+					<h4>Columns on a Full Width Page (16 Columns)</h4>
+					
+					<h5>1/2 Columns (8 cols)</h5>
+					<pre class="brush: php;">
+						<div class="container">
+							<div class="eight columns">Half Width</div>
+							<div class="eight columns">Half Width</div>
+						</div></pre>
+					
+					
+					<h5>1/4 Columns (4 cols)</h5>
+					<pre class="brush: php;">
+						<div class="container">
+							<div class="four columns">Quarter Width</div>
+							<div class="four columns">Quarter Width</div>
+							<div class="four columns">Quarter Width</div>
+							<div class="four columns">Quarter Width</div>
+						</div></pre>
+					
+					<h5>3/4 Columns (12 &amp; 4 cols)</h5>
+					
+					<pre class="brush: php;">
+						<div class="container">
+							<div class="four columns">Quarter Width</div>
+							<div class="twelve columns">3/4 Width</div>
+						</div></pre>
+						
+					<h5>1/3 &amp; 2/3 Columns</h5>
+					<p>Thirds use a special syntax for full-width</p>
+					
+					<pre class="brush: php;">
+						<div class="container">
+							<div class="one-third column">1/3 Width</div>
+							<div class="two-thirds column">2/3 Width</div>
+						</div></pre>
+					
+					
+					<h4>Nested Columns</h4>
+					
+					<p>If you nest columns (use columns within columns), you'll need to use the 
+						<code>.alpha</code> and <code>.omega</code> classes
+						on your first and last columns, respectively, to account for the margins.</p>
+					
+					<pre class="brush: php;">
+						<div class="container">
+							<div class="eleven columns">
+								<div class="five columns alpha">First</div>
+								<div class="six columns omega">Last</div>
+							</div>
+						</div></pre>
+						
+					<h4>Offsets</h4>
+					
+					<p>To leave a column gap between columns, use the <code>.offset-by-X</code> class.  Valid values for X are 
+						'one' through 'fifteen'</p>
+					
+					<pre class="brush: php;">
+						<div class="container">
+							<div class="eleven columns"></div>
+							<div class="four columns offset-by-one"></div>
+						</div></pre>
+					
+					
+					<h4>To Clear Rows</h4>
+					
+					<ul>
+						<li>Add the <code>.clear-grid</code> class to the first item in each row</li>
+						<li>OR wrap each row in a <code>.row</code> div</li>
+						<li>OR add a <code>&lt;br class="clear" /&gt;</code> after the last item in each row</li>
+					</ul>
+					
+					
+					
+					
+					<!-- NAVIGATION -->
+					<h3 id="html-navigation">Navigation</h3>
+					
+					<a href="http://agility-html.sevenspark.com" target="_blank" class="button">Navigation Demo</a>
+					
+					<p>The navigation is built with nested unordered lists and links.  The full size menu is CSS-driven.</p>
+					
+					<p><strong>Current Menu Item</strong>: Add the <code>.current</code> class to the list item (LI)</p>
+					<p><strong>Responsive</strong>: The mobile button is displayed when the viewport is less than 480px
+						wide, to save screen real estate on mobile devices.</p>
+					<p><strong>Flyout menus</strong>: Nested unordered lists automatically create flyout menus.</p>
+					
+					<pre class="brush: php;">
+						<nav id="main-nav" class="two-thirds column omega">
+							
+							<!-- This button is only displayed when the viewport is < 480px (mobile devices) -->
+							<a href="#main-nav-menu" class="mobile-menu-button button">+ Menu</a>
+							<ul id="main-nav-menu" class="nav-menu">
+								<li id="nav-home" class="current">
+									<a href="index">Home</a>
+									<ul>
+										<li><a href="home-alternate">Home &ndash; Alternate</a></li>
+										<li><a href="home-no-slider">Home &ndash; No Slider</a></li>
+										<li><a href="home-blog">Home + Blog</a></li>
+									</ul>
+								</li>
+								....
+							</ul>
+						</nav></pre>
+					
+					
+					
+					
+					
+					
+					<!-- Home Page Featured Columns -->
+					<h3 id="html-feature-cols">Home page featured columns</h3>
+					
+					<a href="http://agility-html.sevenspark.com#featured-columns" target="_blank" class="button">Featured Columns Demo</a>
+					
+					<p>The home page featured columns are a combination of the column mosaic layout and featured images.  The key pieces
+						are to wrap your columns in a <code>.mosaic</code> div, and each column has the class <code>.feature-column</code>.
+						You could easily change the number of columns by using the Skeleton grid classes.</p>
+					
+					<pre class="brush: php;">
+						<div class="mosaic row">
+							
+							<!-- feature column 1 -->
+							<div class="feature-column one-third column">											
+								<a href="http://placehold.it/640x320" data-rel="prettyPhoto" class="img-link" title="Agility adapts to any screen size to optimize the user's experience.">
+									<img src="http://placehold.it/640x320" alt="Fully Responsive" class="scale-with-grid">
+								</a>										
+								<h4>Fully Responsive</h4>					
+								<p>Agility adapts to any screen size to optimize the user's experience.</p>
+							</div>
+							<!-- end .feature-column -->
+							
+							<!-- feature column 2 -->
+							<div class="feature-column one-third column">
+								<a href="#video-0" data-rel="prettyPhoto" class="video-link" title="Built from the ground up on a responsive grid system.">
+									<img src="http://placehold.it/640x320" alt="Back to Basics" class="scale-with-grid">
+								</a>
+								<div id="video-0" class="inline-video-lightbox-content">
+									<div class="video-wrapper">
+										<div class="video-container video-flex">
+											<iframe src="http://player.vimeo.com/video/9679622?title=0&amp;byline=0&amp;portrait=0" 
+												width="400" height="225" frameborder="0" webkitallowfullscreen="" 
+												mozallowfullscreen="" allowfullscreen=""></iframe>									
+										</div><!-- end .video-container -->
+									</div><!-- end .video-wrapper -->
+								</div>
+								<h4>Back to Basics</h4>					
+								<p>Built from the ground up on a responsive grid system.</p>
+							</div>
+							<!-- end .feature-column -->
+							
+							<!-- feature column 3 -->
+							<div class="feature-column one-third column">
+								<a href="img/slides/beautiful_design_940.jpg" data-rel="prettyPhoto" class="img-link" title="Elegantly minimal.  Beautifully simple.">
+									<img src="img/slides/beautiful_design_940.jpg" alt="Beautiful Design" class="scale-with-grid">
+								</a>
+								<h4>Beautiful Design</h4>					
+								<p>Elegantly minimal.  Beautifully simple.</p>
+							</div>
+							<!-- end .feature-column -->
+							
+							<div class="clear"></div>
+						</div></pre>
+					
+					
+					
+					
+					
+					<!-- Blog Layouts -->
+					<h3 id="html-blog-layouts">Blog Layouts</h3>
+					
+					<h4>Standard Blog Layout</h4>
+					
+					<a href="http://agility-html.sevenspark.com/blog" target="_blank" class="button">Standard Blog Layout Demo</a>
+					
+					<p>The standard blog layout wraps the articles in the <code>.blog-layout</code> class.  The latest post is larger to make it
+						stand out, but that as not required - it is just an alternative style.</p>
+					
+					<pre class="brush: php;">
+						<div class="blog-layout eleven columns" id="main" role="main">
+		
+							<h2 class="page-title">The Blog</h2>
+								
+							<!-- latest post -->
+							<article class="post first">
+								<div class="latest-indicator">
+									Latest
+								</div>					
+							
+								<!-- post header -->
+								<header>
+										
+									<h1><a href="post-1" class="">Post Title</a></h1>				
+											
+									<!-- post meta -->
+									<div class="post-meta">
+										<div class="four columns alpha">
+											<a href="#" class="post-category">Category</a>
+										</div>
+										<div class="seven columns omega far-edge">
+											by <a href="#" class="post-author">Author name</a> on
+											<time datetime="2011-09-26" class="post-date">Month day, year</time>
+										</div>
+									</div>
+									<!-- end .post-meta -->									
+										
+									<div class="featured-image img-wrapper seven columns alpha">												
+										<a href="http://placehold.it/640x320" data-rel="prettyPhoto" class="img-link" title="In Love by h.koppdelaney http://www.flickr.com/photos/h-k-d/3838158206/"><img src="http://placehold.it/640x320" alt="Wuthering Heights" class="scale-with-grid"></a>
+									</div>
+								</header>
+								
+								<!-- post content -->
+								<div class="four columns omega">
+										
+									<!-- post excerpt -->
+									<div class="post-excerpt">
+										<p>Excerpt content here.</p>
+										<a href="post-1" class="excerpt-link">Continue Reading &rarr;</a>							
+									</div>
+									<!-- end .post-excerpt -->
+										
+									<footer>																				
+										<span class="post-tags tooltip-container"><a href="#" class="icon tag-icon tooltip-anchor"></a><span class="tooltip"><a href="#">novel</a>, <a href="#">Ellis Bell</a>, <a href="#">Catherine</a>, <a href="#">Heathcliff</a>, <a href="#">English</a></span></span>
+														<span class="post-comments tooltip-container"><a href="#comments" class="icon comments-icon tooltip-anchor"></a><span class="tooltip">5 Comments</span></span> 
+										<span class="post-permalink tooltip-container"><a href="post-1" class="icon permalink-icon tooltip-anchor"></a><span class="tooltip">Permalink</span></span>
+									</footer>
+								</div>
+								
+								<div class="clear"></div>
+								
+							</article>
+							<!-- end .post.first (latest) -->
+					
+							<!-- post -->
+							<article class="post">
+							
+								<!-- post header -->
+								<header>						
+									<div class="featured-image img-wrapper four columns alpha">
+										<a href="http://placehold.it/640x320" data-rel="prettyPhoto" class="img-link" title="Next Dimension by h.koppdelaney http://www.flickr.com/photos/h-k-d/2864168894/"><img src="http://placehold.it/640x320" alt="The Wonderful Wizard of Oz" class="scale-with-grid" /></a>
+									</div>
+									
+									<div class="seven columns omega">
+											
+										<h1><a href="post-2" class="">Post Title</a></h1>				
+													
+										<!-- post meta -->
+										<div class="post-meta">
+											<div class="three columns alpha">
+												<a href="#" class="post-category">Category</a>
+											</div>
+											<div class="four columns omega far-edge">
+												by <a href="#" class="post-author">Author name</a> on
+												<time datetime="2011-09-21" class="post-date">Month day, year</time>
+											</div>
+										</div>
+										<!-- end .post-meta -->									
+											
+									</div>
+								</header>
+								
+								<!-- post content -->
+								<div class="seven columns omega">
+										
+									<!-- post excerpt -->
+									<div class="post-excerpt">
+										<p>Excerpt content here..</p>
+										<a href="post-2" class="excerpt-link">Continue Reading &rarr;</a>
+									</div>
+									<!-- end .post-excerpt -->
+										
+									<footer>
+										<span class="post-tags tooltip-container"><a href="#" class="icon tag-icon tooltip-anchor"></a><span class="tooltip"><a href="#">wizard</a>, <a href="#">Oz</a>, <a href="#">Dorothy</a>, <a href="#">Toto</a>, <a href="#">Aunt Em</a>, <a href="#">witch</a>, <a href="#">flying monkeys</a></span></span>
+															<span class="post-comments tooltip-container"><a href="#comments" class="icon comments-icon tooltip-anchor"></a><span class="tooltip">5 Comments</span></span> 
+										<span class="post-permalink tooltip-container"><a href="post-2" class="icon permalink-icon tooltip-anchor"></a><span class="tooltip">Permalink</span></span>
+									</footer>
+								</div>
+								
+								<div class="clear"></div>
+								
+							</article>
+							<!-- end .post -->
+						
+							....
+								
+							<!-- Blog Navigation -->
+							<nav class="blog-navigation">
+								<a href="#" class="five columns alpha">&larr; Older Posts</a>
+								<!--<a href="#" class="five columns omega offset-by-one far-edge">Newer Posts &rarr;</a>-->		
+							</nav>
+							<!-- end .blog-navigation -->
+							
+						</div>
+					</pre>
+					
+					
+					<h4>Grid Layout</h4>
+					
+					<a href="http://agility-html.sevenspark.com/blog-grid" target="_blank" class="button">Grid Blog Layout Demo</a>
+					
+					<p>The grid layout is built by wrapping the articles in a <code>.mosaic</code> div with a <code>.col-X</code> class,
+						where X is the number of posts per row.</p>
+						
+					<p>Each article is given the appropriate Skeleton grid class.</p>
+					
+					<pre class="brush: php;">
+					<div class="mosaic col-3">			
+				
+						<!-- post - grid -->
+						<article class="post one-third column with-meta">
+							
+							<header>
+								<a href="http://placehold.it/640x320" data-rel="prettyPhoto" class="img-link" title="In Love by h.koppdelaney http://www.flickr.com/photos/h-k-d/3838158206/"><img src="http://placehold.it/640x320" alt="Wuthering Heights" class="scale-with-grid"></a>
+								
+								<h1><a href="post-1" class="">Post Title</a></h1>
+															
+								<!-- post meta -->
+								<div class="post-meta">
+									<div class=" columns alpha">
+										<a href="#" class="post-category">Category</a>
+									</div>
+									<div class="meta-right columns omega far-edge">
+										by <a href="#" class="post-author">Author name</a> on
+										<time datetime="2011-09-26" class="post-date">Month day, year</time>
+									</div>
+								</div>
+								<!-- end .post-meta -->
+								
+							</header>
+								
+							<!-- post excerpt -->
+							<div class="post-excerpt">
+								<p>Excerpt content here.</p>
+								<a href="post-1" class="excerpt-link">Continue Reading &rarr;</a>							
+							</div>
+							<!-- end .post-excerpt -->
+						</article>
+						<!-- end .post -->
+						
+				
+						<!-- post - grid -->
+						<article class="post one-third column with-meta">
+							<header>
+								<a href="http://placehold.it/640x320" data-rel="prettyPhoto" class="img-link" title="Next Dimension by h.koppdelaney http://www.flickr.com/photos/h-k-d/2864168894/"><img src="http://placehold.it/640x320" alt="The Wonderful Wizard of Oz" class="scale-with-grid"></a>
+								
+								<h1><a href="post-2" class="">Post Title</a></h1>
+															
+								<!-- post meta -->
+								<div class="post-meta">
+									<div class=" columns alpha">
+										<a href="#" class="post-category">Category</a>
+									</div>
+									<div class="meta-right columns omega far-edge">
+										by <a href="#" class="post-author">Author name</a> on
+										<time datetime="2011-09-21" class="post-date">Month day, year</time>
+									</div>
+								</div>
+								<!-- end .post-meta -->
+								
+							</header>
+							
+							<!-- post excerpt -->
+							<div class="post-excerpt">
+								<p>Excerpt content here.</p>
+								<a href="post-2" class="excerpt-link">Continue Reading &rarr;</a>							
+							</div>
+							<!-- end .post-excerpt -->
+						</article>
+						<!-- end .post -->
+						
+				
+						<!-- post - grid (with example content)-->
+						<article class="post one-third column with-meta">
+							<header>										
+								<a href="#video-3" data-rel="prettyPhoto" class="video-link" title="the lone cypress by Eric Bryan http://www.flickr.com/photos/flowers-of-the-sea/5183147057/"><img src="http://placehold.it/640x320" alt="The Count of Monte Cristo" class="scale-with-grid"></a>
+								<div id="video-3" class="inline-video-lightbox-content">
+									<div class="video-wrapper">
+										<div class="video-container video-flex">
+											<iframe src="http://player.vimeo.com/video/21864555?portrait=0" width="400" height="225" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>									
+										</div><!-- end .video-container -->
+									</div><!-- end .video-wrapper -->
+									
+								</div>
+								<h1><a href="post-3" class="">The Count of Monte Cristo</a></h1>
+															
+								<!-- post meta -->
+								<div class="post-meta">
+									<div class=" columns alpha">
+										<a href="#" class="post-category">Historical</a>
+									</div>
+									<div class="meta-right columns omega far-edge">
+										by <a href="#" class="post-author">Alexandre Dumas</a> on
+										<time datetime="2011-09-07" class="post-date">Sep 7, 2011</time>
+									</div>
+								</div>
+								<!-- end .post-meta -->
+								
+							</header>
+								
+							<!-- post excerpt -->
+							<div class="post-excerpt">
+								<p>At the same moment, and in the midst of the terrifying silence which usual...</p>
+								<a href="post-3" class="excerpt-link">Continue Reading &rarr;</a>							
+							</div>
+							<!-- end .post-excerpt -->
+						</article>
+						<!-- end .post -->
+						
+						....
+					</div></pre>
+					
+					
+					
+					
+					
+					
+					<!-- Portfolios -->
+					<h3 id="html-portfolio">Portfolios</h3>
+					
+					<a href="http://agility-html.sevenspark.com/portfolio-4col" target="_blank" class="button">Portfolio Demo</a>
+					
+					<p>Portfolios can be created with any number of columns using this structure.  Adding [folio] to the <code>data-rel</code>
+						attribute will make all the items appear as a gallery in the lightbox.
+					</p>
+					
+					<pre class="brush: php;">
+						<!-- Portfolio Grid Layout -->		
+						<div class="portfolio col-4">
+								
+							<!-- portfolio item -->
+							<article class="portfolio-item four columns">
+								<!-- lightbox with image -->
+								<a href="img/troopers/supertroopers.jpg" data-rel="prettyPhoto[folio]" class="img-link preload"
+									title="Super Troopers! by JD Hancock http://www.flickr.com/photos/jdhancock/3597447738" 
+									><img src="img/troopers/supertroopers.jpg" alt="Super Troopers!" class="scale-with-grid" /></a>
+								<!-- end lightbox with image -->
+
+								<header>
+									<h1><a href="portfolio-portfolio_troopers-1" class="">Super Troopers!</a></h1>
+								</header>					
+																			
+								<div class="portfolio-excerpt">by JD Hancock</div>
+
+							</article>
+							<!-- end .portfolio-item -->
+					
+							<!-- portfolio item -->
+							<article class="portfolio-item four columns">
+								<!-- lightbox with video -->
+								<a href="#video-2" data-rel="prettyPhoto[folio]" class="video-link"
+									title="Career-Limiting Move by JD Hancock http://www.flickr.com/photos/jdhancock/3591682866"
+									><img src="img/troopers/careerlimiting.jpg" alt="Career-Limiting Move" class="scale-with-grid" /></a>
+								<div id="video-2" class="inline-video-lightbox-content">	
+									<div class="video-wrapper">
+										<div class="video-container">
+											<iframe src="http://player.vimeo.com/video/15607283?title=0&amp;byline=0&amp;portrait=0" 
+										width="400" height="225" frameborder="0" webkitAllowFullScreen mozallowfullscreen 
+										allowFullScreen></iframe>									
+										</div><!-- end .video-container -->
+									</div><!-- end .video-wrapper -->							
+								</div>
+								<!-- end lightbox with video -->			
+															
+								<header>
+									<h1><a href="portfolio-portfolio_troopers-2" class="">Career-Limiting Move</a></h1>																	
+								</header>					
+																			
+								<div class="portfolio-excerpt">by JD Hancock</div>
+													
+							</article>
+							<!-- end .portfolio-item -->
+					
+							<!-- portfolio item -->
+							<article class="portfolio-item four columns">
+								<!-- lightbox with image -->
+								<a href="img/troopers/facingthestorm.jpg" data-rel="prettyPhoto[folio]" class="img-link preload"
+									title="Facing the Storm by JD Hancock http://www.flickr.com/photos/jdhancock/3575402272" 
+									><img src="img/troopers/facingthestorm.jpg" alt="Facing the Storm" class="scale-with-grid" /></a>
+								<!-- end lightbox with image -->		
+															
+								<header>
+									<h1><a href="portfolio-portfolio_troopers-3" class="">Facing the Storm</a></h1>																	
+								</header>					
+																			
+								<div class="portfolio-excerpt">by JD Hancock</div>
+													
+							</article>
+							<!-- end .portfolio-item -->
+					
+							<!-- portfolio item -->
+							<article class="portfolio-item four columns">
+								<!-- lightbox with image -->
+								<a href="img/troopers/darthjawa.jpg" data-rel="prettyPhoto[folio]" class="img-link preload"
+									title="Darth Jawa by JD Hancock http://www.flickr.com/photos/jdhancock/4320006468/" 
+									><img src="img/troopers/darthjawa.jpg" alt="Darth Jawa" class="scale-with-grid" /></a>
+								<!-- end lightbox with image -->
+						
+								<header>
+									<h1><a href="portfolio-portfolio_troopers-4" class="">Darth Jawa</a></h1>
+								</header>					
+																			
+								<div class="portfolio-excerpt">by JD Hancock</div>
+													
+							</article>
+							<!-- end .portfolio-item -->
+							
+						</div>
+						<!-- end .portfolio -->
+						
+					</pre>
+					
+					
+					
+					
+					
+					
+					
+					<!-- Horizontal Rules -->
+					<h3 id="html-horizontalrules">Horizontal Rules</h3>
+					
+					<a href="http://agility-html.sevenspark.com/about#horizontalrule-demo" target="_blank" class="button">Horizontal Rule Demo</a>
+					
+					<p>Agility includes several types of horizontal rules.</p>
+					
+					<pre class="brush: php;">
+						<!-- basic -->
+						<hr>
+						
+						<!-- fat -->
+						<hr class="fat">
+						
+						<!-- stripes -->
+						<hr class="stripes">
+						
+						<!-- mini -->
+						<hr class="mini">
+						
+						<!-- fleuron -->
+						<span class="fleuron"></span>
+						
+					</pre>
+					
+					
+					
+					
+					
+					<h3 id="html-blockquotes">Blockquotes</h3>
+					
+					<a href="http://agility-html.sevenspark.com/about#blockquote-demo" target="_blank" class="button">Blockquote Demo</a>
+					
+					<p>Blockquotes are normally full width.  Use the <code>cite</code> element to provide attribution.</p>
+					
+					<pre class="brush: php;">
+						<blockquote>This is a normal block quote.  After silence, that 
+							which comes nearest to expressing the inexpressible is music.
+							<cite>Aldous Huxley</cite>
+						</blockquote>
+					</pre>
+					
+					<br/><br/>
+					<a href="http://agility-html.sevenspark.com/about#pullquote-demo" target="_blank" class="button">Pullquote Demo</a>
+					
+					<p>To use a pullquote in a paragraph, use the <code>.pullquote</code> class before the start of a paragraph:</p>
+					
+					<pre class="brush: php;">
+						<blockquote class="pullquote">Yes, it is a dull beginning. I say, 
+							let us pretend that it is the end.
+							<cite>Peter Pan, by J.M Barrie</cite>
+						</blockquote>
+						<p>Paragraph text...</p></pre>
+						
+						
+						
+						
+					
+					<h3 id="html-taglines">Taglines</h3>
+					
+					<a href="http://agility-html.sevenspark.com/about#tagline-demo" target="_blank" class="button">Tagline Demo</a>
+					
+					<p>Taglines can be used for extreme emphasis, generally on your home page.</p>
+					
+					<pre class="brush: php;">
+						<div class="tagline">
+							This is a tagline, you can use it for extreme emphasis.
+							
+							<!-- add in a fleuron if you wish -->
+							<span class="fleuron"></span>
+						</div></pre>
+									
+					
+					
+					
+					<h3 id="html-lists">Lists</h3>
+					
+					<a href="http://agility-html.sevenspark.com/about#list-demo" target="_blank" class="button">List Demo</a>
+					
+					<p>Agility offers several lists styles that employ different bullet types.  Just add the appropriate class.</p>
+			
+					<pre class="brush: php;">
+						
+						<!-- disc -->
+						<ul class="disc">
+							<li>Peter Pan</li>
+							<li>The Adventures of Huckleberry Finn</li>
+							<li>Wuthering Heights</li>
+							<li>The Odyssey</li>
+							<li>Alice's Adventures in Wonderland</li>
+						</ul>
+						
+						<!-- square -->
+						<ul class="square">
+							<li>Peter Pan</li>
+							<li>The Adventures of Huckleberry Finn</li>
+							<li>Wuthering Heights</li>
+							<li>The Odyssey</li>
+							<li>Alice's Adventures in Wonderland</li>
+						</ul>
+						
+						<!-- checkmark -->
+						<ul class="checkmark">
+							<li>Peter Pan</li>
+							<li>The Adventures of Huckleberry Finn</li>
+							<li>Wuthering Heights</li>
+							<li>The Odyssey</li>
+							<li>Alice's Adventures in Wonderland</li>							
+						</ul>
+							
+						<!-- pin -->
+						<ul class="pin">
+							<li>Peter Pan</li>
+							<li>The Adventures of Huckleberry Finn</li>
+							<li>Wuthering Heights</li>
+							<li>The Odyssey</li>
+							<li>Alice's Adventures in Wonderland</li>							
+						</ul>	
+						
+						<!-- link lists, which have effects on hover -->
+						<ul class="link-list">
+							<li><a href="http://bit.ly/UberMenu">UberMenu – WordPress Mega Menu</a></li>
+							<li><a href="http://bit.ly/qpdDzH">Menu Management Enhancer for WordPress</a></li>
+							<li><a href="http://bit.ly/g64hdB">Scroll Checkpoint – Animated Content Panels Plugin</a></li>						
+						</ul>					
+					</pre>
+			
+			
+				</section>
+			
+			
+				<section id="ui-kit">
+				
+					<h2>UI Elements</h2>
+					
+					
+					<!-- Buttons -->
+					
+					<h3 id="ui-buttons">Buttons</h3>
+					
+					<a href="http://agility-html.sevenspark.com/about#button-demo" target="_blank" class="button">Button Demo</a>
+					
+					<p>It's easy to insert buttons.  You can style anchors, button elements, or submit buttons as buttons.</p>
+					
+					<pre class="brush: php;">
+						<!-- anchor -->
+						<a href="#" class="button">Click me!</a>
+						
+						<!-- submit button - automatically styled, add classes for colors -->
+						<input type="submit" value="Click me!" />
+						
+						<!-- button elements -->
+						<button>Click me!</button>
+					</pre>
+					
+					<p>To change the color, just add the appropriate class:</p>
+					
+					
+					<pre class="brush: php;">
+						<!-- anchor -->
+						<a href="#" class="button button-red">Click me!</a>
+						
+						<!-- submit button - automatically styled, add classes for colors -->
+						<input type="submit" value="Click me!" class="button-blue" />
+						
+						<!-- button elements -->
+						<button class="button-green">Click me!</button>
+					</pre>
+					
+					<p>To make the text light instead of dark, add the <code>.button-lighttext</code> class.</p>
+					
+					<pre class="brush: php;">
+						<!-- anchor -->
+						<a href="#" class="button button-red button-lighttext">Click me!</a>
+						
+						<!-- submit button - automatically styled, add classes for colors -->
+						<input type="submit" value="Click me!" class="button-blue button-lighttext" />
+						
+						<!-- button elements -->
+						<button class="button-green button-lighttext">Click me!</button>
+					</pre>
+					
+					<p>To make the button full-width with centered text, add the <code>.full-width</code> class.</p>
+					
+					<pre class="brush: php;">
+						<!-- anchor -->
+						<a href="#" class="button button-red full-width">Click me!</a>
+					</pre>
+					
+					<p>To create larger buttons, add the <code>.button-large</code> class.</p>
+					
+					<pre class="brush: php;">
+						<!-- anchor -->
+						<a href="#" class="button button-red button-large">Click me!</a>
+					</pre>
+					
+					
+					<h4>Color Options</h4>
+					
+					<ul>
+						<li>button (light grey default)</li>
+						<li>button-green</li>
+						<li>button-blue</li>
+						<li>button-red</li>
+						<li>button-grey</li>
+						<li>button-purple</li>
+						<li>button-yellow</li>						
+					</ul>
+					
+					
+					<!-- Tabs -->
+					<h3 id="ui-tabs">Tabs</h3>
+					
+					<a href="http://agility-html.sevenspark.com/about#tab-demo" target="_blank" class="button">Tab Demo</a>
+					
+					<a href="http://getskeleton.com/#tabs" class="button" target="_blank">Skeleton Tabs Documentation &rarr;</a>
+					
+					<p>Tabs are created by creating two adjacent unordered lists.  The first contains the navigational
+						tabs, and the second contains the content.  The list items are linked together by <code>href</code> 
+						&rarr; <code>id</code></p>
+					
+					<pre class="brush: php;">
+						<!-- Standard <ul> with class of "tabs" -->
+						<ul class="tabs">
+  							<!-- Give href an ID value of corresponding "tabs-content" <li>'s -->
+  							<li><a class="active" href="#simple">Simple</a></li>
+  							<li><a href="#lightweight">Lightweight</a></li>
+  							<li><a href="#mobileFriendly">Mobile</a></li>
+						</ul>
+
+						<!-- Standard <ul> with class of "tabs-content" -->
+						<ul class="tabs-content">
+  							<!-- Give ID that matches HREF of above anchors -->
+  							<li class="active" id="simple">The tabs are clean and simple unordered-list markup and basic CSS.</li>
+  							<li id="lightweight">The tabs are cross-browser, but don't need a ton of hacky CSS or markup.</li>
+  							<li id="mobileFriendly">The tabs work like a charm even on mobile devices.</li>
+						</ul></pre>
+					
+					
+					
+					
+					
+					
+					<h3 id="ui-alerts">Alert Boxes</h3>
+					
+					<a href="http://agility-html.sevenspark.com/about#alert-demo" target="_blank" class="button">Alert Box Demo</a>
+					
+					<p>Agility comes with 3 styles of alert boxes: notification (green), warning (yellow), and error (red).</p>
+					
+					<pre class="brush: php;">
+						<!-- notification -->
+						<div class="alert alert-notification">
+							<h6>This is a notificaiton alert.</h6>
+							<p>Congratulations on your wonderful decision to purchase Agility!</p> 
+						</div>
+						
+						<!-- warning -->
+						<div class="alert alert-warning">
+							<h6>This is a warning alert.</h6>  
+							<p>Caution!  Do not push the red button!</p>
+						</div>
+						
+						<!-- error -->
+						<div class="alert alert-error">
+							<h6>This is an error alert.</h6>
+							<p>You just had to push that button, didn't you?  Well, that's it, it's all over...</p>
+						</div>
+					</pre>
+					
+					
+					
+					
+				</section>
+			
+			
+			
+			
+				<section id="media">
+				
+				
+					<h2>Media</h2>
+					
+					
+					
+					<!-- Responsive Images -->
+					<h3 id="media-images">Responsive Images</h3>
+					
+					<p>To make an image automatically scale as the grid responds, add the class <code>.scale-with-grid</code> 
+						to the <code>img</code> tag.  This will ensure that the image is never larger than the width of
+						its container - though it will not automatically expand if it is narrower than the container.
+					</p>
+					
+					<pre class="brush: php;">
+						<div class="ten columns">
+							<img class="scale-width-grid" src="/path/to/img.jpg" />
+						</div></pre>
+					
+					
+					<!-- Video Embedding -->
+					<h3 id="media-video">Responsive Video Embedding</h3>
+					
+					<a href="http://agility-html.sevenspark.com/post-3" target="_blank" class="button">Responsive Video Demo</a>
+					
+					<h4>Embedding from YouTube and Vimeo</h4>
+					
+					<p>You can embed Vimeo and YouTube videos just by copying the latest iFrame embed code
+						from those sites.  Set the size (width/height) you'd like the video to appear at on
+						mobile devices.  For devices > 480px wide, videos wrapped in the responsive containers
+						will automatically scale to the size of their container.</p>
+					
+					<pre class="brush: php;">
+						<iframe src="http://player.vimeo.com/video/15607283?title=0&amp;byline=0&amp;portrait=0" width="400" height="225" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+					</pre>
+					
+										
+					<h4>Responsive Video</h4>
+					
+					<p>To make your embedded videos responsive, wrap them in this code:</p>
+					
+					<pre class="brush: php;">
+						<div class="video-wrapper">
+							<div class="video-container video-flex">
+								<iframe src="http://player.vimeo.com/video/15607283?title=0&amp;byline=0&amp;portrait=0" width="400" height="225" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>									
+							</div><!-- end .video-container -->
+						</div><!-- end .video-wrapper -->
+					</pre>
+					
+					<p>This will make the video automatically size to its parent container.  However, this resizing is not active for mobile sizes; otherwise it interferes with the built-in browser player on
+						devices like the iPhone.  Therefore, the recommended width to set in your embed code is about 400px - which ensures the best sizing for landscape oriented mobile phones when
+						not resized.</p>
+					
+					<div class="alert alert-warning">
+						It is important to note that vendors are still working on mobile device compatibility.  For example, Vimeo videos are not compatible with Android devices at the time 
+						of this writing; rotating the screen orientation while loading a Vimeo video on the iPhone tends to crash mobile Safari.  These are issues to be aware of which
+						are awaiting solutions by the vendors.  You may wish to include a link to allow users to view videos in native apps rather than in-browser.
+					</div>				
+				
+				
+					
+					<!-- Lightbox -->
+					<h3 id="media-lightbox">Lightbox</h3>
+					
+					<a href="http://agility-html.sevenspark.com/blog-grid" target="_blank" class="button">Lightbox Demo</a>					
+					
+					<h4>Images</h4>
+					
+					<p>To create an image lightbox, wrap your image in an anchor which links to the image, and set the <code>data-rel</code> attribute to <code>prettyPhoto</code>
+						 and the class to <code>img-link</code>.  Add the <code>scale-with-grid</code> class to the <code>img</code> tag in make the whole thing responsive.
+						 The lightbox will automatically be initiated.</p>
+						 
+					<pre class="brush: php;">
+						<a href="http://placehold.it/640x320" data-rel="prettyPhoto" class="img-link" title="Agility adapts to any screen size to optimize the user's experience.">
+							<img src="http://placehold.it/640x320" alt="Fully Responsive" class="scale-with-grid">
+						</a></pre>
+						
+					<p>You can create a lightbox gallery by adding the gallery name to the <code>data-rel</code> attribute for each of the images that should appear in the gallery:</p>
+					
+					<pre class="brush: php;">
+						<a href="http://placehold.it/640x320" data-rel="prettyPhoto[folio]" class="img-link" title="Slide 1.">
+							<img src="http://placehold.it/640x320" alt="Fully Responsive" class="scale-with-grid">
+						</a>
+						<a href="http://placehold.it/640x320" data-rel="prettyPhoto[folio]" class="img-link" title="Slide 2.">
+							<img src="http://placehold.it/640x320" alt="Fully Responsive" class="scale-with-grid">
+						</a>
+					</pre>
+					
+					
+					<h4>Videos</h4>
+					
+					<p>To create a video lightbox, use the same lightbox structure, with two adjustments:</p>
+					
+					<ol>
+						<li>Add a responsive video wrapped in an <code>.inline-video-lightbox-content</code> div with an ID after the lightbox link.</li>
+						<li>Set the <code>href</code> of the lightbox link to the ID of the inline video.</li>
+					</ol>
+					
+					<pre class="brush: php;">
+						<!-- lightbox -->
+						<a href="#video-0" data-rel="prettyPhoto" class="video-link" title="Built from the ground up on a responsive grid system.">
+							<img src="http://placehold.it/640x320" alt="Back to Basics" class="scale-with-grid">
+						</a>
+						
+						<!-- video which will appear in lightbox -->
+						<div id="video-0" class="inline-video-lightbox-content">								
+							<div class="video-wrapper">
+								<div class="video-container video-flex">
+									<iframe src="http://player.vimeo.com/video/9679622?title=0&amp;byline=0&amp;portrait=0" width="400" height="225" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>									
+								</div><!-- end .video-container -->
+							</div><!-- end .video-wrapper -->							
+						</div>
+					</pre>
+				
+				
+				
+				
+				
+					<!-- MAPS -->
+					<h3 id="media-maps">Maps</h3>
+					
+					<a href="http://agility-html.sevenspark.com/contact" target="_blank" class="button">Map Demo</a>
+					
+					<p>You can easily add Google Maps just by setting location data in the markup.  Just add the class
+						<code>.map_canvas</code> to a div and set the following data:</p>
+						
+					<table class="template-list">
+						<tr>
+							<td style="width:100px;">data-lat</td>
+							<td>The latitude of the coordinates to show on the map.  This will load immediately.</td>
+							<td>40.4166909</td>
+						</tr>
+						<tr>
+							<td>data-lng</td>
+							<td>The longitude of the coordinates to show on the map.  This will load immediately.</td>
+							<td>-3.7003454</td>
+						</tr>
+						<tr>
+							<td>data-address</td>
+							<td>This address is optional and will be geocoded and displayed - it sends an extra request to do this,
+								so if the geocache fails the original lat and long coordinates will be displayed.</td>
+							<td>5 Calle de Sevilla, Madrid, Spain</td>
+						</tr>
+						<tr>
+							<td>data-zoom</td>
+							<td>The level to which the map should be zoomed to begin with.</td>
+							<td>15</td>
+						</tr>
+						<tr>
+							<td>data-mapTitle</td>
+							<td>The text to display when hovering over the map marker.</td>
+							<td>Agility, Inc</td>
+						</tr>
+						
+					</table>						
+					
+					<pre class="brush: php;">
+						<div class="map_canvas" 						
+							data-lat="40.4166909" 							
+							data-lng="-3.7003454"							
+							data-address="5 Calle de Sevilla, Madrid, Spain"							
+							data-zoom="15" 							
+							data-mapTitle="Agility, Inc"							
+							style="height:220px;width:100%;"></div> 
+					</pre>
+				
+				</section>
+			
+			
+			
+			
+					
+				<section id="plugins">		
+					
+					<h2 >Plugins</h2>
+					
+					
+					<!-- RESPONSIVE SLIDER -->
+					<h3 id="plugins-slider">Responsive Slider</h3>
+					
+					<a href="http://agility-html.sevenspark.com/responsive-slider" target="_blank" class="button">Responsive Slider Demo</a>
+					
+					<p><a href="http://flex.madebymufffin.com/">FlexSlider</a> is used as the basis for the Agility slider.					
+						<a href="http://flex.madebymufffin.com/#advanced" class="button" target="_blank">View the Full FlexSlider Documentation &rarr;</a>
+					</p>
+					
+					<p>The slider is automatically initialized in <code>agility.js</code>.  Just place the HTML markup anywhere in the 
+						site and it'll be activated.</p>
+					
+					<p>Here's some sample markup for the slider:</p>
+					
+					<pre class="brush: php;">
+					<div class="flex-container">
+						<div class="flexslider">
+							<ul class="slides">
+								<li>
+									<!-- Image only -->
+									<img src="slide1.jpg" />
+								</li>
+								<li>
+									<!-- Image with link -->
+									<a href="#"><img src="slide2.jpg" /></a>
+								</li>
+								<li>
+									<!-- Image with Caption -->
+									<img src="slide3.jpg" />
+									<div class="flex-caption">
+						    			<p>Caption text.</p>
+						    		</div>
+								</li>
+								<li>
+									<!-- Image with link, Caption at top-->
+									<a href="#"><img src="slide4.jpg" /></a>
+									<div class="flex-caption flex-caption-top">
+						    			<p>Caption text.</p>
+						    		</div>
+								</li>
+							</ul>
+						</div>
+					</div></pre>
+					
+					<p>You can add the class <code>.flex-caption-top</code> to move the caption div to the top of the image 
+						(by default it is at the bottom).</p>
+					
+					
+					<p>And here is a list of all options, which can be set in the <code>agility.js</code> file:</p>
+					
+					<pre class="brush: js;">
+						animation: "fade",              //String: Select your animation type, "fade" or "slide"
+						slideDirection: "horizontal",   //String: Select the sliding direction, "horizontal" or "vertical"
+						slideshow: true,                //Boolean: Animate slider automatically
+						slideshowSpeed: 7000,           //Integer: Set the speed of the slideshow cycling, in milliseconds
+						animationDuration: 600,         //Integer: Set the speed of animations, in milliseconds
+						directionNav: true,             //Boolean: Create navigation for previous/next navigation? (true/false)
+						controlNav: true,               //Boolean: Create navigation for paging control of each clide? Note: Leave true for manualControls usage
+						keyboardNav: true,              //Boolean: Allow slider navigating via keyboard left/right keys
+						mousewheel: false,              //Boolean: Allow slider navigating via mousewheel
+						prevText: "Previous",           //String: Set the text for the "previous" directionNav item
+						nextText: "Next",               //String: Set the text for the "next" directionNav item
+						pausePlay: false,               //Boolean: Create pause/play dynamic element
+						pauseText: 'Pause',             //String: Set the text for the "pause" pausePlay item
+						playText: 'Play',               //String: Set the text for the "play" pausePlay item
+						randomize: false,               //Boolean: Randomize slide order
+						slideToStart: 0,                //Integer: The slide that the slider should start on. Array notation (0 = first slide)
+						animationLoop: true,            //Boolean: Should the animation loop? If false, directionNav will received "disable" classes at either end
+						pauseOnAction: true,            //Boolean: Pause the slideshow when interacting with control elements, highly recommended.
+						pauseOnHover: false,            //Boolean: Pause the slideshow when hovering over slider, then resume when no longer hovering
+						controlsContainer: "",          //Selector: Declare which container the navigation elements should be appended too. Default container is the flexSlider element. Example use would be ".flexslider-container", "#container", etc. If the given element is not found, the default action will be taken.
+						manualControls: "",             //Selector: Declare custom control navigation. Example would be ".flex-control-nav li" or "#tabs-nav li img", etc. The number of elements in your controlNav should match the number of slides/tabs.
+						start: function(){},            //Callback: function(slider) - Fires when the slider loads the first slide
+						before: function(){},           //Callback: function(slider) - Fires asynchronously with each slider animation
+						after: function(){},            //Callback: function(slider) - Fires after each slider animation completes
+						end: function(){}               //Callback: function(slider) - Fires when the slider reaches the last slide (asynchronous)</pre>
+					
+					
+					
+					
+					
+					
+					
+					<!-- CONTACT FORM -->
+					<h3 id="plugins-contact-form">Contact Form</h3>
+					
+					<a href="http://agility-html.sevenspark.com/contact" target="_blank" class="button">Contact Form Demo</a>
+					
+					<div class="alert alert-notification">The contact form requires a server running PHP5
+						and a properly configured mail server.</div>
+					
+					<p>Agility includes a copy of the excellent AJAX Contact Form from Jigowatt.</p>
+					
+					
+					
+					<h4>Setup &amp; Configuration</h4>		
+					
+					<p>The contact form code is already included in your package, so all you need to do is configure some
+						values and add the PHP file to your server.</p>
+						
+					<ol>
+						<li>Open <code>ajaxcontact/contact.php</code>, and find the <strong>CONFIGURATION</strong> section
+							near the top</li>
+						<li>Edit the <code>$address</code> value to your own email address.</li>
+						<li>Configuring the rest of the variables is optional, including:
+							<ul>
+								<li>Invalid Name Error</li>
+								<li>Empty Email Error</li>
+								<li>Invalid Email Error</li>
+								<li>Invalid Subject Error</li>
+								<li>Invalid Message Error</li>
+								<li>Email Subject</li>
+								<li>Success Header</li>
+								<li>Success Message</li>
+								<li>Mailing Error Message</li>
+							</ul>	
+						</li>
+						<li>You can configure the rest of the file as well, but you should be comfortable with PHP 
+							and understand what you're doing if you want to edit anything beyond the configuration section.</li>
+						<li>Sections of code for a phone number and human verification system are commented out; uncomment
+							them if you wish to use them on your site.</li>
+						<li>Add the contact form code to your page.  The javascript is already included in the template.  The IDs
+							and classes should remain intact.</li>
+												
+					</ol>
+					
+					<pre class="brush: php;">
+						
+						<!-- AJAX contact form -->
+						<div id="contact" class="contact-form">
+						
+							<div id="message"></div>
+							
+							<form method="post" action="ajaxcontact/contact.php" name="contactform" id="contactform">
+								<label for="name" accesskey="n">Name</label> <input type="text" name="name" id="name">
+								<label for="email" accesskey="e">Email</label> <input type="text" name="email" id="email">
+								<label for="subject" accesskey="s">Subject</label> <input type="text" name="subject" id="subject">
+								<label for="comments" accesskey="m">Message</label> <textarea name="comments" id="comments"></textarea>
+								<input type="submit" value="Send">
+							</form>
+														
+						</div></pre>			
+					
+					
+					
+					
+					<!-- PRETTY PHOTO -->
+					<h3 id="plugins-prettyPhoto">Pretty Photo</h3>
+					
+					<p>See <a href="#media-lightbox">Media Lightbox</a></p>
+					
+					<a href="http://www.no-margin-for-errors.com/projects/prettyphoto-jquery-lightbox-clone/documentation/" class="button">PrettyPhoto Documentation &rarr;</a>
+					
+					<h4>Advanced Lightbox Functionality</h4>
+					<p>You can adjust the prettyPhoto lightbox options in the <code>agility.js</code> javascript file.  You can see a list of all the options in the 
+						<a href="http://www.no-margin-for-errors.com/projects/prettyphoto-jquery-lightbox-clone/documentation/">prettyPhoto documentation</a>.</p>
+					
+					
+				</section>
+				
+				
+				
+				
+				<!-- SKINS -->
+				<section id="skins">
+					
+					<h2>Skins</h2>
+					
+										
+					<h3 id="skins-background">Background</h3>
+				
+					<p>Changing the background skin is as easy as adding a class to the <code>body</code> tag.</p>
+					
+					<ul>
+						<li>bkg-fiber</li>
+						<li>bkg-smoky</li>
+					</ul>
+					
+					<p>Leave blank (no class) to default to the white background.</p>
+					
+					<pre class="brush: php;">
+						&lt;body class="bkg-fiber"&gt; </pre>
+					
+					
+					
+					<h3 id="skins-highlights">Highlight Color</h3>
+					
+					<p>Changing the highlight skin is also as easy as adding a class to the <code>body</code> tag.</p>
+					
+					<ul>
+						<li>skin-red</li>
+						<li>skin-blue</li>
+						<li>skin-green</li>
+						<li>skin-purple</li>
+					</ul>
+					
+					<p>Leave blank (no class) to default to the charcoal scheme.</p>
+					
+					<pre class="brush: php;">
+						&lt;body class="skin-red"&gt;</pre>
+					
+					<p>Alternatively, just copy the styles from your desired skin to the Default style selectors and do not use a class.
+						The style can be edited in layout.css by navigating to the #Skins section.</p>
+						
+					<p>For example, copy the red skin:</p>
+					
+					<pre class="brush: css;">
+						/* Red */
+						.skin-red #sub-title,
+						.skin-red #main p a,
+						.skin-red nav#main-nav > ul > li.current > a,
+						.skin-red a.excerpt-link,
+						.skin-red .post-meta a.post-category,
+						.skin-red #tweet a{
+							color:#d83f28;
+						}
+						.skin-red .contact-form label{
+							border-bottom-color: #d83f28;
+						}
+						
+						.skin-red #colophon .footer-upper{
+							border-top-color: #d83f28;
+						}</pre>
+					
+					<p>To the default style:</p>
+					
+					<pre class="brush: css;">
+						/* Default - copy your values here */
+						#sub-title,
+						#main p a,
+						nav#main-nav > ul > li.current > a,
+						a.excerpt-link,
+						.post-meta a.post-category,
+						#tweet a{
+							color:#d83f28;
+						}
+						.contact-form label{
+							border-bottom-color: #d83f28; 
+						}
+						#colophon .footer-upper{
+							border-top-color: #d83f28; 
+						}</pre>
+					
+				</section>
+				
+				
+				
+				
+				
+				<!-- CSS STRUCTURE -->
+				<section id="css-structure">
+					
+					<h2>CSS Files and Structure</h2>
+					
+					<h3 id="css-base">base.css</h3>
+					
+					<div class="alert alert-warning">
+						<h6>Do Not Edit this file</h6>
+						
+						<p>This is a Skeleton Core file.  Keep all your customizations in other files so that if there is a future 
+							Skeleton release you can just overwrite this file easily.</p>						
+					</div>
+					
+					<p>This file contains the basic styles for skeleton.</p>
+					
+					<h3 id="css-skeleton">skeleton.css</h3>
+					
+					<div class="alert alert-warning">
+						<h6>Do Not Edit this file</h6>
+						
+						<p>This is a Skeleton Core file.  Keep all your customizations in other files so that if there is a future 
+							Skeleton release you can just overwrite this file easily.</p>						
+					</div>
+					
+					<p>This file contains the skeleton grid.</p>
+					
+					<h3 id="css-layout">layout.css</h3>
+					
+					<p>This file contains all the styles for the site.  Here are the contents of the file.  It is easy to 
+						search as each section has a <code>#</code> in front of the section header.</p>
+						
+					<pre class="brush: css;">
+						/*
+						 * TABLE OF CONTENTS
+						 * =========================================================
+						 * 
+						 * 		#General Site Styles
+						 * 		#Fonts & Typography
+						 * 		#Dropdown Panel Container
+						 * 
+						 * 		#Site Header
+						 *		#Navigation
+						 *
+						 * 		#Slider
+						 * 		#Lightbox
+						 * 		#Videos 
+						 * 
+						 * 		#Page Headings
+						 * 		#Post Content
+						 * 			- Mosiac - Grid Layout
+						 * 			- Blog Layout - Standard Layout
+						 * 			- Bloglist - Widget Style
+						 * 		#Portfolio
+						 * 		#Single Posts
+						 * 		#Comments
+						 *
+						 * 		#Sidebar
+						 * 
+						 * 		#HTML Elements
+						 * 			#Blockquotes
+						 * 			#Lists
+						 * 			#Forms
+						 * 			#Buttons
+						 * 			#Tabs
+						 * 			#Tables
+						 * 			#Alert Boxes
+						 * 			#Icons
+						 * 			#Tooltips
+						 * 
+						 * 		#Contact Form
+						 *  
+						 * 		#Footer 
+						 * 		#Miscellaneous Headers
+						 * 
+						 * 		#Twitter Plugin
+						 * 
+						 * 		#Utility Classes 		
+						 * 		#Skins
+						 * 		#Transitions
+						 * 		#IE Stupidity
+						 * 		#Font-Face (sample code)
+						 * 
+						 * 		#Media Queries
+						 * 
+						 */
+					</pre>
+					
+					<h3 id="css-ie7">ie7.css</h3>
+					
+					<div class="alert alert-warning">Please note that IE7 is not officially supported.  This file is provided as a courtesy.</div>
+					
+					<p>A simple file with some basic IE7 CSS fixes.  IE7 is not officially supported, but this will make
+						the site more usable for IE7 users anyway.  It is only loaded for IE7 users.</p>
+					
+				</section>
+				
+				
+				
+				
+				<!-- JAVASCRIPT -->
+				<section id="javascript">
+					<h2>JavaScript</h2>
+					
+					<h3 id="agility-js">agility.js</h3>
+					<p>This is the main jQuery functionality for the site.  It handles:</p>
+					
+					<ul>
+						<li>Loading the Flex Slider</li>
+						<li>Controlling the Drop Panel</li>
+						<li>Initiates PrettyPhoto</li>
+						<li>Sets up the Mobile Menu</li>
+						<li>Handles image sizing in IE</li>
+						<li>Preloads images</li>
+						<li>Loads Google Maps</li>
+						<li>Loads recent Tweets</li>						
+					</ul>
+					
+					<p>It also contains the imgSize script and a preloader script.</p>
+					
+					<h3 id="jquery-js">jquery.min.js</h3>
+					<p>jQuery 1.6.2 javascript library.  Loaded from Google CDN.</p>
+					
+					<h3 id="tabs">tabs.js</h3>			
+					<div class="alert alert-warning">Do Not Edit</div>		
+					<p>Contains code for activating tabs.</p>			
+					
+					<h3 id="prettyPhoto">prettyPhoto.js</h3>
+					<div class="alert alert-warning">Do Not Edit</div>
+					<p>A flexible jQuery lightbox.</p>
+					
+					<h3 id="flexSlider">jquery.flexslider.js</h3>
+					<div class="alert alert-warning">Do Not Edit</div>
+					<p>Fully responsive jQuery slider.</p>
+					
+					<h3 id="ajaxContact">AJAX Contact Form - jquery.jigowatt.js</h3>
+					<div class="alert alert-warning">Do Not Edit unless you are proficient with javascript and understand AJAX.</div>
+					<p>AJAX Contact Form script loaded from ajaxcontact/js/jquery.jigowatt.js</p>
+					
+					<h3 id="fix-ie">fix-ie.js</h3>
+					<p>Helps make Internet Explorer act like a modern browser.  (Loaded remotely)</p>
+					
+					<h3 id="google-maps-api-js">Google Maps API</h3>
+					<p>Embed Google Maps in your own web pages.  (Loaded remotely)</p>
+					
+					<h3 id="twitter-js">Twitter JS</h3>
+					<p>Loads latest Tweets.  (Loaded remotely)</p>
+					
+				</section>
+				
+				
+				
+				<!-- FAQs -->
+				<section id="faqs">
+					
+					<h2>Frequently Asked Questions</h2>
+					
+					<div class="alert alert-notification">
+						The FAQ section will be expanded online as common requests come in.
+					</div>
+					
+					<h4 id="FAQ-pinch-zoom">My site can't pinch and zoom on mobile devices.  How can I allow that?</h4>
+					
+					<p>Part of the purpose of the responsive site is to not have to zoom.  In order to best display the capabilities of
+						the template, zooming is disabled by default.  To enable it, just change the <code>maximum-scale</code> value
+						of the <code>viewport</code> meta in the site header.  </p>
+						
+					<pre class="brush: php;">
+						
+						<!-- no scaling -->
+						<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+						
+						<!-- scaling up to 3x zoom -->
+						<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3">
+						
+					</pre>
+						
+					
+				</section>
+				
+				
+				
+				<!-- SOURCES & CREDITS -->
+				<section id="credits">
+					<h2>Sources &amp; Credits</h2>
+					
+					
+					<h3 id="credit-grid">Grid Framework</h3>
+					
+					<h4><a href="http://getskeleton.com/">Skeleton Responsive Framework</a></h4>					
+					<p>A Beautiful Boilerplate for Responsive, Mobile-Friendly Development by <a href="http://www.davegamache.com">Dave Gamache</a></p>
+					
+									
+					
+					<h3 id="credit-javascript">JavaScripts</h3>
+					
+					<h4><a href="http://flex.madebymufffin.com/">FlexSlider</a></h4>					
+					<p>An awesome, fully responsive jQuery slider plugin by <a href="http://madebymufffin.com/">Tyler Smith</a></p>
+					
+					<h4><a href="http://www.no-margin-for-errors.com/projects/prettyphoto-jquery-lightbox-clone/">Pretty Photo Lightbox</a></h4>
+					<p>A flexible jQuery lightbox by <a href="http://www.no-margin-for-errors.com/">Stéphane Caron</a></p>
+						
+					<h4><a href="http://www.modernizr.com/">Modernizr</a></h4>
+					<p>An open-source JavaScript library that helps you build the next generation of HTML5 and CSS3-powered websites.</p>
+					
+					<h4><a href="http://code.google.com/apis/maps/documentation/javascript/">Google Maps API</a></h4>
+					<p>The Google Maps Javascript API lets you embed Google Maps in your own web pages.</p>
+					
+					<h4><a href="http://unstoppablerobotninja.com/entry/fluid-images/">imgSizer</a></h4>
+					<p>Image resizer for IE by <a href="http://unstoppablerobotninja.com/">Ethan Marcotte</a>.</p>					
+					
+					<h4><a href="http://code.google.com/p/twitterjs/downloads/list">Twitter JS</a></h4>
+					<p>Latest Tweets loader by <a href="http://remysharp.com/2007/05/18/add-twitter-to-your-blog-step-by-step/">Remy Sharp</a></p>
+					
+					<h3 id="credit-phpscript">PHP Scripts</h3>
+					
+					<h4><a href="http://codecanyon.net/item/ajax-contact-form/50846?ref=sevenspark" ref="nofollow">AJAX Contact Form</a></h4>
+					<p>AJAX/PHP premium contact form by Jigowatt (extended license)</p>
+										
+					
+					<h3 id="credit-images">Images</h3>
+					
+					<h4>From PhotoDune (Regular license - demo only)</h4>
+					
+					<p><a href="http://photodune.net/item/modern-dance-a-bboy-doing-some-breakdance-moves/221987?ref=sevenspark" ref="nofollow">Modern Dance</a>
+					by Yuri Arcurs (demo only)</p>
+					
+					<p><a href="http://codecanyon.net/item/child-playing-at-snowballs/681315?ref=sevenspark" ref="nofollow">Child Playing at Snowballs</a> by
+						yarruta (demo only)</p>
+						
+					<p><a href="http://codecanyon.net/item/fresh-and-beautiful-young-fashion-model-posing/218647?ref=sevenspark" ref="nofollow">Fresh and beautiful
+						young fashion model posing</a> by Yuri Arcurs (demo only)</p>
+					
+					
+					<h4>From Flickr (Creative Commons - demo only)</h4>
+					
+					<p><a href="http://www.flickr.com/photos/h-k-d/3838158206/">In Love</a> by h.koppdelaney </p>
+					
+					<p><a href="http://www.flickr.com/photos/h-k-d/2864168894/">Next Dimension</a> by h.koppdelaney </p>
+					
+					<p><a href="http://www.flickr.com/photos/flowers-of-the-sea/5183147057/">the lone cypress</a> by Eric Bryan </p>
+					
+					<p><a href="http://www.flickr.com/photos/jeff_finley/4921806335/">Jeff Finley Wallpaper</a> by Jeff Finley</p>
+					
+					<p><a href="http://www.flickr.com/photos/playingwithpsp/2093191019">Sea Dreams</a> by Playingwithbrushes </p>
+					
+					<p><a href="http://www.flickr.com/photos/alicepopkorn/5973536077/">loneliness</a> by alicepopkorn</p>
+					
+					<p>Storm Trooper photos by <a href="http://www.flickr.com/photos/jdhancock/3597447738">JD Hancock</a></p>
+					
+					<p><a href="http://www.flickr.com/photos/st3f4n/3459513455">To be or not to be (a clone)</a> by Stefan </p>
+					
+					<p><a href="http://www.flickr.com/photos/hertzen/5507310366">Pictorgram Movie Posters</a> by Viktor Hertz</p>
+						
+						
+					<h3 id="credit-graphics">Graphics</h3>
+					<p><a href="http://graphicriver.net/item/the-high-technology-device-pack/460645?ref=sevenspark" ref="nofollow">High Technology Device Pack</a>
+						by StockDesignMan (demo only)
+					</p>
+					
+					
+										
+										
+				</section>
+			
+			</div>
+			
+		</div>
+		
+	</div>
+	
+	
+</body>
+
+</html>
