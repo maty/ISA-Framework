@@ -169,13 +169,15 @@
 	
 	
 		<div id="page_body">
+		   <div class="page_header">	
 			<h1>Möbel</h1><p>
 			<h2 class="page-title page-title-with-sub sixteen columns" >Möbel</h2>
 			<h5 class="sub-page-title sixteen columns">Stühle, Tische, Bänke, Regale, Wickelkommoden
 Alles was ich verschieben kann.</h5>
+           </div>
 			
 			<!-- Portfolio Grid Layout -->
-			<div class="col-3">
+			<div class="col-3" id="container">
 		
 				<!-- portfolio item -->
 				<article class="one-third column">
@@ -361,6 +363,19 @@ Email: <a class="button" href="mailto:oliver@ovdw.de" style="margin:.5em 0 0 0;"
 <!--[if (gte IE 6)&(lte IE 8)]>
   <script type="text/javascript" src="http://www.app.travelideas.es/template-ovdw/javascripts/fix-ie.js"></script>
 <![endif]-->
+
+<script src="http://www.app.travelideas.es/template-ovdw/javascripts/imagesloaded.pkgd.min.js"></script>
+<script src="http://www.app.travelideas.es/template-ovdw/javascripts/masonry.pkgd.min.js"></script>
+
+<script type="text/javascript">
+  var container = document.querySelector('#container');
+  var msnry;
+  // initialize Masonry after all images have loaded
+  imagesLoaded( container, function() {
+    msnry = new Masonry( container );
+  });
+</script>
+
 
 <!-- end Scripts -->
 
