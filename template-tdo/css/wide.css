@@ -1,0 +1,13 @@
+/* contenedores styles wide
+-------------------------------------------------- */
+.menu-left {
+    left: 0;
+    position: absolute;
+    top: 16px;
+}
+.menu-center {
+  float: left;
+}
+.menu-right {
+    float: right;
+}
