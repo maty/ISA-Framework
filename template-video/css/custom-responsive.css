@@ -1,0 +1,12 @@
+@media (max-width: 380px) {
+
+.cookies-overlay {
+display: none;
+}
+
+.modal-content{
+  margin-top: 0px;
+  
+  }
+
+} 
