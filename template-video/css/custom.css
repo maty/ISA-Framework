@@ -104,3 +104,28 @@
 	color:#cc1f20;
 }
 
+.modal-content a.default {
+  color:#ccc;
+}
+.modal-content a.default:hover {
+  color:#fff;
+}
+
+/* Ouibounce Modal */
+
+#ouibounce-modal .modal-title {
+  background-color: #526C7D;
+}
+#ouibounce-modal h3 {
+  line-height: 20px;  
+}
+
+#ouibounce-modal .modal-body {
+  font-size: .7em;
+  padding: 15px;
+}
+#ouibounce-modal .modal-body h2 {
+  font-size: 1.5em;
+  line-height: 20px;  
+}
+
