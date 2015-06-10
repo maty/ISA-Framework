@@ -1,0 +1,853 @@
+/*===============================================================================================================================================================
+//RESET
+================================================================================================================================================================*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var,
+b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {	margin: 0;	padding: 0; border: 0;	font-size: 100%;font: inherit;vertical-align: baseline;}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display: block;}
+body {line-height: 1;}
+ol, ul {/*list-style: none;*/}
+blockquote, q {	quotes: none;}
+blockquote:before, blockquote:after,q:before, q:after {	content: '';content: none;}
+table {	border-collapse: collapse;	border-spacing: 0;}
+
+html, body{height: 100%;}
+
+a {outline:none; }
+body{/*background-image: url(bg.jpg); background-repeat:repeat-x;*/ font-family: calibri, Arial, Helvetica, sans-serif; font-size:13px;background-color:#dfded5;}
+#container{margin:0 auto; width:960px; }
+.clear{clear:both;}
+
+/*===============================================================================================================================================================
+General
+================================================================================================================================================================*/
+#fondos{width:100%; position:absolute; z-index:-1; top:0; height:100%}
+	#header{background-color:#a39b9a; height:435px; width:100%; background-image:url(http://www.patagonline.com/images/header1.jpg); background-repeat:no-repeat; background-repeat:repeat-x; }
+	#cuerpo{background-color:##dfded5; height:400px; width:100%; background-image:url(http://www.patagonline.com/images/bg_fondo.jpg); background-repeat:repeat-x; }
+
+#main_content{position:relative; z-index:0;font-family:Arial, Helvetica, sans-serif; font-size:13px;}
+	#content {width:1004px; margin:135px auto; background:url(http://www.patagonline.com/images/side_bg_warp.jpg) repeat-y  -14px 0;}
+		#menu{ background-color:#526c7d; height:36px; }
+		.page{background-color:#ffffff; float:left; width:714px;  padding:10px 15px 30px 15px; min-height: 720px;}
+		#side{background-color:#A89E9D; float:right; width:258px;color:#FFFFFF; padding:10px 0 30px 0;  border-left: 1px solid #332b2f; border-right: 1px solid #332b2f; border-top: 1px solid #685e63; margin-top:-37px; position:relative;}
+		#footer{background-color:#8198A2;; height:200px; margin:-135px 0; clear:both; width:100%; display:block;}
+
+/*---------Elementos-----------------*/
+p {color:#4c4c4c; margin:10px 0 15px 0;font-size:12px; line-height:16px; font-family:Arial, Helvetica, sans-serif;}
+.ds_content {color:#4c4c4c; margin:10px 0 15px 0;font-size:12px; line-height:16px; font-family:Arial, Helvetica, sans-serif;}
+
+.resaltado{ color:#4d9184; font-style:italic;}
+h1{color:#4e6e80; font-size:30px; margin:0px 0 30px 0px ;}
+h2{color:#53464d; font-size:22px; margin:0px 0 10px 0;}
+h3{color:#4e6e80; font-size:18px; margin:0px 0 10px 0;}
+h4{color:#4e6e80; font-size:28px; margin:0px 0 30px 0px ;}
+
+.page ul li{ list-style-position:inside; color:#4c4c4c; margin:5px 0 5px 0;font-size:12px; line-height:16px; font-family:Arial, Helvetica, sans-serif;}
+.page ul{ margin:0px 0 30px 0;}
+.page ul ul { margin:0px 0 10px 0;}
+.page ul ul li{ margin:0px 0 5px 20px; list-style-type:square;}
+.page .map  {float:left; margin-right:16px}
+em{ font-style:italic;}
+strong{font-weight:bold;}
+.page a { color:#4e6e80;text-decoration:none; border-bottom:1px dotted #4e6e80;  }
+.page a:visited {color:#53464d;}
+.page a:hover { color:#4e6e80;}
+.page img{ border:solid 1px #1e3e4a; margin-bottom:20px;}
+
+#breadcrumb{ margin:5px 0 25px;}
+#breadcrumb h1 { font-size: 13px;font-family:font-family: Arial, Helvetica, sans-serif; color: black;}
+a.bread{margin:0 0px; float:left; display:block; border:none;}
+a.bread span{margin: 3px 12px 0 3px; float:right; }
+.flecha_bread{ display:block; width:7px; height:9px; background:url(http://www.patagonline.com/images/breadcrumb_flechas.jpg) no-repeat top right; text-indent:-800000px; float:left }
+
+
+
+
+/*.page iframe{width:734px; overflow:hidden; display:block; margin:0 -15px; padding:0; min-height:760px;}*/
+
+iframe .page{ min-height:100%}
+
+
+
+/*===============================================================================================================================================================
+HEADER
+================================================================================================================================================================*/
+
+#header-inner{ width:1004px; margin:0 auto; }
+#header-inner h6{ margin:0;}
+#header-inner h6 a{ text-indent:-100000px; height:87px; width:290px; display:block; background:url(http://www.patagonline.com/images/logo_new.jpg); float:left; }
+#header-inner h6 span{ display:block; height:67px; text-align:center; background-color:#4d6d7f; color:#fff; padding:10px 25px;float:left; font-size:26px }
+#header-inner ul.lenguaje{ float:right; width:260px; text-align:center; background-color:#51444a;}
+#header-inner ul.lenguaje li { list-style:none; float:left; padding:10px 0 10px 12px; }
+#header-inner ul.lenguaje li a{ display:block; color:#f8d98b; text-decoration:none; border-right:1px solid #f8d98b; padding: 0 10px 0 10px; }
+#header-inner ul.lenguaje li:last-child a{ border:none!important;}
+#header-inner ul.lenguaje li a:hover, #header-inner ul.lenguaje li a:active{ color:#FFF;}
+
+/*===============================================================================================================================================================
+HEADER DE
+================================================================================================================================================================*/
+
+#header-inner-de{ width:1004px; margin:0 auto; }
+#header-inner-de h6{ margin:0;}
+#header-inner-de h6 a{ text-indent:-100000px; height:87px; width:290px; display:block; background:url(http://www.patagonline.com/images/logo_new_de.jpg); float:left; }
+#header-inner-de h6 span{ display:block; height:67px; text-align:center; background-color:#4d6d7f; color:#fff; padding:10px 25px;float:left; font-size:26px }
+#header-inner-de ul.lenguaje{ float:right; width:260px; text-align:center; background-color:#51444a;}
+#header-inner-de ul.lenguaje li { list-style:none; float:left; padding:10px 0 10px 12px; }
+#header-inner-de ul.lenguaje li a{ display:block; color:#f8d98b; text-decoration:none; border-right:1px solid #f8d98b; padding: 0 10px 0 10px; }
+#header-inner-de ul.lenguaje li:last-child a{ border:none!important;}
+#header-inner-de ul.lenguaje li a:hover, #header-inner ul.lenguaje li a:active{ color:#FFF;}
+
+/*===============================================================================================================================================================
+HEADER EN
+================================================================================================================================================================*/
+
+#header-inner-en{ width:1004px; margin:0 auto; }
+#header-inner-en h6{ margin:0;}
+#header-inner-en h6 a{ text-indent:-100000px; height:87px; width:290px; display:block; background:url(http://www.patagonline.com/images/logo_new_en.jpg); float:left; }
+#header-inner-en h6 span{ display:block; height:67px; text-align:center; background-color:#4d6d7f; color:#fff; padding:10px 25px;float:left; font-size:26px }
+#header-inner-en ul.lenguaje{ float:right; width:260px; text-align:center; background-color:#51444a;}
+#header-inner-en ul.lenguaje li { list-style:none; float:left; padding:10px 0 10px 12px; }
+#header-inner-en ul.lenguaje li a{ display:block; color:#f8d98b; text-decoration:none; border-right:1px solid #f8d98b; padding: 0 10px 0 10px; }
+#header-inner-en ul.lenguaje li:last-child a{ border:none!important;}
+#header-inner-en ul.lenguaje li a:hover, #header-inner ul.lenguaje li a:active{ color:#FFF;}
+
+/*===============================================================================================================================================================
+HEADER IT
+================================================================================================================================================================*/
+
+#header-inner-it{ width:1004px; margin:0 auto; }
+#header-inner-it h6{ margin:0;}
+#header-inner-it h6 a{ text-indent:-100000px; height:87px; width:290px; display:block; background:url(http://www.patagonline.com/images/logo_new_it.jpg); float:left; }
+#header-inner-it h6 span{ display:block; height:67px; text-align:center; background-color:#4d6d7f; color:#fff; padding:10px 25px;float:left; font-size:26px }
+#header-inner-it ul.lenguaje{ float:right; width:260px; text-align:center; background-color:#51444a;}
+#header-inner-it ul.lenguaje li { list-style:none; float:left; padding:10px 0 10px 12px; }
+#header-inner-it ul.lenguaje li a{ display:block; color:#f8d98b; text-decoration:none; border-right:1px solid #f8d98b; padding: 0 10px 0 10px; }
+#header-inner-it ul.lenguaje li:last-child a{ border:none!important;}
+#header-inner-it ul.lenguaje li a:hover, #header-inner ul.lenguaje li a:active{ color:#FFF;}
+
+
+/*===============================================================================================================================================================
+HOME
+================================================================================================================================================================*/
+.banner_home{width:213px; height:190px; background:url(http://www.patagonline.com/images/banner_home_bg.jpg) bottom no-repeat; float:left; padding:10px; margin:25px 0 30px 0;}
+.banner_home span{line-height:30px; }
+
+.banner_home img{border:none; width:84px; height:93px; margin-right: -15px; padding:0;float:right; }
+.banner1,.banner2{ margin-right:7px}
+
+.banner1 h4 ,.banner2 h4 ,.banner3 h4 {margin: 40px 0 0; width:135px; line-height: 10px;}
+.banner1 h4 a{color:#7dbbab;border:none;}
+.banner2 h4 a{color:#62b6cb;border:none;}
+.banner3 h4 a{color:#e46868;border:none;}
+
+
+.infogra_map{ width:350px;  float: left; margin: 0 16px 5px 0;}
+.infogra_map a, .infogra_map a:hover, .infogra_map a:active{ margin-top:-5px; border:none; font-size:15px;}
+.banner1:hover a { border-bottom:2px dotted #7dbbab;}
+
+
+.banner2:hover a { border-bottom:2px dotted #62b6cb;}
+
+
+.banner3:hover a { border-bottom:2px dotted #e46868;}
+
+
+/*===============================================================================================================================================================
+TABs
+================================================================================================================================================================*/
+.filters{ float:right; margin-top:10px; }
+.filters select{ margin-right:7px; }
+.filters select:last-child{ margin-right:0px; }
+.tab_container {border: 1px solid #e9e9e9;	overflow: hidden;clear: both;float: left; width: 100%;background:#fff; margin-bottom:30px; }
+.border_tab{background-color:#fbfbfb; margin:2px; padding: 0 0 20px; }
+.tab_content {	padding:20px 5px}
+
+
+ul.tabs {margin: 0;	padding: 0;	float: left; list-style: none;	height: 36px; /*border-left: 1px solid #999;width: 100%;*/}
+ul.tabs li {float: left; margin-right: 2px; height: 45px; width:233px; line-height: 29px; position: relative; background: url(http://www.patagonline.com/images/tab_button.png) no-repeat bottom;}
+ul.tabs li a { text-decoration: none; color: #fff; display: block; font-size: 22px; outline: none; text-align:center; border-bottom:none;}
+html ul.tabs li.active, html ul.tabs li.active a:hover  {background-position:top;}
+
+/*=======================TABs Content======================================================================================*/
+.tab_content .modulo_oferta {width:332px; height:198; float:left; margin:10px 7px;  border:1px solid #e9e9e9; padding:1px; }
+.tab_content .modulo_oferta-inner{background:url(http://www.patagonline.com/images/tab_bg_ofertas.jpg) repeat-x; padding:10px 5px;}
+.tab_content .modulo_oferta .col_1{ width:132px;float:left;}
+.tab_content .modulo_oferta .col_2{ width:187px;height: 90px; float:left;}
+.tab_content .modulo_oferta img{ margin:0;}
+.tab_content .modulo_oferta .precio-fecha{ color:#e46868; font-size:15px; line-height:25px;}
+.tab_content .modulo_oferta .precio-fecha span{ color:#488593;}
+.tab_content .modulo_oferta .fecha span{color:#456170}
+
+.tab_content .modulo_oferta p{ margin:0;}
+
+#estrellas .estrellita{}
+#estrellas{ }
+#estrellas li{ float:left; list-style:none; margin-right:3px;}
+#estrellas li a{ text-indent:-800000px; background:url(http://www.patagonline.com/images/estrellitas.png) right; width:11px; height:12px; display:block; border:none;}
+#estrellas li a:hover, #estrellas li a:active, #estrellas li a.litup { background-position:left;}
+/*===============================================================================================================================================================
+MENU
+================================================================================================================================================================*/
+.nav {font-size:18pt; font-weight:normal; color:#ffffff;}
+.cufon .nav { line-height:80px;}
+ul#navigation-1	{ list-style:none; width:100%; font:normal 8pt verdana, arial, helvetica;}
+
+/*ul#navigation-1 li {margin:0; padding:0; display:block; float:left; position:relative; width:124px;  } 
+ul#navigation-1 li a:link,ul#navigation-1 li a:visited	{padding:0px 0; display:block; text-align:center; text-decoration:none; background-image:url(../images/menu.jpg);
+background-repeat:no-repeat;background-position:bottom; color:ffffff; width:124px; height:50px;}*/
+
+ul#navigation-1 li {
+    display: block;
+    float: left;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+ul#navigation-1 > li {
+    height: 36px;
+    border-right: 1px solid #fff;
+}
+
+ul#navigation-1 li a:link, ul#navigation-1 li a:visited {
+    display: block;
+    padding: 0 15px;
+    text-align: center;
+    text-decoration: none;
+}
+
+ul#navigation-1 li:hover a,ul#navigation-1 li a:hover,ul#navigation-1 li a:active {background-position:top;}
+/*/////////////////////////////////NAV 2////////////////////////////////////////////////////*/
+ul#navigation-1 li ul.navigation-2	
+	{margin:inherit; padding:1px 1px 0; list-style:none; display:none; background:#ffffff; width:156px; position:absolute; top:36px; /*-------ALTURA DEL SUBMENU------*/left:0px; /*border:8px solid green*/ }
+ul#navigation-1 li:hover ul.navigation-2 
+	{display:block; }
+ul#navigation-1 li ul.navigation-2 li
+	{width:156px; clear:left; }
+ul#navigation-1 li ul.navigation-2 li a:link,
+ul#navigation-1 li ul.navigation-2 li a:visited
+	{clear:left; background:#f4f4f4; padding:8px 5px 8px 5px; width:146px; border:1px solid #ffffff; position:relative; z-index:1000; text-align:left; color:#4C1B1B; font-size:8pt;  height:inherit;}
+ul#navigation-1 li ul.navigation-2 li:hover a,
+ul#navigation-1 li ul.navigation-2 li a:active,
+ul#navigation-1 li ul.navigation-2 li a:hover
+	{background:#a1dbe9; }
+/*/////////////////////////////////NAV 3////////////////////////////////////////////////////*/
+ul#navigation-1 li ul.navigation-2 li ul.navigation-3
+	{ display:none; margin: inherit; padding:4px 5px 4px 5px; list-style:none; position:absolute; left:157px; top:-1px; padding:1px 1px 0 1px;  background:#ffffff; z-index:900; }
+ul#navigation-1 li ul.navigation-2 li:hover ul.navigation-3
+	{ display:block; }
+ul#navigation-1 li ul.navigation-2 li ul.navigation-3 li a:link,
+ul#navigation-1 li ul.navigation-2 li ul.navigation-3 li a:visited
+	{ background:#f4f4f4; }
+ul#navigation-1 li ul.navigation-2 li ul.navigation-3 li:hover a,
+ul#navigation-1 li ul.navigation-2 li ul.navigation-3 li a:hover,
+ul#navigation-1 li ul.navigation-2 li ul.navigation-3 li a:active
+	{ background:#b6e5f1; }
+ul#navigation-1 li ul.navigation-2 li a span
+	{ position:absolute; top:0; left:132px; font-size:12pt; color:#63b7cb; }
+ul#navigation-1 li ul.navigation-2 li:hover a span,
+ul#navigation-1 li ul.navigation-2 li a:hover span
+	{ color:#ffffff; }
+	
+/*////////////////////////////////////////////NAV 4/////////////////////////////////////////*/
+ul#navigation-1 li ul.navigation-2 li ul.navigation-3 li ul.navigation-4
+{ display:none; margin:0; padding:4px 5px 4px 5px; list-style:none; position:absolute; left:158px; top:-1px; padding:1px 1px 0 1px; background:#ffffff; z-index:900; }
+ul#navigation-1 li ul.navigation-2 li ul.navigation-3 li:hover ul.navigation-4 	{ display:block; } 
+
+ul#navigation-1 li ul.navigation-2 li ul.navigation-3 li ul.navigation-4 li a:link,
+ul#navigation-1 li ul.navigation-2 li ul.navigation-3 li ul.navigation-4 li a:visited	{ background:#f4f4f4; }
+ul#navigation-1 li ul.navigation-2 li ul.navigation-3 li ul.navigation-4 li:hover a,
+ul#navigation-1 li ul.navigation-2 li ul.navigation-3 li ul.navigation-4 li a:hover,
+ul#navigation-1 li ul.navigation-2 li ul.navigation-3 li ul.navigation-4 li a:active{ background:#d9f1f8; }
+ul#navigation-1 li ul.navigation-2 li ul.navigation-3 li a span	{ position:absolute; top:0; left:132px; font-size:12pt; color:#63b7cb; }
+ul#navigation-1 li ul.navigation-2 li ul.navigation-3 li:hover a span,
+ul#navigation-1 li ul.navigation-2 li ul.navigation-3 li a:hover span{  color:#ffffff; }/*===============================================================================================================================================================
+SIDE MENU
+================================================================================================================================================================*/
+#side-menu {width:177px; padding:0px; margin:0px; float:left;}
+#side-menu li{ list-style:none; display:block;  padding:13px 10px 7px 10px; margin:0;clear:right;border:1px solid #fff;border-bottom:1px dotted #f0f0f0;}
+#side-menu li:hover, #side-menu li:active {background-color:#fbfbfb; border:1px solid #f0f0f0; border-right:none;}
+#side-menu li:hover a, #side-menu li:active a{color:#4e6e80}
+#side-menu a {line-height:14px;color:#50b6d4; border:none; display:block; font-size:14px; margin:0;}
+#side-menu a span{color:#4e6e80; margin-left:5px;}
+#side-menu h3{color:#50434a; font-size:17px; margin:-15px 0 0;}
+#side-menu h2{color:#e46868;}
+
+
+#right_side_content{ border-left: 1px solid #F0F0F0;float: right; padding:0 15px 30px 20px; width: 501px; margin:0; }
+#right_side_content img{ margin:5px 10px 15px 0;}
+#right_side_content_landing { margin:0; }
+
+/*===============================================================================================================================================================
+PHOTO GALLERY
+================================================================================================================================================================*/
+#photo-gallery img{ margin:5px 0;}
+#photodiv { width: 510px; height: 380px; overflow: hidden; }
+ul#thumbs_control{ height:30px; float:right;margin:0 20px 0;}
+ul#thumbs_control li{ float:left; list-style:none; margin-left:5px; line-height:12px;}
+ul#thumbs_control li a{ border:none; }
+
+ul.thumbs{list-style:none; clear: both; margin:0;}
+ul.thumbs li {display:block; float:left; margin:0px 18px 10px 0;}
+ul.thumbs li a{ border:none;}
+ul.thumbs li:last-child{ margin-right:0px;}
+.photo{ margin:0px 0 0px 0;}
+
+.flecha_der{ display:block; width:25px; height:23px; background:url(http://www.patagonline.com/images/btn_siguiente.png) no-repeat top right; text-indent:-800000px; float:left }
+
+
+.flecha_der:hover{ background-position:right bottom;}
+
+.flecha_izq{ display:block; width:25px; height:23px; background:url(http://www.patagonline.com/images/btn_volver.png) no-repeat top left; text-indent:-800000px;float:left }
+
+.flecha_izq:hover{ background-position:left bottom;}
+
+/*===============================================================================================================================================================
+BLOG
+================================================================================================================================================================*/
+#blog .thumb-blog { height:100%;  margin:0px 20px 0 0 ; display:block; width:142px; float:left}
+#blog .thumb-blog img { border:1px solid #4E6E80; margin:0;}
+#blog .thumb-blog a { border:none;}
+#blog .thumb-blog a:hover img { border:1px solid #fff;}
+#blog p{ margin:0}
+.border {border: 1px solid #e9e9e9; float: left; width: 100%;background:#fff;  margin-bottom: 20px; }
+.container {background-color:#fbfbfb; margin:2px; padding: 5px;}
+#blog a { border:0}
+#blog a:hover { border-bottom:1px dotted #4e6e80;}
+/*===============================================================================================================================================================
+SIDE BAR
+================================================================================================================================================================*/
+#contact_side{ /*position:fixed;z-index:100*/}
+#side h2 { margin-left:10px;}
+#side .nec_ayuda { 
+	margin-left:10px;
+	color: #53464D;
+    font-size: 22px;
+}
+
+#contact_side_header .llamanos {
+    color: #F8D786;
+    line-height: 17px;
+    padding: 28px 0 0 104px;
+    font-size: 30px;
+    margin: 0 0 30px;
+}
+
+#contact_side_header .llamanos_LATAM {
+    color: #F8D786;
+    line-height: 17px;
+    padding: 28px 0 0 104px;
+    font-size: 15px;
+    margin: 0 0 30px;
+}
+
+
+#contact_side_header .llamanos_LATAM span {
+    color: #FFFFFF;
+    font-size: 20px;
+}
+
+#contact_side_header .llamanos span {
+    color: #FFFFFF;
+    font-size: 20px;
+}
+
+#contact_side_header .contacto_t {
+    color: #4E6E80;
+    margin: 41px 0 0 13px;
+    font-size: 22px;
+}
+
+#contact_side_header{background-image:url(http://www.patagonline.com/images/contacto_side_header.jpg);height:135px; }
+#contact_side_header h1{color:#f8d786; padding: 28px 0 0 104px;line-height: 17px;}
+#contact_side_header h1 span{color:#fff; font-size:20px}
+#contact_side_header h2 {color:#4e6e80; margin:-15px 0;margin: 41px 0 0 13px; }
+
+#contact_side_form{ background-color:#fff; width:232px; padding:20px 4px 6px 4px ; margin:0 9px; }
+#contact_side_form li{ list-style:none;padding-top: 15px;}
+#contact_side_form h4 {color:#4c4c4c; font-size:13px; margin-bottom:6px; }
+#contact_side_form .input_form{ height:26px; width:225px;}
+#contact_side_form .textarea_form{width:225px; height:110px;}
+.form_btn{ background:url(http://www.patagonline.com/images/btn_azul_bg.jpg) top no-repeat #44606f; width:120px; height:25px; border:none; color:#fff; font-size:13px;margin-top:15px; }
+.form_btn:hover{ background-position:bottom;}
+
+#contact_side_header img{ float:left;border: 1px solid #6E5C6B ;margin: 20px 14px 20px 20px;
+   	         border-radius: 4px;
+            -ms-border-radius: 4px;
+            -moz-border-radius: 4px;
+            -webkit-border-radius: 4px;
+            -khtml-border-radius: 4px;
+ }
+
+.grupo_botones{ margin:30px auto 15px; width:241px; position:absolute; top:590px; left:9px;}
+.grupo_botones li.amedida{ list-style:none; background:url(http://www.patagonline.com/images/btn_catalogo.jpg) top no-repeat #4a3e43; width:241px; height:48px; display:block; margin-bottom:15px; }
+.grupo_botones li.amedida:hover{background-position:bottom;}
+.grupo_botones li.amedida a{color: #d35d60;font-size: 25px;line-height: 44px; padding-left: 60px; text-decoration: none; width:181px; height:48px; display:block; font-family: calibri, Arial, Helvetica, sans-serif; }
+
+.grupo_botones li.catalogo{list-style:none; background:url(http://www.patagonline.com/images/btn_amedida.jpg) top no-repeat #4a3e43; width:241px; height:48px; display:block;margin-bottom:15px;}
+.grupo_botones li.catalogo:hover{background-position:bottom;}
+.grupo_botones li.catalogo a{color: #63b7cb;font-size: 25px;line-height: 44px; padding-left: 60px; text-decoration: none; width:181px; height:48px; display:block;  font-family: calibri, Arial, Helvetica, sans-serif;}
+
+.grupo_botones_latam{ margin:30px auto 15px; width:241px; position:absolute;left:9px;}
+.grupo_botones_latam li.guia{ list-style:none; background:url(http://www.patagonline.com/images/btn_catalogo.jpg) top no-repeat #4a3e43; width:241px; height:48px; display:block; margin-bottom:15px; }
+.grupo_botones_latam li.guia:hover{background-position:bottom;}
+.grupo_botones_latam li.guia a{color: #d35d60;font-size: 25px;line-height: 44px; padding-left: 60px; text-decoration: none; width:181px; height:48px; display:block; font-family: calibri, Arial, Helvetica, sans-serif; }
+
+.grupo_botones_latam li.vuelos{list-style:none; background:url(http://www.patagonline.com/images/btn_vuelos.jpg) top no-repeat #4a3e43; width:241px; height:48px; display:block;margin-bottom:15px;}
+.grupo_botones_latam li.vuelos:hover{background-position:bottom;}
+.grupo_botones_latam li.vuelos a{color: #63b7cb;font-size: 25px;line-height: 44px; padding-left: 60px; text-decoration: none; width:181px; height:48px; display:block;  font-family: calibri, Arial, Helvetica, sans-serif;}
+
+#social {margin-left:8px; position:absolute; top:740px; left:1px;}
+#social li  {float: left; list-style-type: none; margin-left:px;}
+#social li a{ height:51px; width:44px; display:block; overflow: hidden; text-indent: -20000px; margin-right: 5px;}
+#social li a:hover{ background-position:bottom;}
+
+#social .blog a{ background:url(http://www.patagonline.com/images/btn_blog.jpg) top no-repeat transparent}
+#social .flickr a{ background:url(http://www.patagonline.com/images/btn_flickr.jpg) top no-repeat transparent}
+#social .facebook a{ background:url(http://www.patagonline.com/images/btn_facebook.jpg) top no-repeat transparent}
+#social .twiter a{ background:url(http://www.patagonline.com/images/btn_twitter.jpg) top no-repeat transparent}
+#social .youtube a{ background:url(http://www.patagonline.com/images/btn_youtube.jpg) top no-repeat transparent}
+
+/*===============================================================================================================================================================
+FORMULARIO
+================================================================================================================================================================*/
+#main_form ul { margin:25px 0;}
+#main_form p{ width:105px; text-align:right; margin-right:20px; float:left;}
+#main_form li { clear:both; list-style: none;}
+#main_form .input_form ,#main_form .drop ,#main_form .textarea_form,{outline:none; color: #4e6e80; margin:5px 0px 0px 0; border: solid #d5d4d4 1px; outline:none; font-family:Arial, Helvetica, sans-serif; font-size:12px;}
+.input_form { height: 25px; width: 300px;}
+
+#main_form .drop{ height:30px; min-width:100px; outline:none; }
+#main_form .drop option{ padding: 3px;}
+#main_form select.drop { line-height:25px; }
+#main_form .check{line-height: 38px; margin: 0 8px; outline:none; }
+#main_form .textarea_form{  height: 180px; width: 490px;outline:none; }
+#main_form p.info{ width:auto; text-align:left; float:left;}
+#main_form .info_check{ line-height: 40px;outline:none; }
+
+/*===============================================================================================================================================================
+Cotizador ================================================================================================================================================================*/
+
+.page .cotizador_img { float:left; margin:0 20px 35px 0;}
+.page .left { float:left; margin:0 20px 35px 0;}
+#cotizador_img { float:left; margin:0 20px 35px 0;}
+
+/*===============================================================================================================================================================
+Nosotros================================================================================================================================================================*/
+
+ul.imagen li{ list-style:none; clear:both; }
+ul.imagen li img{float:left; }
+
+/*===============================================================================================================================================================
+Sliders================================================================================================================================================================*/
+
+
+
+
+.page .slider { float:left; margin:0 20px 10px 0;}
+.slider_content{ padding:0 8px;}
+.slider_content h2{ margin: 15px 0 -15px;}
+.slider_content li{ list-style:none;}
+.slider_content li a{ font-size:15px; line-height:22px; color:#89897b; border:none; cursor:pointer;}
+/*===============================================================================================================================================================
+Excursiones
+================================================================================================================================================================*/
+#excursion_img img, #excursion_map img { border:none; }
+#excursion_img { display:block; width:412px; height:324px; overflow:hidden; border:1px solid #1E3E4A; float:left; clear: both;margin-bottom:20px;  }
+#excursion_map { display:block; width:280px; height:324px; overflow:hidden; border:1px solid #1E3E4A; float:right;clear: right;  }
+#excursion_map a { border:none;}
+
+.container h1{ margin:0px 0 15px;}
+.container p{ margin:5px 0 10px 0}
+
+ul.comentarios li{ list-style:url(http://www.patagonline.com/images/comillas.jpg) outside; margin-left:30px;}
+/*===============================================================================================================================================================
+Footer
+================================================================================================================================================================*/
+#footer-izq {height:200px; padding-right:242px; width:50%; float:left;background:#4e6e80}
+#footer-izq ul{ float:left; width:180px;}
+#footer-izq li { list-style:none; line-height: 20px;}
+#footer-izq li span { line-height:40px; font-weight:bold; font-size:16px; }
+#footer-izq a{color:#FFF; text-decoration:none;}
+#footer-izq a:hover{color:#a6d2eb;}
+
+#footer-der {background:#8198A2; height:200px; width:50% -243px; float:left;margin-right:-243px; border-left: 1px solid #3b4f5b;}
+
+#footer-inner-izq{ color: #FFFFFF;  float: right;  margin-right: -242px; width: 721px; }
+#footer-inner-der {  margin: 10px 0 0 20px;}
+#footer-inner-der p{ margin-left:10px;}
+#footer-inner-der p a{ text-decoration:underline; color: #50434a;}
+
+
+
+
+.addthis_toolbox { margin:35px 0 20px 0; }
+
+.addthis_toolbox a{border:none!important}
+
+
+
+
+/*===============================================================================================================================================================
+MODAL
+================================================================================================================================================================*/
+#mask { position:absolute; left:0; top:0; z-index:9000; background-color:#000; display:none;top:-140px}
+  #boxes{ top:-140px}
+#boxes .window {  position:fixed; left:0; top:0px; display:none; z-index:9999; padding:0px; top:30px!important;
+   	         border-radius: 4px;
+            -ms-border-radius: 4px;
+            -moz-border-radius: 4px;
+            -webkit-border-radius: 4px;
+            -khtml-border-radius: 4px;
+			}
+#boxes .window a{ position:absolute; top:9px; right:13px; color:#999; text-decoration:none; font-size:15px;}
+
+#boxes .window .infografia-container{overflow:scroll; width:630px; height:730px; margin-top:20px; overflow-x: hidden;}
+#boxes .window .video-container{ margin-top:20px; }
+#boxes #dialog1 {width:620px;  height:763px;  padding:10px; background-color:#ffffff; }
+
+#boxes #dialog2 {width:640px; height:410px; padding:10px; background-color:#ffffff;}
+
+#boxes #dialog3 {width:755px; height:763px; padding:10px; background-color:#ffffff;}
+#boxes #dialog3 iframe{ width:755px; height:733px; overflow-x:hidden; margin-top:20px;}
+
+
+/* ******************************* items ******************************* */
+
+
+
+ul#itemslist {
+	list-style:none;
+	display:block;
+	padding:0;
+	margin:0;
+	overflow:auto;
+}
+
+ul#itemslist li {
+	float:left;
+	margin: 0 10px 0 0;
+	padding:0;
+}
+
+div.ds_service_item {
+	float:left;
+	width:300px;
+	height: 350px;
+	margin:0;
+	padding: 20px 20px 10px 0;
+}
+
+div.ds_service_item h3 {
+	margin: 0;
+	padding:0;
+}
+
+div.ds_service_item img {
+	display:block;
+	clear:right;
+	margin: 0 0 10px 0;
+	padding:0;
+}
+
+div.stardiv img {
+	display:inline;
+	border:none !important;
+}
+
+div.pricediv {
+	display:block;
+	margin: 0;
+	padding:10px 0;
+}
+
+div.ds_service_item a.agregarlink {
+	clear:both;
+  	color: #d85860;
+	display:block;
+	padding:5px 0 5px 30px;
+	margin:0;
+	background-image:url(http://www.patagonline.com/images/clip.gif);
+	background-repeat:no-repeat;
+	background-position:top left;
+}
+
+ul#videoslist {
+	list-style:none;
+	display:block;
+	padding:0;
+	margin:0;
+	overflow:auto;
+}
+
+ul#videoslist li {
+	float:left;
+	margin: 0 10px 0 0;
+	padding:0;
+}
+
+div.ds_service_video {
+	margin: 0;
+	padding:20px 20px 20px 15px;
+
+}
+
+ul#progslist {
+	list-style:none;
+	display:block;
+	padding:0;
+	margin:0;
+	overflow:auto;
+}
+
+ul#progslist li {
+	float:left;
+	margin: 0 10px 0 0;
+	padding:0;
+}
+
+dl.ds_items_list {
+	width:760px;
+	margin: 20px 0 0 10px;
+	padding: 0;
+	overflow:auto;
+}
+
+dl.ds_items_list dt {
+	color:#000;
+	width: 160px;
+	float: left;
+	margin: 0 10px 0 0;
+	padding: 5px 0;
+	text-align:left;
+	font-size:14px;
+	font-weight:bold;
+}
+
+/* commented backslash hack for mac-ie5 \*/
+dl.ds_items_list dt { clear: both; }
+/* end hack */
+
+dl.ds_items_list dd {
+	margin: 0;
+	padding: 5px;
+	overflow:auto;
+}
+
+dl.ds_items_list dd img {
+	float: left;
+	margin: 0 10px 0 0;
+	padding: 0;
+}
+
+ul.ds_items_4cols {
+	list-style:none;
+	display:block;
+	padding:0;
+	margin: 20px 0 0 0;
+	overflow:auto;
+}
+
+ul.ds_items_4cols li {
+	float: left;
+	width:535px;
+	padding:10px 5px;
+	margin:0;
+	overflow:auto;
+}
+
+ul.ds_items_4cols li img {
+	float: right;
+	margin: 0 0 0 10px;
+	padding: 0;
+}
+
+ul.ds_items_2cols {
+	list-style:none;
+	display:block;
+	padding:0;
+	margin: 20px 0 0 0;
+	overflow:auto;
+	
+}
+
+ul.ds_items_2cols h2 {
+	padding-bottom: 10px
+}
+
+ul.ds_items_2cols li {
+	float: left;
+	width:200px;
+	padding:20px 5px;
+	margin:0;
+}
+
+ul.ds_items_2cols li img {
+	margin: 0;
+	display:block;
+	padding-right: 20px;
+	padding-bottom: 10px;
+	border:none;
+}
+
+
+
+/* ***************************** Grupos ***************************** */
+
+#maincolumnwide-grupos {
+	display:block;
+	width:983px;
+	height: auto;
+	padding:10px 0;
+	margin:0 0 0 5px;
+	overflow:auto;
+}
+
+
+#tabdiv-grupos{
+	float:left;
+	color:#111;
+	width:550px;
+	background-color:#FFF;
+	margin-top: 10px;
+	margin-right: 0pt;
+	margin-bottom: 0pt;
+	margin-left: 10px;	
+	border:none;
+}
+
+#desc-grupos {
+padding-right: 10px;
+margin-right: 10px;
+
+}
+
+#viewlist {
+	width:700px;
+	padding:0;
+	margin:0;
+}
+
+#viewlist th {
+	padding:5px;
+	margin:0;
+	background-color:#5888B8;
+	color:#FFF;
+}
+
+#viewlist td {
+	padding:5px;
+	margin:0;
+}
+
+#viewlist td h2 {
+	padding:10px;
+	margin:0;
+	background-color:#EBEBEC;
+}
+
+#viewlist td ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+#viewlist td li {
+	display:block;
+	/*list-style: none outside;*/
+	margin: 5px 0;
+	padding:10px;
+	border-bottom:1px dashed #000;
+	overflow:auto;
+}
+
+#viewlist td li.servicebullet1 {
+	background: url(http://www.gestion.patagonline.com/images/mini_accomodation.gif) 10px 12px no-repeat;
+}
+
+#viewlist td li.servicebullet2 {
+	background: url(http://www.gestion.patagonline.com/images/mini_crucero.gif) 10px 12px no-repeat;
+}
+
+#viewlist td li.servicebullet3 {
+	background: url(http://www.gestion.patagonline.com/images/mini_tour.gif) 10px 12px no-repeat;
+}
+
+#viewlist td li.servicebullet4 {
+	background: url(http://www.gestion.patagonline.com/images/mini_transport.gif) 10px 12px no-repeat;
+}
+
+#viewlist td li.servicebullet5 {
+	background: url(http://www.gestion.patagonline.com/images/mini_flights.gif) 10px 12px no-repeat;
+}
+
+#viewlist td li.pricelist {
+	display:block;
+	list-style: none outside;
+	margin: 5px 0;
+	padding:0 0 0 40px;
+	border:0;
+}
+
+#viewlist td li.accomlist {
+	display:block;
+	list-style: none outside;
+	margin: 5px 0;
+	padding:10px;
+	border:0;
+}
+
+#viewlist td li div {
+	display:block;
+	float:left;
+	width:350px;
+	margin: 0;
+	padding:0;
+}
+
+#viewlist td li img {
+	display:block;
+	margin: 0 0 5px 0;
+	padding:0;
+	border:0;
+}
+
+#viewlist td li img.servicestatus {
+	float:left;
+	margin: 0;
+	padding:0;
+}
+
+#viewlist td h3 {
+	clear:none;
+	padding:5px 0 5px 30px;	
+	font-size: 13px;
+	margin-top: -3px;
+
+}
+
+/*/////////////////SOCIAL PLUGINS//////////////////*/
+
+.addthis_floating_style.addthis_counter_style {
+width: 80px;
+margin-top: 220px;
+text-align: center;
+}
+
+/*Facebook*/
+.fb-like-box {margin: 200px 0 0 10px!important;background-color: #4B3F49;}
+.fb-recommendations {margin:10px 0 0 10px!important; background-color: #4B3F49;}
+
+
+#post_share {
+	background-color:#FFFFFF;
+	border:1px solid #CCCCCC;
+	float:left;
+	margin-left:-125px;
+	margin-top:-80px;
+	padding:5px;
+	position:fixed;
+	text-align:center;
+}
