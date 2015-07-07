@@ -62,24 +62,6 @@
 <link href="/template-tdo/video/css/custom.css" rel="stylesheet" type="text/css" /> 
 
 
-<script>(function() {
-  var _fbq = window._fbq || (window._fbq = []);
-  if (!_fbq.loaded) {
-    var fbds = document.createElement('script');
-    fbds.async = true;
-    fbds.src = '//connect.facebook.net/en_US/fbds.js';
-    var s = document.getElementsByTagName('script')[0];
-    s.parentNode.insertBefore(fbds, s);
-    _fbq.loaded = true;
-  }
-  _fbq.push(['addPixelId', '829891343689066']);
-})();
-window._fbq = window._fbq || [];
-window._fbq.push(['track', 'PixelInitialized', {}]);
-</script>
-<noscript><img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?id=829891343689066&amp;ev=PixelInitialized" /></noscript>
-
-
 
     <!-- Fav and touch icons -->
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/template-travelsoft/framework/ico/apple-touch-icon-144-precomposed.png">
@@ -150,7 +132,15 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 })(window,document,'script','dataLayer','GTM-MG3D9S');</script>
 <!-- End Google Tag Manager -->
 
-
+<!-- Facebook SDK -->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v2.3&appId=363147010531630";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 
 	<div id="content-wrap">
 	
@@ -180,9 +170,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 
 <small>Respetamos tu privacidad, tus datos no serán entregados a terceros.</small>
-	  <small>Enviando tus datos a través del formulario estas aceptando nuestros  <a href="#" data-toggle="modal" data-target="#modal-terms">Terminos y Condiciones </a> </small></br></br>
+	  <small>Enviando tus datos a través del formulario estas aceptando nuestros  <a href="#" data-toggle="modal" data-target="#modal-terms">Terminos y Condiciones </a> </small>
+	    <div class="whats-app">
 
-<a href="whatsapp://send" data-text="Mira esta pagina!" data-href="" class="wa_btn wa_btn_s" style="display:none">Compartir</a>	               
+<a href="whatsapp://send" data-text="Mira esta pagina!" data-href="" class="wa_btn wa_btn_s" style="display:none">Compartir</a>	  
+	               </div>
 
 		    </div><!-- /input-group -->
 	      </div>
