@@ -1495,3 +1495,10 @@ margin-bottom: -5px;
 button.close {
 display: none;
 }
+
+.lenguaje {
+  float: right;
+  width: 260px;
+  text-align: center;
+  background-color: #51444a;
+}
