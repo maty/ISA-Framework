@@ -381,6 +381,15 @@ height: auto;}
 {
 	padding: 0px;
 }
+
+.ip_comments.media {
+	color: #fff;
+	text-align: center;
+	font-size: 17px;
+}
+.ip_comments.media img {
+	margin-left: 0;
+}
 /* responsiveness */
 @media (max-width:480px){
 	#footer .footer-brand{
