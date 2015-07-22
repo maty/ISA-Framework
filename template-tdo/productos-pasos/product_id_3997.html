@@ -1,0 +1,60 @@
+        <!-- product -->
+        <div class="product">
+          <!--
+            <div class="product-header">
+              <h4 class="product-title">Barcelona Sports City Break</h4>
+            </div>-->
+          <div class="product-body">
+          <div class="span5">
+                <img alt="Barcelona Sports City Break" src="https://dl.dropboxusercontent.com/u/205431/incoming/fotos/Camp%20Nou.jpg">
+                <p>Give us your eMail address and we´ll send you more info about this product.</p>
+                
+
+            <div><!-- X -->
+              <form class="ajax" onsubmit="this.lead_y.value=this.lead_x.value*13;return checkStep2(this);" method="post" action="productos-pasos/thanks1.html">  
+                <fieldset>
+                  <input type="email" name="lead_email" placeholder="Enter your email" id="inputEmail1" class="form-control">
+                  <input type="hidden" value="388" name="lead_x">
+                  <input type="hidden" value="" name="lead_y">
+                  <input type="hidden" value="3997" name="lead_product_id">
+                  <input type="hidden" value="2" name="cta_step">
+                  <br>
+                  </fieldset>
+                  <div class="form-actions">
+                    <input type="submit" value="More information" name="cta_step2_submit" class="btn btn-success more-information">
+                  </div>
+              </form>
+          </div><!-- X -->
+          </div>
+          </div>
+
+          <div class="product-footer">
+            <p>We respect your privacy and ail never share your contact information.</p>
+          </div>
+        </div>     
+        <!-- product -->
+
+<script>
+    function checkStep2(form) {
+      var lead_email = form.lead_email.value;
+      if (! lead_email ) {
+        alert("Please fill'Email'");
+        form.lead_email.focus();
+        return false;
+      }
+      return true;
+    }
+</script>
+  
+
+
+
+
+
+
+
+
+
+
+
+
