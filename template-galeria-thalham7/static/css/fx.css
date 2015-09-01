@@ -1,0 +1,239 @@
+/*
+	Debug
+*/
+
+#debugOut {position: fixed; left: 0px; top: 0px; z-index: 8192; border-style: none; margin: 0px; padding: 0px; vertical-align: top; font-family: sans-serif; font-weight: bold; font-size: 11px;}
+#debugOut pre {margin: 2px 4px 0px 4px; color: #303030; text-shadow: 0px 1px 2px #ffffff; background-color: rgba(255,255,255,.75);}
+
+#debugOut.negative pre {color: #e8e8e8; text-shadow: 0px 1px 2px #000; background-color: rgba(0,0,0,.25);}
+
+/*
+	Display
+*/
+
+.sprite {position: absolute; margin: 0px; padding: 0px; left: 0px; top: 0px; -webkit-font-smoothing: antialiased;}
+img.sprite, fast-sprite {image-rendering: optimizeQuality; -webkit-perspective: 10px; -webkit-perspective-origin: 50% 50%; -moz-perspective: 10px; -moz-transform:translateZ(100px);}
+
+.shape {pointer-events: none; -webkit-touch-callout: none;}
+.button {cursor: pointer;}
+
+.shape, .unselectable, .button {-webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;}
+
+
+object, embed {width: 100%; height: 100%}
+object:focus, embed:focus {outline: none;}
+
+.textbox.fullwidth {width: 100%}
+/*
+	General
+*/
+
+* {
+	margin: 0; padding: 0;
+}
+
+body.grab * {
+	cursor: grabbing;
+	cursor: -moz-grabbing;
+	cursor: -webkit-grabbing;
+}
+
+body.move * {
+	cursor: move !important;
+}
+
+.gallery {
+	background-color: transparent;
+}
+
+.gallery-stage {
+	position: relative;
+	left: 0; top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+.gallery-content {
+	display: none;
+}
+
+.gallery-stage h1, .gallery-stage h2, .gallery-stage h3, .gallery-stage h4 {
+	color: #ffffff !important;
+}
+
+/*
+	Colours
+*/
+
+.color02 .button.button-background {
+	background-color: rgba(194, 200, 14, .84);
+}
+
+.color02 .button.navigation-button.button-background:hover {
+	background-color: rgb(194, 200, 14);
+}
+
+.color03 .button.button-background {
+	background-color: rgba(253, 195, 0, .84);
+}
+
+.color03 .button.navigation-button.button-background:hover {
+	background-color: rgb(253, 195, 0);
+}
+
+.color04 .button.button-background {
+	background-color: rgba(0, 175, 216, .84);
+}
+
+.color04 .button.navigation-button.button-background:hover {
+	background-color: rgb(0, 175, 216);
+}
+
+.color05 .button.button-background {
+	background-color: rgba(0, 105, 180, .84);
+}
+
+.color05 .button.navigation-button.button-background:hover {
+	background-color: rgb(0, 105, 180);
+}
+
+.color06 .button.button-background {
+	background-color: rgba(165, 40, 104, .84);
+}
+
+.color06 .button.navigation-button.button-background:hover {
+	background-color: rgb(165, 40, 104);
+}
+
+.color07 .button.button-background {
+	background-color: rgba(221, 147, 0, .84);
+}
+
+.color07 .button.navigation-button.button-background:hover {
+	background-color: rgb(221, 147, 0);
+}
+
+.color08 .button.button-background {
+	background-color: rgba(0, 114, 156, .84);
+}
+
+.color08 .button.navigation-button.button-background:hover {
+	background-color: rgb(0, 114, 156);
+}
+
+.button.close-button.button-background:hover {
+	background-color: rgba(0, 0, 0, .84);
+}
+
+/*
+	Thumbs
+*/
+
+.gallery-thumb-cover {
+	background: rgba(0, 0, 0, .2);
+}
+
+/*
+	Detail
+*/
+
+div.caption {
+	position: absolute;
+	left: auto;
+	top: auto;
+	bottom: 0;
+	width: 100%;
+	height: auto;
+	padding: 10px 15px 10px;
+	color: #fff;
+	white-space: normal;
+	font-size: 17px;
+	font-weight: normal;
+	line-height: 21px;
+}
+
+.color01 div.caption {
+    background-color: rgba(037, 182, 209, .84);
+}
+
+.color02 div.caption {
+	background-color: rgba(194, 200, 14, .84);
+}
+
+.color03 div.caption {
+	background-color: rgba(253, 195, 0, .84);
+}
+
+.color04 div.caption {
+	background-color: rgba(0, 175, 216, .84);
+}
+
+.color05 div.caption {
+	background-color: rgba(0, 105, 180, .84);
+}
+
+.color06 div.caption {
+	background-color: rgba(165, 40, 104, .84);
+}
+
+.color07 div.caption {
+	background-color: rgba(221, 147, 0, .84);
+}
+
+.color08 div.caption {
+	background-color: rgba(0, 114, 156, .84);
+}
+
+/*
+	Containers
+*/
+
+/* --- P H O N E :: XS --- */
+@media (max-width: 767px) {
+	.gallery-container {
+		height: auto;
+	}
+
+	.header-container {
+		height: auto;
+	}
+
+}
+
+/* --- T A B L E T :: SM --- */
+@media (min-width: 768px) and (max-width: 959px) {
+	.gallery-container {
+		height: auto;
+	}
+
+	.header-container {
+		height: auto;
+	}
+
+}
+
+/* --- D E S K T O P :: MD --- */
+@media (min-width: 960px) and (max-width: 1199px) {
+	.gallery-container {
+		height: 400px;
+	}
+
+	.header-container {
+		height: 400px;
+	}
+
+}
+
+/* --- L A R G E :: LG --- */
+@media (min-width: 1200px) {
+	.gallery-container {
+		height: 500px;
+	}
+
+	.header-container {
+		height: 500px;
+	}
+
+}
+
