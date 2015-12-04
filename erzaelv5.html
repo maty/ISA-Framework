@@ -132,7 +132,7 @@
 									<a class="typeform-share button" href="https://matias19.typeform.com/to/oBvpKr" data-mode="1" target="_blank">Erzähl-mahl! verschenken</a>
 <script>(function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'share.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}id=id+'_';if(!gi.call(d,id)){qs=ce.call(d,'link');qs.rel='stylesheet';qs.id=id;qs.href=b+'share-button.css';s=gt.call(d,'head')[0];s.appendChild(qs,s)}})()</script>
 
-<a class="button button-color03" href="https://matias19.typeform.com/to/oBvpKr" data-mode="1" target="_blank">Erzähl-mahl! verschenken</a>
+<a class="typeform-share button button-color03" href="https://matias19.typeform.com/to/oBvpKr" data-mode="1" target="_blank">Erzähl-mahl! verschenken</a>
 
 									<a class="button button-color01" target="_self" href="#anmeldung"> direkt zur Anmeldung </a>
 
@@ -664,11 +664,16 @@ Die beiden Gastgeberinnen sind reizend, sehr offen, freundlich, umsichtig und si
 					jQuery(document).ready(function () {
 						ISA.initFrontend();
 					});
+
 				</script>
-				
-				
 
-
+				<script>
 				
+				  if ($("a").is(".typeform-share.button-color03")) {
+				      $("a.button-color03").removeClass('typeform-share');
+				    }				
+
+				</script>
+
 	</body>
 </html>
