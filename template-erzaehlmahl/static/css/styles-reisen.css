@@ -22,8 +22,109 @@
 .fragebogen .radioSlider label {
   font-size: 0.8em;
 }
+.typeform-share.button {
+  display: inline-block!important;
+  margin-bottom: 0!important;
+  font-weight: normal!important;
+  vertical-align: middle!important;
+  cursor: pointer!important;
+  background-image: none!important;
+  border: 1px solid transparent!important;
+  white-space: nowrap!important;
+  padding: 8.5px 12px!important;
+  font-size: 15px!important;
+  line-height: 1.33333333!important;
+  border-radius: 3px!important;
+  -webkit-user-select: none!important;
+  -moz-user-select: none!important;
+  -ms-user-select: none!important;
+  user-select: none!important;
+  border: 0 none!important;
+  font-family: "OfficinaSansITCW01-Bold", "OfficinaSans-Bold", Helvetica, Arial, sans-serif!important;
+  font-size: 17px!important;
+  -webkit-font-smoothing: antialiased!important;
+  height: auto!important;
+  letter-spacing: 0.15em!important;
+  line-height: 1em!important;
+  padding: 20px 24px 18px 24px!important;
+  text-align: center!important;
+  text-shadow: none!important;
+  text-transform: uppercase!important;
+  float: none!important;
+}
+.typeform-share.button:focus,
+.typeform-share.button:active:focus,
+.typeform-share.button.active:focus {
+  outline: thin dotted!important;
+  outline: 5px auto -webkit-focus-ring-color!important;
+  outline-offset: -2px!important;
+}
+.typeform-share.button:hover,
+.typeform-share.button:focus {
+  color: #333333!important;
+  text-decoration: none!important;
+}
+.typeform-share.button:active,
+.typeform-share.button.active {
+  outline: 0!important;
+  background-image: none!important;
+  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125)!important;
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125)!important;
+}
+.typeform-share.button.disabled,
+.typeform-share.button[disabled],
+fieldset[disabled] .typeform-share.button {
+  cursor: not-allowed!important;
+  pointer-events: none!important;
+  opacity: 0.65!important;
+  filter: alpha(opacity=65)!important;
+  -webkit-box-shadow: none!important;
+  box-shadow: none!important;
+}
+.typeform-share.button:focus {
+  box-shadow: none!important;
+}
+.typeform-share.button:active {
+  box-shadow: none!important;
+}
+
+.typeform-share.button.button-color03 {
+  background-color: #444444!important;
+  color: #ffffff!important;
+}
+.typeform-share.button.button-color03:hover {
+  background-color: #cccccc!important;
+}
+.text-container .typeform-share.button {
+  margin-top: 3em;
+}
+
+
+@media (max-width: 1280px) {
+  .typeform-share.button {
+    font-size: 16px!important;
+    padding: 13px 24px 11px 24px!important;
+  }
+}
+@media (max-width: 959px) {
+  .typeform-share.button {
+    font-size: 15px!important;
+    padding: 13px 24px 13px 24px!important;
+  }
+  .text-container .typeform-share.button {
+    margin-top: 2em;
+  }  
+}
+
 @media (max-width: 767px) {
   .fragebogen .radioSlider label {
-    font-size: 0.6em;
+    font-size: 0.6em!important;
   }
+  .typeform-share.button {
+    font-size: 16px!important;
+    padding: 12px 24px 12px 24px!important;
+  }
+  .text-container .typeform-share.button {
+    margin-top: 1em;
+  }    
 }
