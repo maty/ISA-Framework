@@ -117,9 +117,11 @@ xtype
     color: #666;
 }
 
-.card .precio {
-    /*color: #7A7A7A;*/
+.precio {
     color: #3ea1b3;
+}
+
+.card .card-action .precio {
     font-size: 35px;
     line-height: 37px;
 }
@@ -229,6 +231,10 @@ xtype
  }
 
 /* navigation */
+
+.navbar-fixed {
+  position: fixed;
+}
 
 nav {
     background-color: transparent;
@@ -973,3 +979,13 @@ footer h3, footer a {
   font-size: 90px;
 }
 
+/* helpers */
+.margin-neg {
+  margin-top: -360px;
+}
+.block {
+  width: 100%;
+}
+.h300 {
+  height: 300px;
+}
