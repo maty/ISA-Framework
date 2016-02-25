@@ -17,7 +17,7 @@
      'background-color' : 'transparent'
    });
      $('#big-video-wrap').css({
-     'background' : 'url(../video/Fiesta_Gruppit_en_la_discoteca_Silken.jpg) 100% 0 no-repeat',
+     'background' : 'url(./video/Fiesta_Gruppit_en_la_discoteca_Silken.jpg) 100% 0 no-repeat',
      'background-attachment' : 'fixed',
      'background-size' : 'cover'
    });
@@ -30,8 +30,8 @@
    } else if(Opera) {
    operaVideoLoader();
    } else {
-       BV.show('../video/Fiesta_Gruppit_en_la_discoteca_Silken.mp4', {
-       altSource: '../video/Fiesta_Gruppit_en_la_discoteca_Silken.ogg',
+       BV.show('./video/Fiesta_Gruppit_en_la_discoteca_Silken.mp4', {
+       altSource: './video/Fiesta_Gruppit_en_la_discoteca_Silken.ogg',
        ambient: true
     });
     $('.overlay.overlay--mesh').remove();
