@@ -40,8 +40,9 @@ $('.button-collapse').sideNav({
 
 //setHeight
       var e = $(window).height();
-          t = e - $(".content-middle .nav-filters").height();
-      $(".first-seccion").css("height", t + 32 + "px");
+          //t = e - $(".content-middle .nav-filters").height();
+      //$(".first-seccion").css("height", t + 32 + "px");
+      $(".first-seccion").css("height", e + "px");
 
   });  
 
@@ -57,6 +58,7 @@ $('.button-collapse').sideNav({
     $('.search-form-li').find('#initSearchIcon').removeClass('hide');
     $('.search-form-wrap').addClass('hide');
   }); 
+
 
 
 
