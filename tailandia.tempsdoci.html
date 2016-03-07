@@ -132,7 +132,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 			
 		    <div class="modal-content text-center">
       <div class="modal-header">
-			<a href="#" onclick="BV.getPlayer().muted(true);" class="pull-right">Quitar sonido</a>
+			<a href="#" onclick="BV.getPlayer().volume(1);" class="pull-right">Activar sonido</a>
 			<div class="clearfix"></div>				
      		<img title="{title}" alt="logo_gruppit" src="http://www.app.travelideas.es/files/clients_logos/54.png"/></br>
      		
@@ -288,6 +288,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       }
       else {
         $(function() {
+          BV.getPlayer().volume(0);
           $(".modal-body iframe, .modal-body video").css("display", "none");
         });  
       }        
