@@ -30,7 +30,7 @@
    } else if(Opera) {
    operaVideoLoader();
    } else {
-       BV.show('./video/Fiesta_Gruppit_en_la_discoteca_Silken.mp4', {
+       BV.show('./video/12515821-2.mp4', {
        altSource: './video/Fiesta_Gruppit_en_la_discoteca_Silken.ogg',
        ambient: true
     });
