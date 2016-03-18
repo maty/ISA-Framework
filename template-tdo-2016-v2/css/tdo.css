@@ -124,6 +124,9 @@ a:active, a:hover {
     background-color: #fff;
 }
 
+#big-video-wrap video {
+    width: 100%;
+}
 
  .opera,
  .opera body,

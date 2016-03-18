@@ -30,13 +30,23 @@
    } else if(Opera) {
    operaVideoLoader();
    } else {
-       BV.show('./video/12515821-2.mp4', {
-       altSource: './video/Fiesta_Gruppit_en_la_discoteca_Silken.ogg',
-       ambient: true
-    });
+      $(function() {
+            var BV = new $.BigVideo();
+            var vids = [
+                './video/12515821-2.mp4',
+                './video/8431557.mp4',
+                './video/5555580.mp4',
+                './video/6558168-2.mp4',
+                './video/12608964-2.mp4'
+            ];
+            vids.sort(function() { return 0.5 - Math.random() }); // random order on load
+      BV.init();
+      BV.showPlaylist(vids,{ambient:true});
+      });
     $('.overlay.overlay--mesh').remove();
     $('#big-video-wrap').prepend('<div class="overlay overlay--mesh"></div>');
   }
+
  }
  
  videoPlayer();
