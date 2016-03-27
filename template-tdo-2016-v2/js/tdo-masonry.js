@@ -1,13 +1,10 @@
 // masonry
 
-    var $container = $('#product .row, #nosotros .row, #seo .row');
-    // initialize
-    $container.masonry({
-      columnWidth: '.col',
-      itemSelector: '.col',
-    });
-
-
-
-
+    var $container = $('#product .row, #nosotros .row, #seo .row, #container');
  
+      $container.imagesLoaded(function(){
+        $container.masonry({
+          itemSelector: '.col, .column',
+	      columnWidth: '.col, .column',
+        });
+      });
