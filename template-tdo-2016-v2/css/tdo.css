@@ -124,10 +124,19 @@ a:active, a:hover {
     background-color: #fff;
 }
 
-#big-video-wrap video {
-    width: 100%;
+#big-video-wrap {
+    min-height: 620px;
+    height: auto;
 }
 
+#big-video-wrap video {
+    width: 100%;
+    min-height: 620px;
+}
+#big-video-wrap .overlay {
+    min-height: 620px;
+    height: auto;
+}
  .opera,
  .opera body,
  .lt-ie9,
@@ -194,12 +203,6 @@ a:active, a:hover {
  #big-video-wrap {
      /*position: absolute!important;*/
  }
- .overlay {
-     position: absolute;
-     width: 100%;
-     height: 100%;
-     z-index: 1;
- }
  
  .overlay--mesh {
      background-color: rgba(000,000,000,0.6);
@@ -241,7 +244,13 @@ nav {
     width: 100%;
     z-index: 1;
     position: absolute;  
+    top: 0;
+
 }
+.banner .overlay {
+    z-index: 0;
+}
+
 
 .mapa-container {
   position: relative;
@@ -344,6 +353,56 @@ nav {
 
 .nav-filters .select-wrapper span.caret {
       color: #fff;
+}
+
+nav .nav-filters {
+  background-color: transparent;
+  display: none;
+  bottom: -10px;
+}
+
+.z-depth-1 nav .nav-filters {
+  display: block;
+}
+
+nav .nav-filters .input-field input {
+  border-bottom: 1px solid #9e9e9e;
+}
+
+nav .nav-filters .row .col {
+    padding: 0 1.95rem;
+}
+nav .nav-filters .input-field label {
+    left: 30px;
+}
+
+nav .nav-filters .select-wrapper input.select-dropdown {
+    line-height: 4rem;
+}
+nav .nav-filters .select-wrapper+label {
+  top: -5px;
+  line-height: 25px;
+}
+nav .nav-filters  .select-wrapper span.caret {
+  top: 0;
+}
+
+nav .nav-filters .input-field label.active {
+    -webkit-transform: translateY(-40%);
+    transform: translateY(-40%);  
+}
+
+nav .nav-filters .input-field input {
+    font-size: 1rem;
+    padding-left: 0;
+    line-height: 25px
+}
+
+.search-form-li {
+  position: relative;
+}
+.z-depth-1 .search-form-wrap {
+  background-color: #2a3233;
 }
 
 /* btns styles */
@@ -964,4 +1023,13 @@ footer h3, footer a {
 }
 .h300 {
   height: 300px;
+}
+
+.blur {
+  -webkit-filter: blur(5px);
+  filter: blur(5px);  
+}
+
+.no-cssfilters .blur {
+  background-image: url('../img/01-bg.jpg')!important;
 }

@@ -26,7 +26,45 @@
 
 		<div class="navbar-fixed">
 		    <nav id="nav_f" role="navigation">
-		        <div class="nav-wrapper"><a id="logo-container" href="index.html" class="brand-logo"><img src="img/tempsdoci-white.png"></a>
+		        <div class="nav-wrapper">
+		        	<a id="logo-container" href="index.html" class="brand-logo"><img src="img/tempsdoci-white.png"></a>
+			   		  <div class="nav-filters">
+		   			    <div class="container">
+					      <form class="col s12">
+					        <div class="row">
+					          <div class="input-field col m6 l3">
+					            <input id="input_date" type="date" class="datepicker">
+					            <label for="input_date">Desde</label>
+					          </div>
+					          <div class="input-field col m6 l3">
+					            <input id="input_date2" type="date" class="datepicker">
+					            <label for="input_date2">Hasta</label>
+					          </div>
+					          <div class="input-field col m6 l3">
+							    <select>
+							      <option value="" disabled selected>Elija un opción</option>
+		                          <option value="argentina">Argentina</option>
+		                          <option value="brasil">Brasil</option>
+		                          <option value="uruguay">Uruguay</option>
+		                          <option value="chile">Chile</option>
+		                          <option value="paraguay">Paraguay</option>
+							    </select>
+							    <label>Destino</label>
+					          </div>
+					          <div class="input-field col m6 l3">
+							    <select>
+							      <option value="" disabled selected>Elija una opción</option>
+		                          <option value="minigrups1">Minigrups</option>
+		                          <option value="singles1">Singles</option>
+		                          <option value="viajes-a-medida1">Viajes a medida</option>
+							    </select>
+							    <label>Tipo de viaje</label>
+					          </div>
+					        </div>
+					      </form>
+		 			    </div>              
+					  </div>              
+
 		 			<div id="slide-out" class="side-nav full">
 		 			    <h2 class="title-nav">Viaje a Vietnam</h2>
 						<div class="menu__wrap">
@@ -125,45 +163,9 @@
 
         <section class="first-seccion">
             <div class="content-middle">
-              <h1><span>20 años</span> organizando</h1>
-              <h3>mas de <span>100 salidas</span> en grupos</h3>
-              <h2><span>97 destinos</span> en el mundo</h2>
-	   		  <div class="nav-filters">
-   			    <div class="container">
-			      <form class="col s12">
-			        <div class="row">
-			          <div class="input-field col s6 l3">
-			            <input id="input_date" type="date" class="datepicker">
-			            <label for="input_date">Desde</label>
-			          </div>
-			          <div class="input-field col s6 l3">
-			            <input id="input_date2" type="date" class="datepicker">
-			            <label for="input_date2">Hasta</label>
-			          </div>
-			          <div class="input-field col s6 l3">
-					    <select>
-					      <option value="" disabled selected>Elija un opción</option>
-                          <option value="argentina">Argentina</option>
-                          <option value="brasil">Brasil</option>
-                          <option value="uruguay">Uruguay</option>
-                          <option value="chile">Chile</option>
-                          <option value="paraguay">Paraguay</option>
-					    </select>
-					    <label>Destino</label>
-			          </div>
-			          <div class="input-field col s6 l3">
-					    <select>
-					      <option value="" disabled selected>Elija una opción</option>
-                          <option value="minigrups1">Minigrups</option>
-                          <option value="singles1">Singles</option>
-                          <option value="viajes-a-medida1">Viajes a medida</option>
-					    </select>
-					    <label>Tipo de viaje</label>
-			          </div>
-			        </div>
-			      </form>
- 			    </div>              
-			  </div>              
+              <h1> <a class="" href=""> <span>20 años</span></a> organizando</h1>
+              <h3>mas de <a class="" href=""><span>100 salidas</span></a> en grupos</h3>
+              <h2><a class="" href=""><span>97 destinos</span></a> en el mundo</h2>
             </div>
         </section>
 
@@ -173,7 +175,7 @@
 			    <div class="container">
 		            <h2 class="header text_b center-align"> Viajes </h2>
 			        <div class="row">
-			            <div class="col s12 m4 l4">
+			            <div class="col s12 m6 l3">
 			               <div class="card">
 			                  <div class="card-image waves-effect waves-block waves-light">
 			                    <div class="overlay"></div>
@@ -181,7 +183,10 @@
 			                    <a href="grupo-item.html" class="card-title">Laponia en el puente de la purisina </a>
 			                  </div>
 			                  <div class="card-content">
-			                    <p class="flow-text">Viaje lleno de aventura por una de las regiones más bonitas e inhóspitas de Europa.</p>
+			                    <p>Viaje lleno de aventura por una de las regiones más bonitas e inhóspitas de Europa.</p>
+			                    <div class="right-align">
+									<img src="img/logo_footer_inc.png" class="responsive-img">			                    	
+			                    </div>
 			                  </div>
 				              <div class="card-action">
 						        <strong class="left precio">1.685€</strong>
@@ -190,7 +195,7 @@
 				              </div>
 			              </div>
 			            </div>
-			            <div class="col s12 m4 l4">
+			            <div class="col s12 m6 l3">
 			               <div class="card">
 			                  <div class="card-image waves-effect waves-block waves-light">
 			                    <div class="overlay"></div>
@@ -199,9 +204,12 @@
 			                    <a href="grupo-item.html" class="card-title">Laponia en el puente de la purisina </a>
 			                  </div>
 			                  <div class="card-content">
-			                    <p class="flow-text">Viaje lleno de aventura por una de las regiones más bonitas e inhóspitas de Europa.</p>
-								<p class="flow-text"><strong>Salida:</strong> 30/12/2015</p>		                    
-								<p class="flow-text"><strong>Regreso:</strong> 15/01/2016</p>		                    
+			                    <p>Viaje lleno de aventura por una de las regiones más bonitas e inhóspitas de Europa.</p>
+								<p><strong>Salida:</strong> 30/12/2015</p>		                    
+								<p><strong>Regreso:</strong> 15/01/2016</p>	
+			                    <div class="right-align">
+									<img src="img/logo_footer_min.png" class="responsive-img">			                    	
+			                    </div>
 			                  </div>
 				              <div class="card-action">
 						        <strong class="left precio">1.685€</strong>
@@ -210,7 +218,7 @@
 				              </div>
 			              </div>
 			            </div>
-			            <div class="col s12 m4 l4">
+			            <div class="col s12 m6 l3">
 			               <div class="card">
 			                  <div class="card-image waves-effect waves-block waves-light">
 			                    <div class="overlay"></div>
@@ -218,9 +226,12 @@
 			                    <a href="grupo-item.html" class="card-title">Laponia en el puente de la purisina </a>
 			                  </div>
 			                  <div class="card-content">
-			                    <p class="flow-text">Viaje lleno de aventura por una de las regiones más bonitas e inhóspitas de Europa.</p>
-								<p class="flow-text"><strong>Salida:</strong> 30/12/2015</p>		                    
-								<p class="flow-text"><strong>Regreso:</strong> 15/01/2016</p>		                    
+			                    <p>Viaje lleno de aventura por una de las regiones más bonitas e inhóspitas de Europa.</p>
+								<p><strong>Salida:</strong> 30/12/2015</p>		                    
+								<p><strong>Regreso:</strong> 15/01/2016</p>	
+			                    <div class="right-align">
+									<img src="img/logo_footer_pat.png" class="responsive-img">			                    	
+			                    </div>
 			                  </div>
 				              <div class="card-action">
 						        <strong class="left precio">1.685€</strong>
@@ -229,7 +240,7 @@
 				              </div>
 			              </div>
 			            </div>
-			            <div class="col s12 m4 l4">
+			            <div class="col s12 m6 l3">
 			               <div class="card">
 			                  <div class="card-image waves-effect waves-block waves-light">
 			                    <div class="overlay"></div>
@@ -238,9 +249,12 @@
 			                    <a href="grupo-item.html" class="card-title">Laponia en el puente de la purisina </a>
 			                  </div>
 			                  <div class="card-content">
-			                    <p class="flow-text">Viaje lleno de aventura por una de las regiones más bonitas e inhóspitas de Europa.</p>
-								<p class="flow-text"><strong>Salida:</strong> 30/12/2015</p>		                    
-								<p class="flow-text"><strong>Regreso:</strong> 15/01/2016</p>		                    
+			                    <p>Viaje lleno de aventura por una de las regiones más bonitas e inhóspitas de Europa.</p>
+								<p><strong>Salida:</strong> 30/12/2015</p>		                    
+								<p><strong>Regreso:</strong> 15/01/2016</p>	
+			                    <div class="right-align">
+									<img src="img/logo_footer_tri.png" class="responsive-img">			                    	
+			                    </div>
 			                  </div>
 				              <div class="card-action">
 						        <strong class="left precio">1.685€</strong>
@@ -249,7 +263,7 @@
 				              </div>
 			              </div>
 			            </div>
-			            <div class="col s12 m4 l4">
+			            <div class="col s12 m6 l3">
 			               <div class="card">
 			                  <div class="card-image waves-effect waves-block waves-light">
 			                    <div class="overlay"></div>
@@ -258,9 +272,12 @@
 			                    <a href="grupo-item.html" class="card-title">Laponia en el puente de la purisina </a>
 			                  </div>
 			                  <div class="card-content">
-			                    <p class="flow-text">Viaje lleno de aventura por una de las regiones más bonitas e inhóspitas de Europa.</p>
-								<p class="flow-text"><strong>Salida:</strong> 30/12/2015</p>		                    
-								<p class="flow-text"><strong>Regreso:</strong> 15/01/2016</p>		                    
+			                    <p>Viaje lleno de aventura por una de las regiones más bonitas e inhóspitas de Europa.</p>
+								<p><strong>Salida:</strong> 30/12/2015</p>		                    
+								<p><strong>Regreso:</strong> 15/01/2016</p>	
+			                    <div class="right-align">
+									<img src="img/logo_footer_vs.png" class="responsive-img">			                    	
+			                    </div>
 			                  </div>
 				              <div class="card-action">
 						        <strong class="left precio">1.685€</strong>
@@ -269,7 +286,7 @@
 				              </div>
 			              </div>
 			            </div>
-			            <div class="col s12 m4 l4">
+			            <div class="col s12 m6 l3">
 			               <div class="card">
 			                  <div class="card-image waves-effect waves-block waves-light">
 			                    <div class="overlay"></div>
@@ -277,7 +294,53 @@
 			                    <a href="grupo-item.html" class="card-title">Laponia en el puente de la purisina </a>
 			                  </div>
 			                  <div class="card-content">
-			                    <p class="flow-text">Viaje lleno de aventura por una de las regiones más bonitas e inhóspitas de Europa.</p>
+			                    <p>Viaje lleno de aventura por una de las regiones más bonitas e inhóspitas de Europa.</p>
+			                    <div class="right-align">
+									<img src="img/logo_footer_inc.png" class="responsive-img">			                    	
+			                    </div>
+			                  </div>
+				              <div class="card-action">
+						        <strong class="left precio">1.685€</strong>
+				                <a class="right waves-effect waves-light btn">Descargar</a>
+				                <div class="clearfix"></div>
+				              </div>
+			              </div>
+			            </div>
+			            <div class="col s12 m6 l3">
+			               <div class="card">
+			                  <div class="card-image waves-effect waves-block waves-light">
+			                    <div class="overlay"></div>
+			                    <div class="etiqueta">Viaje en grupo</div>
+			                    <img class="activator" src="http://www.tempsdoci.com/programas/vietnam/Itinerario%20Vietnam%20Camboya.jpg">
+			                    <a href="grupo-item.html" class="card-title">Laponia en el puente de la purisina </a>
+			                  </div>
+			                  <div class="card-content">
+			                    <p>Viaje lleno de aventura por una de las regiones más bonitas e inhóspitas de Europa.</p>
+								<p><strong>Salida:</strong> 30/12/2015</p>		                    
+								<p><strong>Regreso:</strong> 15/01/2016</p>	
+			                    <div class="right-align">
+									<img src="img/logo_footer_min.png" class="responsive-img">			                    	
+			                    </div>
+			                  </div>
+				              <div class="card-action">
+						        <strong class="left precio">1.685€</strong>
+				                <a class="right waves-effect waves-light btn">Reservar</a>
+				                <div class="clearfix"></div>
+				              </div>
+			              </div>
+			            </div>
+			            <div class="col s12 m6 l3">
+			               <div class="card">
+			                  <div class="card-image waves-effect waves-block waves-light">
+			                    <div class="overlay"></div>
+			                    <img class="activator" src="http://www.tempsdoci.com/programas/vietnam/Itinerario%20Vietnam%20Camboya.jpg">
+			                    <a href="grupo-item.html" class="card-title">Laponia en el puente de la purisina </a>
+			                  </div>
+			                  <div class="card-content">
+			                    <p>Viaje lleno de aventura por una de las regiones más bonitas e inhóspitas de Europa.</p>
+			                    <div class="right-align">
+									<img src="img/logo_footer_pat.png" class="responsive-img">			                    	
+			                    </div>
 			                  </div>
 				              <div class="card-action">
 						        <strong class="left precio">1.685€</strong>
@@ -302,8 +365,8 @@
 			               <div class="card">
 			                  <div class="card-content">
 			                    <a href="#" class="card-title">Oficina en Madrid </a>
-			                    <p class="flow-text">Viaje lleno de aventura por una de las regiones más bonitas e inhóspitas de Europa.</p>
-			                    <p class="flow-text">Viaje lleno de aventura por una de las regiones más bonitas e inhóspitas de Europa.</p>
+			                    <p>Viaje lleno de aventura por una de las regiones más bonitas e inhóspitas de Europa.</p>
+			                    <p>Viaje lleno de aventura por una de las regiones más bonitas e inhóspitas de Europa.</p>
 							    <div class="mapa-container">
 									<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d194347.3844099115!2d-3.8196198515929565!3d40.43813107986679!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd422997800a3c81%3A0xc436dec1618c2269!2zTWFkcmlkLCBFc3Bhw7Fh!5e0!3m2!1ses!2sar!4v1455599998611" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
 							    </div>
@@ -314,8 +377,8 @@
 			               <div class="card">
 			                  <div class="card-content">
 			                    <a href="#" class="card-title">Oficina en Barcelona </a>
-			                    <p class="flow-text">Viaje lleno de aventura por una de las regiones más bonitas e inhóspitas de Europa.</p>
-			                    <p class="flow-text">Viaje lleno de aventura por una de las regiones más bonitas e inhóspitas de Europa.</p>
+			                    <p>Viaje lleno de aventura por una de las regiones más bonitas e inhóspitas de Europa.</p>
+			                    <p>Viaje lleno de aventura por una de las regiones más bonitas e inhóspitas de Europa.</p>
 							    <div class="mapa-container">
 									<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11963.44998908233!2d2.0834463283456977!3d41.44220514160255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a49737037e28ab%3A0xfc70dd098fb1bdcb!2s08198+La+Floresta%2C+Barcelona%2C+Espa%C3%B1a!5e0!3m2!1ses!2sar!4v1455599768412" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>							        
 							    </div>
@@ -326,9 +389,9 @@
 			               <div class="card">
 			                  <div class="card-content">
 			                    <a href="#" class="card-title">Quienes Somos  </a>
-			                    <p class="flow-text">Viaje lleno de aventura por una de las regiones más bonitas e inhóspitas de Europa.</p>
-			                    <p class="flow-text">Viaje lleno de aventura por una de las regiones más bonitas e inhóspitas de Europa.</p>
-			                    <p class="flow-text">Viaje lleno de aventura por una de las regiones más bonitas e inhóspitas de Europa.</p>
+			                    <p>Viaje lleno de aventura por una de las regiones más bonitas e inhóspitas de Europa.</p>
+			                    <p>Viaje lleno de aventura por una de las regiones más bonitas e inhóspitas de Europa.</p>
+			                    <p>Viaje lleno de aventura por una de las regiones más bonitas e inhóspitas de Europa.</p>
 			                  </div>
 			              </div>
 			            </div>
@@ -346,10 +409,10 @@
 			               <div class="card">
 			                  <div class="card-content">
 			                    <a href="#" class="card-title">Texto Seo 1 </a>
-			                    <p class="flow-text">Viaje lleno de aventura por una de las regiones más bonitas e inhóspitas de Europa.</p>
-			                    <p class="flow-text">Viaje lleno de aventura por una de las regiones más bonitas e inhóspitas de Europa.</p>
-			                    <p class="flow-text">Viaje lleno de aventura por una de las regiones más bonitas e inhóspitas de Europa.</p>
-			                    <p class="flow-text">Viaje lleno de aventura por una de las regiones más bonitas e inhóspitas de Europa.</p>
+			                    <p>Viaje lleno de aventura por una de las regiones más bonitas e inhóspitas de Europa.</p>
+			                    <p>Viaje lleno de aventura por una de las regiones más bonitas e inhóspitas de Europa.</p>
+			                    <p>Viaje lleno de aventura por una de las regiones más bonitas e inhóspitas de Europa.</p>
+			                    <p>Viaje lleno de aventura por una de las regiones más bonitas e inhóspitas de Europa.</p>
 			                  </div>
 			              </div>
 			            </div>
@@ -357,13 +420,13 @@
 			               <div class="card">
 			                  <div class="card-content">
 			                    <a href="#" class="card-title">Texto Seo 1 </a>
-			                    <p class="flow-text">Viaje lleno de aventura por una de las regiones más bonitas e inhóspitas de Europa.</p>
-			                    <p class="flow-text">Viaje lleno de aventura por una de las regiones más bonitas e inhóspitas de Europa.</p>
-			                    <p class="flow-text">Viaje lleno de aventura por una de las regiones más bonitas e inhóspitas de Europa.</p>
-			                    <p class="flow-text">Viaje lleno de aventura por una de las regiones más bonitas e inhóspitas de Europa.</p>
-			                    <p class="flow-text">Viaje lleno de aventura por una de las regiones más bonitas e inhóspitas de Europa.</p>
-			                    <p class="flow-text">Viaje lleno de aventura por una de las regiones más bonitas e inhóspitas de Europa.</p>
-			                    <p class="flow-text">Viaje lleno de aventura por una de las regiones más bonitas e inhóspitas de Europa.</p>
+			                    <p>Viaje lleno de aventura por una de las regiones más bonitas e inhóspitas de Europa.</p>
+			                    <p>Viaje lleno de aventura por una de las regiones más bonitas e inhóspitas de Europa.</p>
+			                    <p>Viaje lleno de aventura por una de las regiones más bonitas e inhóspitas de Europa.</p>
+			                    <p>Viaje lleno de aventura por una de las regiones más bonitas e inhóspitas de Europa.</p>
+			                    <p>Viaje lleno de aventura por una de las regiones más bonitas e inhóspitas de Europa.</p>
+			                    <p>Viaje lleno de aventura por una de las regiones más bonitas e inhóspitas de Europa.</p>
+			                    <p>Viaje lleno de aventura por una de las regiones más bonitas e inhóspitas de Europa.</p>
 			                  </div>
 			              </div>
 			            </div>
@@ -383,15 +446,15 @@
 		          <h5 class="center-align">¿Te hemos inspirado? Corre en busca de tu próxima aventura con Temps'doci.</h5>
 			      <form class="col s12">
 			        <div class="row">
-			          <div class="input-field col s6 l3">
+			          <div class="input-field col m6 l3">
 			            <input id="input_date3" type="date" class="datepicker">
 			            <label for="input_date3">Desde</label>
 			          </div>
-			          <div class="input-field col s6 l3">
+			          <div class="input-field col m6 l3">
 			            <input id="input_date4" type="date" class="datepicker">
 			            <label for="input_date4">Hasta</label>
 			          </div>
-			          <div class="input-field col s6 l3">
+			          <div class="input-field col m6 l3">
 					    <select>
 					      <option value="" disabled selected>Elija un opción</option>
                           <option value="argentina">Argentina</option>
@@ -402,7 +465,7 @@
 					    </select>
 					    <label>Destino</label>
 			          </div>
-			          <div class="input-field col s6 l3">
+			          <div class="input-field col m6 l3">
 					    <select>
 					      <option value="" disabled selected>Elija una opción</option>
                           <option value="minigrups1">Minigrups</option>

@@ -3,7 +3,9 @@
  $(function() {
    BV = new $.BigVideo({ useFlashForFirefox: false });
    BV.init();
-   
+   var element = document.getElementById('big-video-vid_html5_api');
+   element.muted = "muted";
+
    var Opera = (navigator.userAgent.match(/Opera|OPR\//) ? true : false);
    
    function operaVideoLoader() {
@@ -39,9 +41,9 @@
                 './video/6558168-2.mp4',
                 './video/12608964-2.mp4'
             ];
-            vids.sort(function() { return 0.5 - Math.random() }); // random order on load
+            var Random = vids.sort(function() { return 0.5 - Math.random() }); // random order on load
       BV.init();
-      BV.showPlaylist(vids,{ambient:true});
+      BV.showPlaylist([vids[0]], {ambient:true, loop: false });
       });
     $('.overlay.overlay--mesh').remove();
     $('#big-video-wrap').prepend('<div class="overlay overlay--mesh"></div>');

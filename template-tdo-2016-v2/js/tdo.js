@@ -39,10 +39,10 @@ $('.button-collapse').sideNav({
       });
 
 //setHeight
-      var e = $(window).height();
+      //var e = $(window).height();
           //t = e - $(".content-middle .nav-filters").height();
       //$(".first-seccion").css("height", t + 32 + "px");
-      $(".first-seccion").css("height", e + "px");
+      //$(".first-seccion").css("height", e + "px");
 
   });  
 
@@ -59,6 +59,13 @@ $('.button-collapse').sideNav({
     $('.search-form-wrap').addClass('hide');
   }); 
 
+// detect cssfilters 
+
+Modernizr.addTest('cssfilters', function() {
+    el = document.createElement('div');
+    el.style.cssText = Modernizr._prefixes.join('filter' + ':blur(5px); ');
+    return !!el.style.length && ((document.documentMode === undefined || document.documentMode > 9));
+});
 
 
 
