@@ -88,6 +88,10 @@
 		background: #2a3233;
 		bottom: -150px;
 	}	
+	#more_info {
+	    right: 10px;
+	    bottom: 20px;
+	}
 
 }
 
@@ -102,6 +106,23 @@
 	.content-middle h3 {
 		font-size: 1.92rem;	
 	}	
+	 .home-video .first-seccion {
+	     min-height: 450px;
+	 }	
+	#big-video-wrap {
+	    min-height: 450px;
+	}
+
+	#big-video-wrap video {
+	    min-height: 450px;
+	}
+	#big-video-wrap .overlay {
+	    min-height: 450px;
+	}	 
+	.arrow-content {
+	  padding: 0 10px 0;
+	}
+
 }
 
 
@@ -131,6 +152,10 @@
 	nav .nav-filters {
 	    bottom: -260px;
 	}
+	.brand-logo img {
+	    max-width: 150px;
+	}
+
 }
 
 

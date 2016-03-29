@@ -1289,6 +1289,10 @@ a:active, a:hover {
     z-index: 3;
 }
 
+#product .card-content img {
+  max-width: 130px;
+}
+
 /*BG video*/
  
 .home-video main {
@@ -1328,7 +1332,7 @@ a:active, a:hover {
      background: transparent;
      display: table;
      width: 100%;
-     min-height: 600px;
+     min-height: 620px;
      padding-top: 0px;
      margin-top: 0px;
      z-index: 3;
@@ -1795,6 +1799,19 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
 }
 
 
+/* arrow */
+
+.arrow-content {
+  padding: 50px 10px 100px;
+}
+.arrow-content a {
+}
+
+.arrow-content i {
+  font-size: 55px;
+  color: #fff;
+}
+
 /* footer */
 
 footer.page-footer {
@@ -2170,6 +2187,9 @@ footer h3, footer a {
 #filter {
     padding-top: 1rem;
     padding-bottom: 1rem;
+}
+#product {
+    padding: 50px 0 100px;
 }
 
 
