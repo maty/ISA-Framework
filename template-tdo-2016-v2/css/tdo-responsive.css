@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 @media only screen and (min-width: 993px) {
 
 	nav a.button-collapse {
@@ -18,80 +17,11 @@
 	nav .nav-filters {
 		background: #2a3233;
 		bottom: -150px;
-	}	
-
-}
-
-
-@media only screen and (max-width: 767px) {
-	.content-middle h1 {
-		font-size: 3.2rem;	
-	}	
-	.content-middle h2 {
-		font-size: 2.56rem;	
-	}	
-	.content-middle h3 {
-		font-size: 1.92rem;	
-	}	
-}
-
-
-@media only screen and (max-width: 605px) {
-	li.search-form-li {
-	    position: absolute;
-	    top: 70px;
-	    right: 0;
-	}	
-	.content-middle h1 {
-		font-size: 2.7rem;	
-	}	
-	.content-middle h2 {
-		font-size: 2.16rem;	
-	}	
-	.content-middle h3 {
-		font-size: 1.42rem;	
-	}	
-}
-
-@media only screen and (max-width: 531px) {
-	nav .nav-filters .row .col {
-	    max-width: 210px;
-	}		
-}
-@media only screen and (max-width: 523px) {
-	nav .nav-filters {
-	    bottom: -260px;
 	}
-}
-
-
-@media only screen and (max-width: 480px) {
-}
-=======
-@media only screen and (min-width: 993px) {
-
-	nav a.button-collapse {
-	    display: block;
-	}	
-}
-
-@media only screen and (max-width: 992px) {
-	nav {
-		padding: 0 10px; 
-	}
-	nav .brand-logo {
-	    left: 10px;
-	    -webkit-transform: translateX(-10px);
-	    transform: translateX(-10px);
-	}
-	nav .nav-filters {
-		background: #2a3233;
-		bottom: -150px;
-	}	
 	#more_info {
 	    right: 10px;
 	    bottom: 20px;
-	}
+	}		
 
 }
 
@@ -121,8 +51,7 @@
 	}	 
 	.arrow-content {
 	  padding: 0 10px 0;
-	}
-
+	}	
 }
 
 
@@ -154,11 +83,9 @@
 	}
 	.brand-logo img {
 	    max-width: 150px;
-	}
-
+	}		
 }
 
 
 @media only screen and (max-width: 480px) {
 }
->>>>>>> origin/master
