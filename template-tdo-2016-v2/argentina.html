@@ -25,9 +25,47 @@
       <i class="material-icons dp48">comment</i>
     </div>    
 
-		<div class="navbar-fixed">
+	<div class="navbar-fixed">
 		    <nav id="nav_f" role="navigation">
-		        <div class="nav-wrapper"><a id="logo-container" href="index.html" class="brand-logo"><img src="img/tempsdoci-white.png"></a>
+		        <div class="nav-wrapper">
+		        	<a id="logo-container" href="index.html" class="brand-logo"><img src="img/tempsdoci-white.png"></a>
+			   		  <div class="nav-filters hide-on-med-and-down">
+		   			    <div class="container">
+					      <form class="col s12">
+					        <div class="row">
+					          <div class="input-field col m6 l3">
+					            <input id="input_date" type="date" class="datepicker">
+					            <label for="input_date">Desde</label>
+					          </div>
+					          <div class="input-field col m6 l3">
+					            <input id="input_date2" type="date" class="datepicker">
+					            <label for="input_date2">Hasta</label>
+					          </div>
+					          <div class="input-field col m6 l3">
+							    <select>
+							      <option value="" disabled selected>Elija un opción</option>
+		                          <option value="argentina">Argentina</option>
+		                          <option value="brasil">Brasil</option>
+		                          <option value="uruguay">Uruguay</option>
+		                          <option value="chile">Chile</option>
+		                          <option value="paraguay">Paraguay</option>
+							    </select>
+							    <label>Destino</label>
+					          </div>
+					          <div class="input-field col m6 l3">
+							    <select>
+							      <option value="" disabled selected>Elija una opción</option>
+		                          <option value="minigrups1">Minigrups</option>
+		                          <option value="singles1">Singles</option>
+		                          <option value="viajes-a-medida1">Viajes a medida</option>
+							    </select>
+							    <label>Tipo de viaje</label>
+					          </div>
+					        </div>
+					      </form>
+		 			    </div>              
+					  </div>              
+
 		 			<div id="slide-out" class="side-nav full">
 		 			    <h2 class="title-nav">Viaje a Vietnam</h2>
 						<div class="menu__wrap">
@@ -37,11 +75,7 @@
 								<li class="menu__item"><a class="menu__link" data-submenu="submenu-2" href="#">Destinos destacados</a></li>
 								<li class="menu__item"><a class="menu__link" data-submenu="submenu-3" href="#">Guía de Vietnam</a></li>
 								<li class="menu__item"><a class="menu__link" data-submenu="submenu-4" href="#">Turismo en tu viaje a Vietnam</a></li>
-								<li class="menu__item"><a class="menu__link" href="http://www.app.travelideas.es/template-tdo-2016-v2/index.html">Home TDO</a></li>
 								<li class="menu__item"><a class="menu__link" href="http://www.app.travelideas.es/template-tdo-2016-v2/vietnam.html">Tematica</a></li>
-								<li class="menu__item"><a class="menu__link" href="http://www.app.travelideas.es/template-tdo-2016-v2/argentina.html">Destino</a></li>
-								<li class="menu__item"><a class="menu__link" href="http://www.app.travelideas.es/template-tdo-2016-v2/standard.html">Page</a></li>
-							</ul>
 							</ul>
 							<!-- Submenu 1 -->
 							<ul data-menu="submenu-1" class="menu__level">
@@ -184,119 +218,180 @@
 		        </div>
 	        </article>
 
-		    <div class="section" id="product">
+		  		    <div class="section" id="product">
 			    <div class="container">
-		            <h2 class="header text_b center-align"> Viajes </h2>
+		            <h2 class="header text_b center-align"> Nuestros Viajes </h2>
 			        <div class="row">
-			            <div class="col s12 m4 l4">
+			            <div class="col s12 m6 l3">
 			               <div class="card">
 			                  <div class="card-image waves-effect waves-block waves-light">
 			                    <div class="overlay"></div>
 			                    <img class="activator" src="http://www.tempsdoci.com/programas/vietnam/Itinerario%20Vietnam%20Camboya.jpg">
-			                    <a href="productos/producto1.html" rel="nofollow"  class="card-title open-dialog">Laponia en el puente de la purisina </a>
+			                    <a href="grupo-item.html" class="card-title">Laponia en el puente de la purisina </a>
 			                  </div>
 			                  <div class="card-content">
 			                    <p>Viaje lleno de aventura por una de las regiones más bonitas e inhóspitas de Europa.</p>
+			                    <div class="right-align">
+									<img src="img/logo_footer_inc.png" class="responsive-img">			                    	
+			                    </div>
 			                  </div>
 				              <div class="card-action">
 						        <strong class="left precio">1.685€</strong>
-				                <a href="productos/producto1.html" rel="nofollow" class="right waves-effect waves-light btn open-dialog">Descargar</a>
+				                <a class="right waves-effect waves-light btn">Descargar</a>
 				                <div class="clearfix"></div>
 				              </div>
 			              </div>
 			            </div>
-			            <div class="col s12 m4 l4">
+			            <div class="col s12 m6 l3">
 			               <div class="card">
 			                  <div class="card-image waves-effect waves-block waves-light">
 			                    <div class="overlay"></div>
 			                    <div class="etiqueta">Viaje en grupo</div>
 			                    <img class="activator" src="http://www.tempsdoci.com/programas/vietnam/Itinerario%20Vietnam%20Camboya.jpg">
-			                    <a href="productos/producto1.html" rel="nofollow"  class="card-title open-dialog">Laponia en el puente de la purisina </a>
+			                    <a href="grupo-item.html" class="card-title">Laponia en el puente de la purisina </a>
 			                  </div>
 			                  <div class="card-content">
 			                    <p>Viaje lleno de aventura por una de las regiones más bonitas e inhóspitas de Europa.</p>
 								<p><strong>Salida:</strong> 30/12/2015</p>		                    
-								<p><strong>Regreso:</strong> 15/01/2016</p>		                    
+								<p><strong>Regreso:</strong> 15/01/2016</p>	
+			                    <div class="right-align">
+									<img src="img/logo_footer_min.png" class="responsive-img">			                    	
+			                    </div>
 			                  </div>
 				              <div class="card-action">
 						        <strong class="left precio">1.685€</strong>
-				                <a href="productos/producto1.html" rel="nofollow" class="right waves-effect waves-light btn open-dialog">Reservar</a>
+				                <a class="right waves-effect waves-light btn">Reservar</a>
 				                <div class="clearfix"></div>
 				              </div>
 			              </div>
 			            </div>
-			            <div class="col s12 m4 l4">
+			            <div class="col s12 m6 l3">
 			               <div class="card">
 			                  <div class="card-image waves-effect waves-block waves-light">
 			                    <div class="overlay"></div>
 			                    <img class="activator" src="http://www.tempsdoci.com/programas/vietnam/Itinerario%20Vietnam%20Camboya.jpg">
-			                    <a href="productos/producto1.html" rel="nofollow"  class="card-title open-dialog">Laponia en el puente de la purisina </a>
+			                    <a href="grupo-item.html" class="card-title">Laponia en el puente de la purisina </a>
 			                  </div>
 			                  <div class="card-content">
 			                    <p>Viaje lleno de aventura por una de las regiones más bonitas e inhóspitas de Europa.</p>
 								<p><strong>Salida:</strong> 30/12/2015</p>		                    
-								<p><strong>Regreso:</strong> 15/01/2016</p>		                    
+								<p><strong>Regreso:</strong> 15/01/2016</p>	
+			                    <div class="right-align">
+									<img src="img/logo_footer_pat.png" class="responsive-img">			                    	
+			                    </div>
 			                  </div>
 				              <div class="card-action">
 						        <strong class="left precio">1.685€</strong>
-				                <a href="productos/producto1.html" rel="nofollow" class="right waves-effect waves-light btn open-dialog">Descargar</a>
+				                <a class="right waves-effect waves-light btn">Descargar</a>
 				                <div class="clearfix"></div>
 				              </div>
 			              </div>
 			            </div>
-			            <div class="col s12 m4 l4">
+			            <div class="col s12 m6 l3">
 			               <div class="card">
 			                  <div class="card-image waves-effect waves-block waves-light">
 			                    <div class="overlay"></div>
 			                    <div class="etiqueta">A medida</div>
 			                    <img class="activator" src="http://www.tempsdoci.com/programas/vietnam/Itinerario%20Vietnam%20Camboya.jpg">
-			                    <a href="productos/producto1.html" rel="nofollow"  class="card-title open-dialog">Laponia en el puente de la purisina </a>
+			                    <a href="grupo-item.html" class="card-title">Laponia en el puente de la purisina </a>
 			                  </div>
 			                  <div class="card-content">
 			                    <p>Viaje lleno de aventura por una de las regiones más bonitas e inhóspitas de Europa.</p>
 								<p><strong>Salida:</strong> 30/12/2015</p>		                    
-								<p><strong>Regreso:</strong> 15/01/2016</p>		                    
+								<p><strong>Regreso:</strong> 15/01/2016</p>	
+			                    <div class="right-align">
+									<img src="img/logo_footer_tri.png" class="responsive-img">			                    	
+			                    </div>
 			                  </div>
 				              <div class="card-action">
 						        <strong class="left precio">1.685€</strong>
-				                <a href="productos/producto1.html" rel="nofollow" class="right waves-effect waves-light btn open-dialog">Descargar</a>
+				                <a class="right waves-effect waves-light btn">Descargar</a>
 				                <div class="clearfix"></div>
 				              </div>
 			              </div>
 			            </div>
-			            <div class="col s12 m4 l4">
+			            <div class="col s12 m6 l3">
 			               <div class="card">
 			                  <div class="card-image waves-effect waves-block waves-light">
 			                    <div class="overlay"></div>
 			                    <div class="etiqueta">Viaje en grupo</div>
 			                    <img class="activator" src="http://www.tempsdoci.com/programas/vietnam/Itinerario%20Vietnam%20Camboya.jpg">
-			                    <a href="productos/producto1.html" rel="nofollow"  class="card-title open-dialog">Laponia en el puente de la purisina </a>
+			                    <a href="grupo-item.html" class="card-title">Laponia en el puente de la purisina </a>
 			                  </div>
 			                  <div class="card-content">
 			                    <p>Viaje lleno de aventura por una de las regiones más bonitas e inhóspitas de Europa.</p>
 								<p><strong>Salida:</strong> 30/12/2015</p>		                    
-								<p><strong>Regreso:</strong> 15/01/2016</p>		                    
+								<p><strong>Regreso:</strong> 15/01/2016</p>	
+			                    <div class="right-align">
+									<img src="img/logo_footer_vs.png" class="responsive-img">			                    	
+			                    </div>
 			                  </div>
 				              <div class="card-action">
 						        <strong class="left precio">1.685€</strong>
-				                <a href="productos/producto1.html" rel="nofollow" class="right waves-effect waves-light btn open-dialog">Reservar</a>
+				                <a class="right waves-effect waves-light btn">Reservar</a>
 				                <div class="clearfix"></div>
 				              </div>
 			              </div>
 			            </div>
-			            <div class="col s12 m4 l4">
+			            <div class="col s12 m6 l3">
 			               <div class="card">
 			                  <div class="card-image waves-effect waves-block waves-light">
 			                    <div class="overlay"></div>
 			                    <img class="activator" src="http://www.tempsdoci.com/programas/vietnam/Itinerario%20Vietnam%20Camboya.jpg">
-			                    <a href="productos/producto1.html" rel="nofollow"  class="card-title open-dialog">Laponia en el puente de la purisina </a>
+			                    <a href="grupo-item.html" class="card-title">Laponia en el puente de la purisina </a>
 			                  </div>
 			                  <div class="card-content">
 			                    <p>Viaje lleno de aventura por una de las regiones más bonitas e inhóspitas de Europa.</p>
+			                    <div class="right-align">
+									<img src="img/logo_footer_inc.png" class="responsive-img">			                    	
+			                    </div>
 			                  </div>
 				              <div class="card-action">
 						        <strong class="left precio">1.685€</strong>
-				                <a href="productos/producto1.html" rel="nofollow" class="right waves-effect waves-light btn open-dialog">Descargar</a>
+				                <a class="right waves-effect waves-light btn">Descargar</a>
+				                <div class="clearfix"></div>
+				              </div>
+			              </div>
+			            </div>
+			            <div class="col s12 m6 l3">
+			               <div class="card">
+			                  <div class="card-image waves-effect waves-block waves-light">
+			                    <div class="overlay"></div>
+			                    <div class="etiqueta">Viaje en grupo</div>
+			                    <img class="activator" src="http://www.tempsdoci.com/programas/vietnam/Itinerario%20Vietnam%20Camboya.jpg">
+			                    <a href="grupo-item.html" class="card-title">Laponia en el puente de la purisina </a>
+			                  </div>
+			                  <div class="card-content">
+			                    <p>Viaje lleno de aventura por una de las regiones más bonitas e inhóspitas de Europa.</p>
+								<p><strong>Salida:</strong> 30/12/2015</p>		                    
+								<p><strong>Regreso:</strong> 15/01/2016</p>	
+			                    <div class="right-align">
+									<img src="img/logo_footer_min.png" class="responsive-img">			                    	
+			                    </div>
+			                  </div>
+				              <div class="card-action">
+						        <strong class="left precio">1.685€</strong>
+				                <a class="right waves-effect waves-light btn">Reservar</a>
+				                <div class="clearfix"></div>
+				              </div>
+			              </div>
+			            </div>
+			            <div class="col s12 m6 l3">
+			               <div class="card">
+			                  <div class="card-image waves-effect waves-block waves-light">
+			                    <div class="overlay"></div>
+			                    <img class="activator" src="http://www.tempsdoci.com/programas/vietnam/Itinerario%20Vietnam%20Camboya.jpg">
+			                    <a href="grupo-item.html" class="card-title">Laponia en el puente de la purisina </a>
+			                  </div>
+			                  <div class="card-content">
+			                    <p>Viaje lleno de aventura por una de las regiones más bonitas e inhóspitas de Europa.</p>
+			                    <div class="right-align">
+									<img src="img/logo_footer_pat.png" class="responsive-img">			                    	
+			                    </div>
+			                  </div>
+				              <div class="card-action">
+						        <strong class="left precio">1.685€</strong>
+				                <a class="right waves-effect waves-light btn">Descargar</a>
 				                <div class="clearfix"></div>
 				              </div>
 			              </div>
@@ -304,7 +399,6 @@
 			        </div>
 			    </div>
 			</div>
-			
 			
 			<div class="container" id="galeria">
 				<div class="page_titles">
