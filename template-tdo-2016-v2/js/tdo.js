@@ -85,4 +85,11 @@ Modernizr.addTest('cssfilters', function() {
 
 
 
- 
+var $input = $('#input_date').pickadate(); 
+window.picker = $input.pickadate('picker');
+
+picker.on('close', function() {
+  console.log(picker.get())
+})
+
+
