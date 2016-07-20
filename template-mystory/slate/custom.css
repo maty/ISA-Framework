@@ -342,7 +342,7 @@
 .topbar .logo {
     position: static!important;
     float: left;
-    background-image: url(http://gruppit.com/front_media/img/gruppit.png)!important;
+    background-image: url(/template-mystory/img/Bildmarke_01a.jpg)!important;
     background-size: 45%!important;
     width: 180px;
     background-position: center center!important;    
@@ -378,12 +378,13 @@
 }
 
 .topbar .action a {
-    background-color: rgba(252,206,0,1);
-    color: #fff!important;
+    background-color: transparent;
+    color: #FFF;
 }
 
 .topbar.above-the-fold .action a {
     background-color: transparent;
+    
 }
 
 .topbar.above-the-fold:before {
