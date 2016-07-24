@@ -248,7 +248,6 @@
     padding: 12px 0 0 0;
     margin: 0;
     display: inline-block;
-    background-color: #fff; 
 }
 
 
@@ -322,7 +321,7 @@
 }
 .submenu li:hover .primer_nivel li a {
     padding: 5px 10px;
-    background-color: rgba(255, 255, 255, 1);
+    background-color: rgba(255, 255, 255, 0.9);
     color: #000!important;
 }
 .submenu li:hover .primer_nivel li a:hover {
@@ -347,6 +346,9 @@
     width: 180px;
     background-position: center center!important;    
 }
+.topbar.above-the-fold .logo {
+    background-image: url(/template-mystory/img/Bildmarke_01b.jpg)!important;    
+}
 .topbar .action {
     position: static!important;
     margin-left: 50px!important;
@@ -362,7 +364,7 @@
 
 .topbar {
     /*top: -60px!important;*/
-    background: rgba(255, 255, 255,1)!important;   
+    background: rgba(255, 255, 255,0.9)!important;   
 }
 
 .topbar.floater {
@@ -378,12 +380,14 @@
 }
 
 .topbar .action a {
-    background-color: transparent;
-    color: #FFF;
+    color: rgba(0,0,0,0.75)!important;
+    border: 1px solid rgba(0,0,0,0.75)!important;
 }
 
 .topbar.above-the-fold .action a {
     background-color: transparent;
+    color: rgba(255,255,255,0.75)!important;
+    border: 1px solid rgba(255,255,255,0.75)!important;
     
 }
 
@@ -395,3 +399,22 @@
 .hide {
     display: none!important;
 }
+
+#luca-splash {
+    background-image: url(/template-mystory/img/Loading_icon.gif);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: transparent!important; 
+
+}
+
+#luca-splash .frame {
+display: none;
+}
+#luca-splash .outer {
+display: none;
+}
+
+
+
+

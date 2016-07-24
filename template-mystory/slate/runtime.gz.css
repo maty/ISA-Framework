@@ -282,7 +282,7 @@ body {
     right: 0;
     bottom: 0;
     left: 0;
-    background-color: #F4F5F5
+    background-color: transparent;
 }
 
 #luca-splash .frame, #luca-splash .outer, #luca-splash .outer * {
