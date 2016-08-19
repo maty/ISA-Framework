@@ -431,6 +431,12 @@ display: none;
    height: auto;
 }
 
+.bumper-content, 
+.spark-bumper-section .footer,
+.spark-header {
+    display: none!important;
+}
+
 
 
 @media screen and (max-width:900px) {
