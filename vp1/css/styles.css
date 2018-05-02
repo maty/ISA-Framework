@@ -431,6 +431,35 @@ input[type="submit"]:active, input[type="reset"]:active, input[type="button"]:ac
 }
 
 
+.button_comparision {
+    -moz-transition: background-color 0.2s ease-in-out;
+    -webkit-transition: background-color 0.2s ease-in-out;
+    -ms-transition: background-color 0.2s ease-in-out;
+    transition: background-color 0.2s ease-in-out;
+    background-color: #0091D4;
+    border-radius: 0;
+    border: 0;
+    color: #ffffff !important;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 600;
+    font-size: 18px;
+    height: 55px;
+    text-align: center;
+    text-decoration: none;
+    white-space: nowrap;
+    padding: 15px;
+    border-radius: 100px;
+}
+
+.button_comparision:hover,
+.button_comparision:focus,
+{
+    text-decoration: none;
+}
+
+
+
 /*Forms
 ------------------------------------*/
 
