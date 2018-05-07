@@ -163,6 +163,7 @@ hr  {
     border: 0;
 }
 
+
 section {
     padding: 80px 0;
 }
@@ -216,10 +217,14 @@ body  {
     padding: 167px 0 300px 0;
 }
 
+#big-video-image {
+    top: 0;
+}
+
 /*Contents Styles
 ------------------------------------*/
 
-.container  {
+.container, .container-sm  {
     margin-left:  auto;
     margin-right:  auto;
     padding-right: 10px;
@@ -251,6 +256,10 @@ body  {
 .row:before {
     display: table;
     content: " ";
+}
+
+.container-sm  {
+    max-width: 680px;
 }
 
 /*Grid Styles
@@ -300,6 +309,12 @@ body  {
     -ms-transition: all 0.2s ease;
     transition: all 0.2s ease;
     border-radius: 20px;
+    display: block;
+}
+
+a.box:hover,
+a.box:focus {
+    color: #fff;
 }
 
   .box-1 { 
@@ -486,7 +501,7 @@ input[type="text"], input[type="email"]  {
     outline: 0;
     padding: 0 10px;
     text-decoration: none;
-    width: 78%;
+    width: 84%;
     font-weight: 600;
     margin: 0 2% 0 0;
 }
