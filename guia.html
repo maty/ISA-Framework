@@ -58,21 +58,23 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
   </head>
 
-    <body>   
-      <section class="caption-video">
-        <div class="container">
-          <div class="align-center">
-            <p> <img src="vp1/img/logo-travelideas.png"> </p>
-            <h1 class="sr-only">Travelideas - Te ayudamos a elegir tu viaje a Sri Lanka</h1>
-            <h2>Descarga Gratis la Guia de Sri Lanka</h2>
-            <p><small>Los mejores concejos e itinerarios para tu viaje a Sri Lanka</small></p>
-                        <div class="scroll-btn m-t-2">
-            	 				
+    <body>  
 
-              <a class="button_comparision" href="#anchor">Descargar Guía Gratis</a>
+      <section class="banner" style="background-image:url(vp1/img/bg-libreria.png);">
+        <div class="banner-body">
+          <div class="container">
+            <div class="align-center">
+              <p> <img src="vp1/img/logo-travelideas.png"> </p>
+              <h1 class="sr-only">Travelideas - Te ayudamos a elegir tu viaje a Sri Lanka</h1>
+              <h2>Descarga Gratis la Guia de Sri Lanka</h2>
+              <p><small>Los mejores concejos e itinerarios para tu viaje a Sri Lanka</small></p>
+              <div class="scroll-btn m-t-2">
+                <a class="button_comparision" href="#anchor">Descargar Guía Gratis</a>
+              </div>
             </div>
-          </div>
-        </div>        
+          </div> 
+        </div>
+        <div class="overlay"></div>       
       </section>  
 
       <section class="p-t-1">
@@ -230,24 +232,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       </div>    
 
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-      <script src="vp1/js/vendor/video.js"></script>
-      <script src="vp1/js/vendor/bigvideo.js"></script>
       <script src="vp1/js/functions.js"></script>
-      <script src="vp1/js/vendor/modernizr-2.5.3.min.js"></script>
-
-     <script>
-        $(function() {
-              var BV = new $.BigVideo();
-        BV.init();
-              if (Modernizr.touch) {
-                  BV.show('vp1/img/bg-libreria.png');
-              } else {
-                  BV.show('vp1/img/bg-libreria.png',{ambient:true});
-              }
-        });
-      </script>      
-
-
 
   </body>
 </html>

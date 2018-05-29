@@ -19,9 +19,10 @@
 
 @media screen and (max-width: 1024px) {
 
-.caption-video {
-    background-attachment: scroll, fixed;
-}
+  .caption-video, 
+  .banner {
+      background-attachment: scroll, fixed;
+  }
 
 }  
 
@@ -36,13 +37,14 @@
 }
 
 @media (max-width:996px) {
-.caption-video {
-    padding: 100px 0 70px 0;
-}
+  .caption-video, 
+  .banner {
+      padding: 100px 0 70px 0;
+  }
 
-.features ul li {
-    width: 100%;
-}
+  .features ul li {
+      width: 100%;
+  }
 
 }
 
@@ -183,7 +185,8 @@
   .btn, .button {
     width:  100%;
   }
-  .caption-video .button {
+  .caption-video .button,
+  .banner .button {
     width: auto;
   }
 
@@ -229,11 +232,13 @@
   .container  {
       width:  90% !important;
   }
-  .caption-video h2 {
+  .caption-video h2,
+  .banner h2 {
       line-height: 28px;
       font-size: 30px;
   }
-  .caption-video p {
+  .caption-video p,
+  .banner p {
       font-size: 20px;
       line-height: 24px;
   }   

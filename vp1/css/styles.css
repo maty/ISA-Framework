@@ -221,6 +221,34 @@ body  {
     top: 0;
 }
 
+/*Background Image
+------------------------------------*/
+
+.banner {
+    padding: 167px 0 300px 0;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    color: #ffffff;
+    text-align: left;
+    position: relative;
+
+}
+.banner-body {
+    position: relative;
+    z-index: 2;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.5);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000,endColorstr=#99000000);
+    height: 100%;
+    width: 100%;
+}
+
 /*Contents Styles
 ------------------------------------*/
 
@@ -548,7 +576,7 @@ input[type="text"], input[type="email"]  {
     background-color: #dff0d8;
 }
 
-/*caption-video Styles
+/*caption-video and images Styles
 ------------------------------------*/
 
 .caption-video {
@@ -558,14 +586,16 @@ input[type="text"], input[type="email"]  {
     position: relative;
 }
 
-.caption-video h2 {
+.caption-video h2, 
+.banner h2  {
     color: #ffffff;
     display: inline-block;
     padding: 0 0 0; 
     text-transform: inherit;   
 }
 
-.caption-video p {
+.caption-video p, 
+.banner p{
     font-size: 30px;
     line-height: 34px;
     font-weight: 400;    
@@ -619,19 +649,6 @@ input[type="text"], input[type="email"]  {
 
 .footer p  {
     margin: 0;
-}
-
-
-background-color: #1C416E;
-position: fixed;
-left: 0%;
-bottom: 0;
-color: #fff;
-width: 100%;
-z-index: 9999;
-font-size: 12px;
-text-align: center;
-padding: 10px 0;
 }
 
 .cookies-overlay button:hover {
