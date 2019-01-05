@@ -18,8 +18,8 @@
 
   </head>
 
-    <body>   
-      <section class="caption-video">
+    <body>
+      <div class="bann_er">
         <div class="container">
           <div class="align-center">
             <p> <img src="img/logo-patagonline.png"> </p>
@@ -30,8 +30,11 @@
               <a class="button" href="#anchor">Descargar programas</a>
             </div>
           </div>
-        </div>        
-      </section>  
+        </div> 
+        <video autoplay loop muted class="banner__video" poster="https://www.patagonline.com/vp1/img/bg-video.png">
+          <source src="https://www.patagonline.com/vp1/vid/patagonline.mp4" type="video/mp4">
+        </video>
+      </div> 
 
       <section class="p-t-1">
         <div class="container">
@@ -82,7 +85,7 @@
                     <p><small>Pingüinos, Costa Atlantica, Estancia</small></p>
                 </div>
               </a>
-              <a class="box box-2 bg-img-cover" style="background-image:url(img/thumbnail-torres-del-paine.jpg);" hrf="#anchor">
+              <a class="box box-2 bg-img-cover" style="background-image:url(img/thumbnail-torres-del-paine.jpg);" href="#anchor">
                 <div class="caption">
                     <h4>Torres del Paine</h4>
                     <p><small>Glaciares, Trekking, Hosterias</small></p>
@@ -181,23 +184,12 @@
       </div>    
 
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-      <script src="js/vendor/video.js"></script>
-      <script src="js/vendor/bigvideo.js"></script>
-      <script src="js/vendor/modernizr-2.5.3.min.js"></script>
       <script src="js/functions.js"></script>
+      <script src="js/functionsVideo.js"></script>
 
-      <script>
-        $(function() {
-              var BV = new $.BigVideo();
-        BV.init();
-              if (Modernizr.touch) {
-                  BV.show('img/bg-video.png');
-              } else {
-                  BV.show('vid/patagonline.mp4',{ambient:true});
-              }
-        });
-      </script>      
 
   </body>
 </html>
+
+
 

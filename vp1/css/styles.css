@@ -221,6 +221,28 @@ body  {
     top: 0;
 }
 
+.bann_er {
+    padding: 167px 0 300px 0;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    color: #ffffff;
+    text-align: left;
+    position: relative;
+}
+
+.banner__video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: auto;
+  min-width: 100%;
+  height: auto;
+  min-height: 100%;
+  transform: translateX(-50%) translateY(-50%);
+  z-index: -1;
+}
+
 /*Background Image
 ------------------------------------*/
 
@@ -595,7 +617,8 @@ input[type="text"], input[type="email"]  {
 }
 
 .caption-video p, 
-.banner p{
+.banner p,
+.bann_er p {
     font-size: 30px;
     line-height: 34px;
     font-weight: 400;    
