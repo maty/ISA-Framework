@@ -12342,6 +12342,10 @@ input.search-query {
   float: left;
 }
 
+.itemPicture img:not([src]) {
+  opacity: 0;
+}
+
 .itemPicture img {
   background: #fff;
   padding: 4px;
@@ -12350,6 +12354,13 @@ input.search-query {
   -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
      -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
           box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  width: 228px;
+  height: 178px;
+  display: block;
+  -webkit-transition: opacity .5s linear 0.2s;
+      -moz-transition: opacity .5s linear 0.2s;
+           transition: opacity .5s linear 0.2s;
+  opacity: 1;
 }
 
 .itemPicture .btn {
