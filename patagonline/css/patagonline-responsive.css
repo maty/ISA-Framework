@@ -100,11 +100,15 @@
 
 }
 
+@media (min-width: 768px) {
+  	body { 
+  		background: url(https://www.patagonline.com/images/header1.jpg) no-repeat center top; 
+	}
+}
 
 
 
 @media (max-width: 767px) {
-
 	.items-menu a span, .items-menu a i {
 	    display: inline-block;
 	    margin: 0 0 0 5px;
@@ -160,11 +164,9 @@
     	margin-left: 20px;
 
 	}
-
-
-
-
-
+	.navbar-header {
+	    background-color: #526C7D;
+	}
 
 
 }

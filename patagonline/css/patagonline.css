@@ -70,11 +70,6 @@ hr {
 
 /* bgs */
 
-body { 
-  background: url(https://www.patagonline.com/images/header1.jpg) no-repeat center top; 
-}
-
-
 html {
 background: rgb(162,154,152); /* Old browsers */
 /* IE9 SVG, needs conditional override of 'filter' to 'none' */
@@ -688,7 +683,7 @@ img {
   background-color: #5BC0DE;
   border: 0;
   border-radius: 0;
-  margin-top: 15px;
+  margin-top: 12px;
 }
 .navbar-default .navbar-toggle:hover {
   background-color: #5BC0DE;
