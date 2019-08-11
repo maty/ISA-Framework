@@ -128,6 +128,9 @@
 	.navbar-nav > li {
 		border-right: none;
 	}
+	.submenu li {
+		border-bottom: 1px solid #5a7488;
+	}
 	.submenu li,
 	.submenu li .primer_nivel li, 
 	.tercer_nivel li, 
@@ -136,10 +139,20 @@
 		width: 100%;
 		text-align: center;
 		position: static;
+		padding: 0;
 	}
-
 	.submenu li:hover .primer_nivel {
 	    position: static;
+	    background-color: #3b4f5a;
+	}
+	.submenu li .primer_nivel li a {
+	    color: #fff;
+	}
+	.submenu .primer_nivel li {
+	    border-bottom: 1px solid #33434c;
+	}
+    .submenu .primer_nivel li a:hover {
+	    background-color: #4d6373;
 	}
 	.logo img {
   		max-width: 210px;
