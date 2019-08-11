@@ -517,11 +517,8 @@ img {
 .sidebar-contact-form .silvia {
     color: #F8D786;
     font-size: 26px;
-    line-height: 26px;
-    margin-bottom: 0;
-    margin-left: 43%;
-    margin-top: 11px;
     text-transform: capitalize;
+    padding: 0 15px;
 }
 .sidebar-contact-form .silvia span {
     color: #FFFFFF;
@@ -868,6 +865,28 @@ ul.nav li.dropdown:hover > ul.dropdown-menu {
     height: 12px;
     text-indent: -800000px;
     width: 11px;
+}
+
+/* Media object
+-------------------------------------------------- */
+
+.media-body {
+  width: 10000px;
+}
+
+.media-left,
+.media-right,
+.media-body {
+  display: table-cell;
+  vertical-align: top;
+}
+
+.media-middle {
+    vertical-align: middle;
+}
+
+.media-object {
+    max-width: inherit;
 }
 
 /* carousel styles
