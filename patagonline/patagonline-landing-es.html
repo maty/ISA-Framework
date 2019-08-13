@@ -705,6 +705,9 @@ Una aventura pero <strong>sin perder el confort </strong>que brinda una hoster&i
        $(".info_cami a, .thumbnail img").on('click', function() {
            $('body').css("overflow", "hidden");
        });
+       $('p:contains("Test para borrar")').each(function(){
+          $(this).html($(this).html().split("Test para borrar").join(""));
+       });
     </script> 
 
 <!-- masonry -->
