@@ -1083,6 +1083,46 @@ blockquote:last-child {
     font-size: 14px;
     line-height: 1.35;
 }
+
+/* Tables styles
+-------------------------------------------------- */
+
+.tg {
+    width: 100%;
+    margin-bottom: 1rem;
+    color: #212529;
+    font-size: 14px;
+}
+
+.tg td, .tg th {
+    padding: 1.3rem;
+    vertical-align: top;
+    border-top: 1px solid #dee2e6;
+}
+
+.tg tbody,
+.tg thead {
+    border: 1px solid #dee2e6;
+}
+
+.tg > thead > tr > th,
+.tg tr > th {
+    background-color: #dddad3;
+    color: #434649;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.tg>tbody>tr:nth-of-type(odd) {
+    background-color: #eceae5;
+}
+
+.tg tr {
+  background-color: #f9f8f6;
+}
+
+
+
 /* footer styles
 -------------------------------------------------- */
 #wrap {
