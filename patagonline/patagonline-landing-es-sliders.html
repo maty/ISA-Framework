@@ -946,6 +946,7 @@ Solo predecible meses antes de que ocurra. Y convoca a miles de turistas y curio
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://www.patagonline.com/template-patagonline/js/jquery-1.10.2.min.js"></script>
     <script src="https://www.patagonline.com/template-patagonline/js/bootstrap.min.js"></script>
+    <script src="/js/jquery.bcSwipe.min.js"></script>
     <script type='text/javascript' src='https://www.patagonline.com/template-patagonline/js/resolution-test.js'></script>
     <script type='text/javascript' src='https://www.patagonline.com/template-patagonline/js/froogaloop.js'></script>
     <script type='text/javascript' src='https://www.patagonline.com/template-patagonline/js/custom.js'></script>
@@ -985,6 +986,9 @@ Solo predecible meses antes de que ocurra. Y convoca a miles de turistas y curio
     imagesLoaded( container, function() {
       msnry = new Masonry( container );
     });
+    </script>
+    <script type="text/javascript">
+      $('.carousel').bcSwipe({ threshold: 50 });
     </script>
 
   </body>
