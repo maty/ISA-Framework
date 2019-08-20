@@ -897,6 +897,66 @@ iframe {
     min-height: 320px;
     width: 100%;
 }
+
+.carousel {
+  position: relative;
+  margin-top: 10px;
+  background-color: #000000;
+}
+
+.carousel h3 {
+background-color: black;
+color: white;
+}
+
+
+.carousel p {
+background-color: black;
+color: white;
+font-size: 16px;
+
+}
+
+.carousel-inner,
+.carousel-control {
+  z-index: 2;
+}
+
+.carousel-inner:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.1);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000,endColorstr=#99000000);
+    height: 100%;
+    width: 100%;
+}
+
+.carousel-caption {
+    background-color: #4b3f4994;
+    padding: 10px;
+    margin-bottom: 40px;
+    word-wrap: break-word;
+ }
+
+.carousel-caption h3,
+.carousel-caption p {
+  background-color: transparent;
+}
+.carousel-caption h2 {
+  border-bottom: none;
+  margin: 0;
+}
+
+.carousel-caption h1,
+.carousel-caption h2,
+.carousel-caption h3,
+.carousel-caption h4,
+.carousel-caption h5 {
+  margin: 0 0;
+}
+
 .carousel-control {
     background-image: none !important;
     height: 13%;
@@ -1511,60 +1571,6 @@ padding-top: 5px;
     font-family: 'Raleway',sans-serif;
 }
 
-
-
-
-.carousel {
-  position: relative;
-  margin-top: 10px;
-  background-color: #a7a1a7;
-  border: 2px solid #4b3f49;
-}
-
-.carousel h3 {
-background-color: black;
-color: white;
-}
-
-
-.carousel p {
-background-color: black;
-color: white;
-font-size: 16px;
-
-}
-
-.carousel-inner,
-.carousel-control {
-  z-index: 2;
-}
-
-.carousel-inner:after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: rgba(0,0,0,0.1);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000,endColorstr=#99000000);
-    height: 100%;
-    width: 100%;
-}
-
-.carousel-caption {
-    background-color: #4b3f4994;
-    padding: 10px;
-    margin-bottom: 40px;
-    word-wrap: break-word;
- }
-
-.carousel-caption h3,
-.carousel-caption p {
-  background-color: transparent;
-}
-.carousel-caption h2 {
-  border-bottom: none;
-  margin: 0;
-}
 
 .modal-productos .alert-info {
 }

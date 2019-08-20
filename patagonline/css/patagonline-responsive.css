@@ -86,6 +86,11 @@
 	  border-top: 1px solid #685e63; 
 	  padding-bottom: 15px;	  
 	}	
+	.carousel-caption {
+	    margin-bottom: 0;
+	    bottom: 10px;
+
+	}
 
 }
 
