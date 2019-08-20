@@ -906,9 +906,9 @@ iframe {
     width: auto;
 }
 .carousel-indicators .active {
-    color: #5BC0DE;
-    background-color: #5BC0DE;
-    border: 1px solid #5BC0DE; 
+    color: #F8D786;
+    background-color: #F8D786;
+    border: 1px solid #F8D786; 
 }
 
 /* img */ 
@@ -1515,8 +1515,10 @@ padding-top: 5px;
 
 
 .carousel {
-position: relative;
-margin-top: 10px;
+  position: relative;
+  margin-top: 10px;
+  background-color: #a7a1a7;
+  border: 2px solid #4b3f49;
 }
 
 .carousel h3 {
@@ -1530,6 +1532,38 @@ background-color: black;
 color: white;
 font-size: 16px;
 
+}
+
+.carousel-inner,
+.carousel-control {
+  z-index: 2;
+}
+
+.carousel-inner:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.1);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000,endColorstr=#99000000);
+    height: 100%;
+    width: 100%;
+}
+
+.carousel-caption {
+    background-color: #4b3f4994;
+    padding: 10px;
+    margin-bottom: 40px;
+    word-wrap: break-word;
+ }
+
+.carousel-caption h3,
+.carousel-caption p {
+  background-color: transparent;
+}
+.carousel-caption h2 {
+  border-bottom: none;
+  margin: 0;
 }
 
 .modal-productos .alert-info {
@@ -1613,5 +1647,39 @@ header span:hover, header a:hover {
     border: 1px solid rgba(248, 217, 139, 0.5);
     border-radius: 0;
     margin-top: 0px;
+}
+
+
+/* utilities */
+
+.embed-responsive {
+    position: relative;
+    display: block;
+    width: 100%;
+    padding: 0;
+    overflow: hidden;
+}
+
+.embed-responsive-21by9::before {
+    padding-top: 42.857143%;
+}
+
+.embed-responsive::before {
+    display: block;
+    content: "";
+}
+
+.embed-responsive .embed-responsive-item, 
+.embed-responsive embed, 
+.embed-responsive iframe, 
+.embed-responsive object, 
+.embed-responsive video {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
 }
 
