@@ -106,6 +106,9 @@
   	body { 
   		background: url(https://www.patagonline.com/images/header1.jpg) no-repeat center top; 
 	}
+	.item-heading {
+	    min-height: 180px;
+	}
 }
 
 
