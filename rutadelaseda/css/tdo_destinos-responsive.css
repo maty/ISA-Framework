@@ -94,6 +94,12 @@
 	#container .item {
 	    width: 50%;
 	}
+
+	.carousel-caption {
+	    margin-bottom: 0;
+	    bottom: 10px;
+	}
+
 }
 
 
