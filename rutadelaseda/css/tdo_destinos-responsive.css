@@ -102,6 +102,11 @@
 
 }
 
+@media (min-width: 768px) {
+	.item-heading {
+	    min-height: 180px;
+	}
+}
 
 
 
