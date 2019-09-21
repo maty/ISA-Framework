@@ -341,8 +341,10 @@ small {
 }
 
 /* img gral styles */
-
 img {
+  display: block;
+  height: auto!important;
+  max-width: 100%;
 }
 
 /* navbar styles
